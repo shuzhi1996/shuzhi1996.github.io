@@ -55,7 +55,7 @@ This research focuses on developing design methodologies tailored for hybrid man
 <div class="card">
   <img src='/images/HASM/HASM1.png' alt="Hybrid Additive-Subtractive">
   <h4>1.1. Topology Optimization for Hybrid Additive-Subtractive Manufacturing<br/><span style="font-size:14px;">（专攻方向）</span></h4>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
+  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="card">
@@ -79,7 +79,7 @@ This research focuses on developing design methodologies tailored for hybrid man
 <div class="card">
   <img src='/images/manufacturing_process/研究0.png' alt="LPBF">
   <h4>2.2. Topology Optimization for LPBF<br/><span style="font-size:14px;">（技术积累）</span></h4>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
+  <a href="{{ '/portfolio/sub/AM1/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="card">
