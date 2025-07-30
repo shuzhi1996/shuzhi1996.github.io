@@ -8,7 +8,7 @@ author_profile: true
 ## 2025
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/MD2025.png" alt="arXiv" style="width: 200px; margin-right: 50px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  <img src="/images/publications/MD2025.png" alt="arXiv" style="width: 200px; margin-right: 50px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Materials & Design 2025</span></p>
     <p><strong>Evolutionary de-homogenization using a generative model for optimizing solid-porous infill structures considering the stress concentration issue</strong></p>
@@ -22,7 +22,7 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/AM2025.png" alt="DGTO" style="width: 200px; margin-right: 50px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  <img src="/images/publications/AM2025.png" alt="DGTO" style="width: 200px; margin-right: 50px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">Additive Manufacturing 2025</span></p>
     <p><strong>DGTO: Derivable geodesics-coupled topology optimization for multi-axis hybrid additive and subtractive manufacturing with curved layer generation</strong></p>
