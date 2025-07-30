@@ -4,19 +4,6 @@ excerpt: "Considering manufacturing constraints during topology optimization bri
 collection: portfolio
 ---
 
-<div class="research-text2">
-<p>
-I am a researcher in design engineering, working at the intersection of computational mechanics, applied mathematics, and informatics. My research centers on generative design under manufacturing constraints, with applications to advanced mechanical products. As an early-career researcher, I am deeply passionate about analyzing and synthesizing physical phenomena, distilling their fundamental principles, and transforming them into mathematical models and computational frameworks—ultimately bringing these ideas to life through efficient, high-performance code.
-</p>
-
-<p>
-我是一名从事设计工学研究的学者，研究方向位于计算力学、应用数学与信息科学的交叉领域。我的主要工作聚焦于面向制造约束的生成式设计，并将其应用于先进机械产品的设计与优化。作为一名青年科研人员，我热衷于分析和综合物理现象，提炼其核心机理，并将其转化为数学模型和计算框架，最终通过高效的计算实现将这些理论落地为可用的设计工具。
-</p>
-</div>
-
----
-
-
 <style>
 .card-grid {
   display: grid;
