@@ -1,49 +1,122 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+#title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<br/><img src='/images/封面1.png'>
 
-A data-driven personal website
+About Me
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<div class="research-text2">
+<p>
+I am a researcher in design engineering, working at the intersection of computational mechanics, applied mathematics, and informatics. My research centers on generative design under manufacturing constraints, with applications to advanced mechanical products. As an early-career researcher, I am deeply passionate about analyzing and synthesizing physical phenomena, distilling their fundamental principles, and transforming them into mathematical models and computational frameworks—ultimately bringing these ideas to life through efficient, high-performance code.
+</p>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<p>
+我是一名从事设计工学研究的学者，研究方向位于计算力学、应用数学与信息科学的交叉领域。我的主要工作聚焦于面向制造约束的生成式设计，并将其应用于先进机械产品的设计与优化。作为一名青年科研人员，我热衷于分析和综合物理现象，提炼其核心机理，并将其转化为数学模型和计算框架，最终通过高效的计算实现将这些理论落地为可用的设计工具。
+</p>
+</div>
 
-Getting started
+Experience
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<div class="research-text2">
+<p>
+I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="https://pages.github.com/">Taiyuan University of Science and Technology (TYUST)</a>, China, in June 2018. Subsequently, I was awarded a <strong>China Scholarship Council (CSC) Scholarship</strong> to pursue my <strong>Ph.D. in Mechanical Engineering</strong> at the <a href="https://pages.github.com/">University of Alberta (UofA)</a>, Canada, under the joint supervision of <a href="https://faculty.sustech.edu.cn/?tagid=mays&iscss=1&snapid=1&orderby=date&go=2&lang=en">Prof. Yongsheng Ma</a> and <a href="https://pages.github.com/">Prof. Xinming Li</a>. I successfully obtained my Ph.D. degree in December 2023 with a dissertation titled <em>"Topology Optimization Considering Additive Manufacturing Constraints."</em> During my doctoral studies, I also spent one year (2020.02 – 2021.02) as a <strong>Visiting Research Student</strong> in the research group of <a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm">Prof. Jikai Liu</a> at <a href="https://pages.github.com/">Shandong University (SDU)</a>, China, where I further advanced my research in computational design and additive manufacturing. Since February 2024, I have been working as a <strong>Specially Appointed Researcher</strong> in the <a href="https://pages.github.com/">Design Engineering Laboratory</a> at <a href="https://pages.github.com/">Osaka University (OU)</a>, Japan, focusing on topology optimization and advanced design methodologies for additive manufacturing.
+</p>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<p>
+我于2018年6月毕业于中国太原科技大学，获得机械工程学士学位。随后，我获得中国国家留学基金委(CSC)资助，前往<a href="https://pages.github.com/">加拿大阿尔伯塔大学</a>攻读机械工程博士学位，由 Yongsheng Ma 教授和 <a href="https://pages.github.com/">Xinming Li 教授</a>联合指导，并于2023年12月顺利获得博士学位，博士论文题目为《考虑增材制造约束的拓扑优化》。在博士期间，我于2020年2月至2021年2月，作为访问研究生前往<a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm">中国山东大学</a>，在 Jikai Liu 教授的研究组开展合作研究，进一步深入了在计算设计与增材制造方向的探索。自2024年2月起，我在<a href="https://pages.github.com/">日本大阪大学设计工学实验室</a>担任特任研究员，指导导师为 Kentaro Yaji，主要从事拓扑优化及其在先进增材制造设计方法中的研究与应用。
+</p>
+</div>
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
 
-**Markdown generator**
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+Research interest
+======
+Topology optimization  
+Design for manufacturing  
+Multi-fidelity modeling and optimization  
+High performance computation  
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+Some of research results
+======
+### 1. Topology Optimization for Multi-axis Hybrid Additive and Subtractive Manufacturing
+<div class="research-text">
+    <p>
+        With high-precision machining, multi-axis forming capabilities, and hybrid additive-subtractive manufacturing, 
+        we are unlocking new frontiers in next-generation product fabrication. 
+        Our research delivers innovative design methodologies that make it possible to manufacture complex, 
+        high-quality components at minimal cost, fully harnessing the power of advanced hybrid manufacturing technologies.
+      </p>
+    <p>
+        通过高精度加工、多轴成型能力以及增减材复合制造技术，我们正在开创先进产品制造的新可能。
+        我们的研究提供了创新的设计方法学，能够在最小化成本的同时实现复杂且高质量的零件制造，
+        充分释放现代复合制造技术的潜能。
+    </p>
+</div>
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<br/><img src='/images/HASM.png'>  
+[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
+
+### 2. Thermal Fluid Topology Optimization for Additve Manufacturing
+<div class="research-text">
+    <p>
+        Optimized Cooling, Superior Molding! Smart cooling channel design speeds up production, 
+        improves surface quality, and lowers manufacturing costs, enabling next-level efficiency 
+        in mold fabrication.
+    </p>
+    <p>
+        智能冷却，卓越成型！优化的冷却流道设计可加快生产节奏、提升表面质量并降低制造成本，
+        助力模具制造迈向新一代高效工艺。
+    </p>
+</div>
+
+<br/><img src='/images/cooling.png'>  
+[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
+
+### 3. Large-scale Topology Optimization for Real-World Design
+<div class="research-text">
+    <p>
+        Harnessing the power of OpenMP and PETSc, we build high-performance solvers capable of handling tens of millions of elements. Our framework enables massive-scale, high-resolution topology optimization, delivering smooth, manufacturable designs — no more LEGO-like structures.
+    </p>
+    <p>
+         高性能并行计算，驱动大规模拓扑优化！基于 OpenMP 和 PETSc，我们构建了可处理上千万单元网格的高性能求解器，实现大规模、高分辨率的拓扑优化。我们的框架能够生成平滑、可制造的设计结构——从此告别“乐高积木”式的结果！
+    </p>
+</div>
+
+<br/><img src='/images/top02 (2).png'>
+<br/><img src='/images/top02 (3).png'>  
+[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
+
+### 4. Topology Optimization Meets Editable CAD
+<div class="research-text">
+    <p>
+        We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.
+    </p>
+    <p>
+         我们开发了将拓扑优化与 CAD 建模深度融合的方法，实现了可直接编辑、具有建模历史的几何特征自动生成。基于 Autodesk Inventor，优化结果可被重建为完全参数化的模型，支持快速设计迭代与后续制造修改。
+    </p>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+    <img src='/images/about/AM4.gif' style="width: 35%; height: auto;">
+    <img src='/images/about/SDGIF_Rusult_5.gif' style="width: 35%; height: auto;">
+    <img src='/images/about/SDGIF_Rusult_6.gif' style="width: 35%; height: auto;">
+</div>
+[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
+
+### 5. Multi-scale Topology Optimization
+<div style="display: flex;">
+    <img src='/images/TopResult_122.gif' style="width: 45%; Height: 35%; margin-right: 0px;">
+    <img src='/images/local.png' style="width: 60%; Height: 55%; margin-top: 5px;">
+</div>
+[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
+
+写在最后
+======
+学术之路走得越远，越容易被浮躁与功利裹挟：拼论文、拼项目，仿佛成果的数量成了唯一的衡量标准。这些却逐渐偏离了我当初选择读博、踏入学术道路的初心。人在屋檐下，往往难以完全避开这些现实。我真正热爱的，是拓扑优化。对我而言，它像是一件可以反复打磨和把玩的玩具，让我沉浸其中、乐此不疲。我希望这里能够成为我的一片自留地，记录并展示那些我真正感兴趣、与我的研究紧密相关的思考与探索。
