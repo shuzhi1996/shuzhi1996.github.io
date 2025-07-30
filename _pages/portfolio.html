@@ -1,21 +1,13 @@
 ---
 layout: archive
 title: "Research"
-permalink: /portfolio/
+permalink: /research/
 author_profile: true
 ---
-
-I aim to develop innovative design solutions that enhance engineering efficiency, improve product performance, and drive industrial advancements. 
-11111
+这里是我的研究主页介绍内容。
 
 {% include base_path %}
 
 {% for post in site.portfolio %}
-    {% unless post.path contains 'sub/' %}
-        {% include archive-single.html %}
-    {% endunless %}
+  {% include archive-single.html %}
 {% endfor %}
-
-
-
-
