@@ -36,17 +36,17 @@ The machining process consists of three stages. The majority of the solid part i
 
 <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
     <div style="flex: 1; text-align: center;">
-        <img src='/images/HASM/am-1.gif' style="width: 100%;">
+        <img src='/images/HASM/AM-1.gif' style="width: 100%;">
         <img src='/images/HASM/SM-1.gif' style="width: 100%; margin-top: 10px;">
         <p style="font-style: italic;">Stage 1 of hybrid fabrication.</p>
     </div>
     <div style="flex: 1; text-align: center;">
-        <img src='/images/HASM/am-2.gif' style="width: 100%;">
+        <img src='/images/HASM/AM-2.gif' style="width: 100%;">
         <img src='/images/HASM/SM-2.gif' style="width: 100%; margin-top: 10px;">
         <p style="font-style: italic;">Stage 2 of hybrid fabrication.</p>
     </div>
     <div style="flex: 1; text-align: center;">
-        <img src='/images/HASM/am-3.gif' style="width: 100%;">
+        <img src='/images/HASM/AM-3.gif' style="width: 100%;">
         <img src='/images/HASM/SM-3.gif' style="width: 100%; margin-top: 10px;">
         <p style="font-style: italic;">Stage 3 of hybrid fabrication.</p>
     </div>
