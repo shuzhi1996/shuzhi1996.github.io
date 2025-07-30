@@ -9,8 +9,7 @@ redirect_from:
 
 <br/><img src='/images/封面1.png'>
 
-About Me
-======
+# About Me
 <div class="research-text2">
 <p>
 I am a researcher in design engineering, working at the intersection of computational mechanics, applied mathematics, and informatics. My research centers on generative design under manufacturing constraints, with applications to advanced mechanical products. As an early-career researcher, I am deeply passionate about analyzing and synthesizing physical phenomena, distilling their fundamental principles, and transforming them into mathematical models and computational frameworks—ultimately bringing these ideas to life through efficient, high-performance code.
@@ -21,8 +20,17 @@ I am a researcher in design engineering, working at the intersection of computat
 </p>
 </div>
 
-Experience
-======
+# Research Interests
+<ul class="research-interests">
+  <li>Topology Optimization</li>
+  <li>Design for Manufacturing</li>
+  <li>Multi-fidelity Modeling & Optimization</li>
+  <li>High Performance Computing</li>
+</ul>
+
+
+
+# Experience
 <div class="research-text2">
 <p>
 I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="https://pages.github.com/">Taiyuan University of Science and Technology (TYUST)</a>, China, in June 2018. Subsequently, I was awarded a <strong>China Scholarship Council (CSC) Scholarship</strong> to pursue my <strong>Ph.D. in Mechanical Engineering</strong> at the <a href="https://pages.github.com/">University of Alberta (UofA)</a>, Canada, under the joint supervision of <a href="https://faculty.sustech.edu.cn/?tagid=mays&iscss=1&snapid=1&orderby=date&go=2&lang=en">Prof. Yongsheng Ma</a> and <a href="https://pages.github.com/">Prof. Xinming Li</a>. I successfully obtained my Ph.D. degree in December 2023 with a dissertation titled <em>"Topology Optimization Considering Additive Manufacturing Constraints."</em> During my doctoral studies, I also spent one year (2020.02 – 2021.02) as a <strong>Visiting Research Student</strong> in the research group of <a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm">Prof. Jikai Liu</a> at <a href="https://pages.github.com/">Shandong University (SDU)</a>, China, where I further advanced my research in computational design and additive manufacturing. Since February 2024, I have been working as a <strong>Specially Appointed Researcher</strong> in the <a href="https://pages.github.com/">Design Engineering Laboratory</a> at <a href="https://pages.github.com/">Osaka University (OU)</a>, Japan, focusing on topology optimization and advanced design methodologies for additive manufacturing.
@@ -33,19 +41,12 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
 </p>
 </div>
 
+# Representative Research
 
-
-Research interest
-======
-Topology optimization  
-Design for manufacturing  
-Multi-fidelity modeling and optimization  
-High performance computation  
-
-Some of research results
-======
-### 1. Topology Optimization for Multi-axis Hybrid Additive and Subtractive Manufacturing
-<div class="research-text">
+<div class="research-card">
+  <h3>Topology Optimization for Multi-axis Hybrid Manufacturing</h3>
+  <img src="/images/HASM.png" alt="Hybrid Manufacturing">
+  <div class="research-text">
     <p>
         With high-precision machining, multi-axis forming capabilities, and hybrid additive-subtractive manufacturing, 
         we are unlocking new frontiers in next-generation product fabrication. 
@@ -58,29 +59,30 @@ Some of research results
         充分释放现代复合制造技术的潜能。
     </p>
 </div>
+  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+</div>
 
-
-<br/><img src='/images/HASM.png'>  
-[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
-
-### 2. Thermal Fluid Topology Optimization for Additve Manufacturing
-<div class="research-text">
+<div class="research-card">
+  <h3>Topology Optimization for Cooling Channel</h3>
+  <img src='/images/cooling.png' alt="Hybrid Manufacturing">
+  <div class="research-text">
     <p>
         Optimized Cooling, Superior Molding! Smart cooling channel design speeds up production, 
         improves surface quality, and lowers manufacturing costs, enabling next-level efficiency 
         in mold fabrication.
     </p>
     <p>
-        智能冷却，卓越成型！优化的冷却流道设计可加快生产节奏、提升表面质量并降低制造成本，
-        助力模具制造迈向新一代高效工艺。
+        智能冷却，卓越成型！优化的冷却流道设计可加快生产节奏、提升表面质量并降低制造成本，助力模具制造迈向新一代高效工艺。
     </p>
 </div>
+  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+</div>
 
-<br/><img src='/images/cooling.png'>  
-[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
-
-### 3. Large-scale Topology Optimization for Real-World Design
-<div class="research-text">
+<div class="research-card">
+  <h3>Large-scale Topology Optimization</h3>
+  <br/><img src='/images/top02 (2).png'>
+  <br/><img src='/images/top02 (3).png'>
+  <div class="research-text">
     <p>
         Harnessing the power of OpenMP and PETSc, we build high-performance solvers capable of handling tens of millions of elements. Our framework enables massive-scale, high-resolution topology optimization, delivering smooth, manufacturable designs — no more LEGO-like structures.
     </p>
@@ -88,13 +90,17 @@ Some of research results
          高性能并行计算，驱动大规模拓扑优化！基于 OpenMP 和 PETSc，我们构建了可处理上千万单元网格的高性能求解器，实现大规模、高分辨率的拓扑优化。我们的框架能够生成平滑、可制造的设计结构——从此告别“乐高积木”式的结果！
     </p>
 </div>
+  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+</div>
 
-<br/><img src='/images/top02 (2).png'>
-<br/><img src='/images/top02 (3).png'>  
-[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
-
-### 4. Topology Optimization Meets Editable CAD
-<div class="research-text">
+<div class="research-card">
+  <h3>Topology Optimization Meets Editable CAD</h3>
+  <div style="display: flex; justify-content: space-between; align-items: center; gap: 0px;">
+    <img src='/images/about/AM4.gif' style="width: 30%; height: auto;">
+    <img src='/images/about/SDGIF_Rusult_5.gif' style="width: 30%; height: auto;">
+    <img src='/images/about/SDGIF_Rusult_6.gif' style="width: 30%; height: auto;">
+  </div>
+  <div class="research-text">
     <p>
         We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.
     </p>
@@ -102,21 +108,11 @@ Some of research results
          我们开发了将拓扑优化与 CAD 建模深度融合的方法，实现了可直接编辑、具有建模历史的几何特征自动生成。基于 Autodesk Inventor，优化结果可被重建为完全参数化的模型，支持快速设计迭代与后续制造修改。
     </p>
 </div>
-
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
-    <img src='/images/about/AM4.gif' style="width: 35%; height: auto;">
-    <img src='/images/about/SDGIF_Rusult_5.gif' style="width: 35%; height: auto;">
-    <img src='/images/about/SDGIF_Rusult_6.gif' style="width: 35%; height: auto;">
+  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
 </div>
-[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
 
-### 5. Multi-scale Topology Optimization
-<div style="display: flex;">
-    <img src='/images/TopResult_122.gif' style="width: 45%; Height: 35%; margin-right: 0px;">
-    <img src='/images/local.png' style="width: 60%; Height: 55%; margin-top: 5px;">
-</div>
-[<center>[ Go to research detail ]</center>]({{ "/portfolio/sub/HASM/" | relative_url }}) 
-
+<!--
 写在最后
 ======
 学术之路走得越远，越容易被浮躁与功利裹挟：拼论文、拼项目，仿佛成果的数量成了唯一的衡量标准。这些却逐渐偏离了我当初选择读博、踏入学术道路的初心。人在屋檐下，往往难以完全避开这些现实。我真正热爱的，是拓扑优化。对我而言，它像是一件可以反复打磨和把玩的玩具，让我沉浸其中、乐此不疲。我希望这里能够成为我的一片自留地，记录并展示那些我真正感兴趣、与我的研究紧密相关的思考与探索。
+-->
