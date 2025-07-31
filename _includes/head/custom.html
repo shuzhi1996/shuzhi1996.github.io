@@ -121,3 +121,26 @@
         color: #555;
     }
 </style>
+
+
+<style>
+.visitor-map-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* 确保左对齐 */
+  gap: 5px;
+}
+
+.visitor-map-container {
+  width: 150px;       /* 控制地图宽度 */
+  height: auto;
+  overflow: hidden;
+  margin-left: 25px;  /* 与左侧图标保持缩进一致 */
+}
+
+.visitor-map-container iframe,
+.visitor-map-container div {
+  max-width: 100% !important;
+  height: auto !important;
+}
+</style>
