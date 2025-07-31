@@ -116,3 +116,28 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
 ======
 学术之路走得越远，越容易被浮躁与功利裹挟：拼论文、拼项目，仿佛成果的数量成了唯一的衡量标准。这些却逐渐偏离了我当初选择读博、踏入学术道路的初心。人在屋檐下，往往难以完全避开这些现实。我真正热爱的，是拓扑优化。对我而言，它像是一件可以反复打磨和把玩的玩具，让我沉浸其中、乐此不疲。我希望这里能够成为我的一片自留地，记录并展示那些我真正感兴趣、与我的研究紧密相关的思考与探索。
 -->
+
+---
+
+---
+
+<div style="
+    background-color: #fff; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-top: 40px; 
+    text-align: center;
+">
+    <h3 style="
+        font-weight: bold; 
+        font-size: 1.2em; 
+        margin-bottom: 15px;
+    ">
+        🌍 Visitor Map
+    </h3>
+    {% raw %}
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=G0kUd01qp_X51j2JI9KKac5r5nvUapRlJBEjaW6OGqo'></script>
+    {% endraw %}
+</div>
+
