@@ -90,7 +90,7 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
          高性能并行计算，驱动大规模拓扑优化！基于 OpenMP 和 PETSc，我们构建了可处理上千万单元网格的高性能求解器，实现大规模、高分辨率的拓扑优化。我们的框架能够生成平滑、可制造的设计结构——从此告别“乐高积木”式的结果！
     </p>
 </div>
-  <a href="{{ '/portfolio/sub/HPC/' | relative_url }}" class="btn">Read More →</a>
+  <a href="{{ '/softwares/software_1/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="research-card">
