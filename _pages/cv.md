@@ -66,7 +66,7 @@ Publications
 18. **Xu, S.**, Rong, Y., Ma, Y., Li, X. (2020). A novel implementation of energy-based homogenization method. *Journal of Integrated Design and Process Science*, 24, 163-179.  
 
 ### Conference Papers
-1. 河塘拓樹, **徐庶之**, 矢地謙太郎. (2025). データ駆動型トポロジー最適化による複数設計変数場の同時最適化. *Proceedings of the Conference on Computational Engineering and Science/日本計算工学会*, Vol. 30, 164-167. 東京: 日本計算工学会.  
+1. 河邊拓樹, **徐庶之**, 矢地謙太郎. (2025). データ駆動型トポロジー最適化による複数設計変数場の同時最適化. *Proceedings of the Conference on Computational Engineering and Science/日本計算工学会*, Vol. 30, 164-167. 東京: 日本計算工学会.  
 2. **徐庶之**, 矢地謙太郎. (2025). Topology optimization for multi-axis additive subtractive manufacturing with curved layer generation. *Proceedings of the Conference on Computational Engineering and Science/日本計算工学会*, Vol. 30, 113-118. 東京: 日本計算工学会.  
 3. **Xu, S.**, Huang, J., Liu, J., & Ma, Y. (2021). Island Scanning Path-Pattern Optimization for Residual Distortion Control in Metal Additive Manufacturing. *CAD21*.  
 4. **Xu, S.**, Rong, Y., Ma, Y. (2020). A novel implementation of energy-based homogenization method for periodical material and stiffened plate. *Thirteenth International Tools and Methods of Competitive Engineering Symposium (TMCE)*.  
