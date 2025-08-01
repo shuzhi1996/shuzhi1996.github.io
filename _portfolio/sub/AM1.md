@@ -6,7 +6,7 @@ permalink: /portfolio/sub/AM1/
 <style>
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 .card {
