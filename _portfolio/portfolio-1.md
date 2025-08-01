@@ -55,6 +55,11 @@ This research focuses on developing design methodologies tailored for hybrid man
 <div class="card">
   <img src='/images/HASM/HASM1.png' alt="Hybrid Additive-Subtractive">
   <h4>1.1. Topology Optimization for Hybrid Additive-Subtractive Manufacturing<br/><span style="font-size:14px;">（专攻方向）</span></h4>
+  <p style="text-align:center;">
+  <span style="background-color:#99ddff; color:white; padding:3px 6px; border-radius:4px;">
+    3 papers published
+  </span>
+</p>
   <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
@@ -73,12 +78,22 @@ This research focuses on developing design methodologies tailored for hybrid man
 <div class="card">
   <img src='/images/multi-axis AM/图片1.png' alt="Multi-axis AM">
   <h4>2.1. Topology Optimization for Multi-axis Additive Manufacturing<br/><span style="font-size:14px;">（专攻方向）</span></h4>
+  <p style="text-align:center;">
+  <span style="background-color:#99ddff; color:white; padding:3px 6px; border-radius:4px;">
+    1 paper published
+  </span>
+</p>
   <a href="{{ '/portfolio/sub/AM2/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="card">
   <img src='/images/manufacturing_process/研究0.png' alt="LPBF">
   <h4>2.2. Topology Optimization for LPBF Metal Additive Manufacturing<br/><span style="font-size:14px;">（博士课题）</span></h4>
+  <p style="text-align:center;">
+  <span style="background-color:#99ddff; color:white; padding:3px 6px; border-radius:4px;">
+    5 papers published
+  </span>
+</p>
   <a href="{{ '/portfolio/sub/AM1/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
@@ -87,12 +102,22 @@ This research focuses on developing design methodologies tailored for hybrid man
     <img src='/images/multiscale/TopResult_122.gif' style="width:40%;" alt="Multiscale">
     <img src='/images/multiscale/local.png' style="width:55%;" alt="Multiscale Local">
   </div>
-  <h4>2.3. Multi-material & Multi-scale TO<br/><span style="font-size:14px;">（技术积累，论文灌水）</span></h4>
+  <h4>2.3. Multi-material & Multi-scale Topology Optimization<br/><span style="font-size:14px;">（技术积累，论文灌水）</span></h4>
+  <p style="text-align:center;">
+  <span style="background-color:#99ddff; color:white; padding:3px 6px; border-radius:4px;">
+    4 papers published
+  </span>
+</p>
 </div>
 
 <div class="card">
   <img src='/images/fiber/fiber.png' alt="LPBF">
   <h4>2.4. Topology Optimization for Fiber Reinforced Material<br/><span style="font-size:14px;">（合作方向）</span></h4>
+  <p style="text-align:center;">
+  <span style="background-color:#99ddff; color:white; padding:3px 6px; border-radius:4px;">
+    1 paper published
+  </span>
+</p>
 </div>
 
 </div>
