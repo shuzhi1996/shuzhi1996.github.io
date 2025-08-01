@@ -46,22 +46,22 @@ author_profile: true
 ## 2024
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Hybrid Additive-Subtractive" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  <img src="/images/publications/CMAME2024.png" alt="Hybrid Additive-Subtractive" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2024</span></p>
     <p><strong>Topology optimization for hybrid additive-subtractive manufacturing incorporating dynamic process planning</strong></p>
-    <p><strong>Xu, S.</strong>, Liu, J., Yaji, K., & Lu, L.</p>
+    <p><strong>Xu, S.</strong>, Liu, J*., Yaji, K., & Lu, L.</p>
     <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 431, 117720. <strong>(SCI, Top, IF 7.3)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Support Structure Optimization" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  <img src="/images/publications/no_image.png" alt="Support Structure Optimization" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">SMO 2024</span></p>
     <p><strong>Support structure topology optimization considering the residual distortion for laser powder bed fusion metal additive manufacturing</strong></p>
-    <p><strong>Xu, S.</strong>, Liu, J., Sun, Y., Li, X., & Ma, Y.</p>
+    <p><strong>Xu, S.</strong>, Liu, J., Sun, Y., Li, X*., & Ma, Y*.</p>
     <p><em>Structural and Multidisciplinary Optimization</em>, 67(10), 1-20. <strong>(SCI, IF 3.6)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
