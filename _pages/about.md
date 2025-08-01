@@ -75,7 +75,7 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
         智能冷却，卓越成型！优化的冷却流道设计可加快生产节奏、提升表面质量并降低制造成本，助力模具制造迈向新一代高效工艺。
     </p>
 </div>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+  <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="research-card">
@@ -90,7 +90,7 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
          高性能并行计算，驱动大规模拓扑优化！基于 OpenMP 和 PETSc，我们构建了可处理上千万单元网格的高性能求解器，实现大规模、高分辨率的拓扑优化。我们的框架能够生成平滑、可制造的设计结构——从此告别“乐高积木”式的结果！
     </p>
 </div>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+  <a href="{{ '/portfolio/sub/HPC/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="research-card">
@@ -108,7 +108,7 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
          我们开发了将拓扑优化与 CAD 建模深度融合的方法，实现了可直接编辑、具有建模历史的几何特征自动生成。基于 Autodesk Inventor，优化结果可被重建为完全参数化的模型，支持快速设计迭代与后续制造修改。
     </p>
 </div>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+  <a href="{{ '/portfolio/sub/CAD/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <!--

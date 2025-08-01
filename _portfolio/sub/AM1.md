@@ -8,26 +8,27 @@ This research focuses on developing advanced optimization methodologies for manu
 
 ## 1.Research Background
 
-We investigate heat transfer, mechanical response, and residual stress evolution during additive and hybrid manufacturing processes.  
-These studies form the theoretical foundation for developing optimization algorithms and predictive simulation tools.
+We investigate heat transfer, mechanical response, and residual stress evolution during additive and hybrid manufacturing processes. These studies form the theoretical foundation for developing optimization algorithms and predictive simulation tools.
 
 
 ## 2.LPBF Simulation Solver
 ### 2.1.Thermal-Elastic-Plastic Solver
+Detail coming soon...
 ### 2.2.Thermal Solver (Overheating Prediction)
+Detail coming soon...
 ### 2.3.Simplified Solver based on Inherent Strain Method 
 ![Simulation flow chart based on inherited strain method](/images/manufacturing_process/研究1-1.png)  
-*Simulation flow chart based on the inherited strain method.*
+<p style="margin-top: 5px; font-style: italic; text-align: center;">Simulation flow chart based on inherent strain method.</p>
 
 <div style="display:flex; justify-content:center; gap:10px; margin-top:15px;">
     <img src='/images/manufacturing_process/Picture3.gif' style="width:45%;">
     <img src='/images/manufacturing_process/Picture5.gif' style="width:45%;">
 </div>
 
-*Layer-by-layer deposition simulation (left) and stress release deformation analysis (right).*
+<p style="margin-top: 5px; font-style: italic; text-align: center;">Simulation process: (left) Fusion process; (right) Cut-off process.</p>
 
 ![Comparison with commercial software](/images/manufacturing_process/研究1-3.png)  
-*Comparison with commercial software shows errors < 5%, demonstrating solver reliability.*
+<p style="margin-top: 5px; font-style: italic; text-align: center;">Comparison with commercial software shows errors < 5%, demonstrating solver reliability.</p>
 
 [🔗 Related MATLAB Code](https://www.mech.sdu.edu.cn/info/1132/129552.htm)
 

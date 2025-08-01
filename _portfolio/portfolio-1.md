@@ -39,7 +39,7 @@ collection: portfolio
 
 ---
 
-## 1. Design for Hybrid Additive-Subtractive Manufacturing
+## 1. Design for Hybrid Manufacturing
 <div class="research-text2">
 <p>
 This research focuses on developing design methodologies tailored for hybrid manufacturing systems that integrate additive manufacturing and subtractive machining within a single process.We investigate topology optimization methods that consider process planning, tool accessibility, and manufacturing constraints, enabling the creation of complex, high-performance structures with minimized post-processing.Our approach bridges computational design and practical manufacturing, providing a pathway to industrial-grade, manufacturable designs.
@@ -59,7 +59,7 @@ This research focuses on developing design methodologies tailored for hybrid man
 </div>
 
 <div class="card">
-  <h4>1.2. Process Planning for Hybrid Additive-Subtractive Manufacturing<br/><span style="font-size:14px;">（合作方向）</span></h4>
+  <h4>1.2. Process Planning for Hybrid Manufacturing<br/><span style="font-size:14px;">（合作方向）</span></h4>
 </div>
 
 </div>
@@ -73,21 +73,21 @@ This research focuses on developing design methodologies tailored for hybrid man
 <div class="card">
   <img src='/images/multi-axis AM/图片1.png' alt="Multi-axis AM">
   <h4>2.1. Topology Optimization for Multi-axis Additive Manufacturing<br/><span style="font-size:14px;">（专攻方向）</span></h4>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
+  <a href="{{ '/portfolio/sub/AM2/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="card">
   <img src='/images/manufacturing_process/研究0.png' alt="LPBF">
-  <h4>2.2. Topology Optimization for LPBF<br/><span style="font-size:14px;">（技术积累）</span></h4>
+  <h4>2.2. Topology Optimization for LPBF Metal Additive Manufacturing<br/><span style="font-size:14px;">（博士课题）</span></h4>
   <a href="{{ '/portfolio/sub/AM1/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="card">
-  <div style="display: flex; gap: 5px;">
-    <img src='/images/multiscale/TopResult_122.gif' style="width:50%;" alt="Multiscale">
-    <img src='/images/multiscale/local.png' style="width:50%;" alt="Multiscale Local">
+  <div style="display: flex; gap: 0px;">
+    <img src='/images/multiscale/TopResult_122.gif' style="width:40%;" alt="Multiscale">
+    <img src='/images/multiscale/local.png' style="width:55%;" alt="Multiscale Local">
   </div>
-  <h4>2.3. Multi-material & Multi-scale TO<br/><span style="font-size:14px;">（技术积累）</span></h4>
+  <h4>2.3. Multi-material & Multi-scale TO<br/><span style="font-size:14px;">（技术积累，论文灌水）</span></h4>
   <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
 </div>
 
