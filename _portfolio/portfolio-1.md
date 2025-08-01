@@ -88,10 +88,10 @@ This research focuses on developing design methodologies tailored for hybrid man
     <img src='/images/multiscale/local.png' style="width:55%;" alt="Multiscale Local">
   </div>
   <h4>2.3. Multi-material & Multi-scale TO<br/><span style="font-size:14px;">（技术积累，论文灌水）</span></h4>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
 </div>
 
 <div class="card">
+  <img src='/images/fiber/fiber.png' alt="LPBF">
   <h4>2.4. Topology Optimization for Fiber Reinforced Material<br/><span style="font-size:14px;">（合作方向）</span></h4>
 </div>
 
