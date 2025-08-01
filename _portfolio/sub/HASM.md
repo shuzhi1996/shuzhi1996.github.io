@@ -90,5 +90,12 @@ The fabricated prototype confirms that the topology-optimized structure is fully
     </a> 
     <em>Additive Manufacturing</em>, 105, 104786.
   </p>
+
+  <p>
+    [3] <strong>徐庶之</strong>, 矢地謙太郎. (2025). 
+    Topology optimization for multi-axis additive subtractive manufacturing with curved layer generation. 
+    <em>Proceedings of the Conference on Computational Engineering and Science / 日本計算工学会</em>, Vol. 30, 113–118. 東京: 日本計算工学会. 
+  </p>
+
 </div>
 
