@@ -12,11 +12,9 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Materials & Design 2025</span></p>
     <p><strong>Evolutionary de-homogenization using a generative model for optimizing solid-porous infill structures considering the stress concentration issue</strong></p>
-    <p><strong>Xu, S.</strong>, Kawabe, H., & Yaji, K.</p>
+    <p><strong>Xu, S.</strong>, Kawabe, H., & Yaji, K*.</p>
     <p><em>Materials & Design</em>, 2025, 114380.</p>
     <p><a href="https://www.sciencedirect.com/science/article/pii/S0264127525008007" target="_blank"><strong>Paper</strong></a>
-    <a href="https://www.sciencedirect.com/science/article/pii/S0264127525008007" target="_blank"><strong>Project</strong></a>
-    <a href="https://www.sciencedirect.com/science/article/pii/S0264127525008007" target="_blank"><strong>Code</strong></a>
     </p>
   </div>
 </div>
@@ -26,18 +24,18 @@ author_profile: true
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">Additive Manufacturing 2025</span></p>
     <p><strong>DGTO: Derivable geodesics-coupled topology optimization for multi-axis hybrid additive and subtractive manufacturing with curved layer generation</strong></p>
-    <p>Guo, Y., <strong>Xu, S.</strong>, Wang, Y., Liu, J., Ahmad, R., & Ma, Y.</p>
+    <p>Guo, Y., <strong>Xu, S.</strong>, Wang, Y., Liu, J*., Ahmad, R*., & Ma, Y*.</p>
     <p><em>Additive Manufacturing</em>, 105, 104786.</p>
     <p><a href="https://www.sciencedirect.com/science/article/pii/S2214860425001502" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Self-Support Structure" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+  <img src="/images/publications/CMAME2025.png" alt="Self-Support Structure" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2025</span></p>
     <p><strong>Self-Support Structure Topology Optimization for Multi-axis Additive Manufacturing Incorporated with Curved Layer Slicing</strong></p>
-    <p><strong>Xu, S.</strong>, Liu, J., He, D., Tang, K., Yaji, K., & Lu, L.</p>
+    <p><strong>Xu, S.</strong>, Liu, J*., He, D., Tang, K., Yaji, K*., & Lu, L.</p>
     <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 438, 117841. <strong>(SCI, Top, IF 7.3)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
