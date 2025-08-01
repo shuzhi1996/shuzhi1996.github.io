@@ -1,9 +1,8 @@
 ---
-title: "Topology optimization for LPBF"
+title: "Topology optimization for CAD"
 permalink: /portfolio/sub/CAD/
 ---
-
-
+Shuzhi Xu, Kentaro Yaji
 ---
 
 ## 1.Research Background

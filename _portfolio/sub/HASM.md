@@ -12,8 +12,15 @@ This research focuses on topology optimization specifically tailored for hybrid 
 ## 2.Design Framework 
 <div style="text-align: center;">
     <img src='/images/HASM/result1.png' style="width: 100%; margin-top: 10px;">
-    <p style="margin-top: 5px; font-style: italic; text-align: center;">Simulation flow chart based on inherited strain method.</p>
+    <p style="margin-top: 5px; font-style: italic; text-align: center;">Design flow chart [2].</p>
 </div>
+
+<div class="research-text3">
+  <p>
+    The structural design, additive manufacturing slicing, partitioning for hybrid additive-subtractive processes, and the number of partitions will be collaboratively optimized!
+  </p>
+</div>
+
 
 ## 3.Fabrication Validation
 <div style="text-align: center;">
