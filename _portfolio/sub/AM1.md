@@ -58,18 +58,18 @@ Detail coming soon...
 ### 2.3.Simplified Solver based on Inherent Strain Method 
 #### 2.3.1.Solver framework
 ![Simulation flow chart based on inherited strain method](/images/manufacturing_process/研究1-1.png)  
-<p style="margin-top: 5px; font-style: italic; text-align: center;">Simulation flow chart based on inherent strain method.</p>
+<p style="margin-top: 5px; font-style: italic; text-align: center; font-size: 8px;">Simulation flow chart based on inherent strain method.</p>
 
 #### 2.3.2.Simulation process
 <div style="display:flex; justify-content:center; gap:10px; margin-top:15px;">
     <img src='/images/manufacturing_process/Picture3.gif' style="width:45%;">
     <img src='/images/manufacturing_process/Picture5.gif' style="width:45%;">
 </div>
-<p style="margin-top: 5px; font-style: italic; text-align: center;">Simulation process: (left) Fusion process; (right) Cut-off process.</p>
+<p style="margin-top: 5px; font-style: italic; text-align: center; font-size: 8px;">Simulation process: (left) Fusion process; (right) Cut-off process.</p>
 
 #### 2.3.3.Results validation
 ![Comparison with commercial software](/images/manufacturing_process/研究1-3.png)  
-<p style="margin-top: 5px; font-style: italic; text-align: center;">Comparison with commercial software shows errors < 5%, demonstrating solver reliability.</p>
+<p style="margin-top: 5px; font-style: italic; text-align: center; font-size: 8px;">Comparison with commercial software shows errors < 5%, demonstrating solver reliability.</p>
 [🔗 Related MATLAB Code](https://www.mech.sdu.edu.cn/info/1132/129552.htm)
 
 
@@ -82,7 +82,7 @@ Detail coming soon...
     <h3>3.1. Residual Stress Constrained Structure Topology Optimization</h3>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-4.png' style="width: 100%; margin-top: 10px;">
-      <p style="font-style: italic; text-align: center;">Comparison and verification with commercial software results.</p>
+      <p style="font-style: italic; text-align: center; font-size: 8px;">Comparison and verification with commercial software results.</p>
     </div>
   </div>
 
@@ -102,19 +102,19 @@ Detail coming soon...
         <img src='/images/manufacturing_process/图片5.gif' style="width: 30%; margin-top: 10px;">
         <img src='/images/manufacturing_process/图片1.jpg' style="width: 70%; margin-top: 10px;">
       </div>
-      <p style="font-style: italic; text-align: center;">The illustration of scanning island.</p>
+      <p style="font-style: italic; text-align: center; font-size: 8px;">The illustration of scanning island.</p>
     </div>
 
 <h4>3.2.2. Modeling</h4>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-7.png' style="width: 100%; margin-top: 10px;">
-      <p style="font-style: italic; text-align: center;">The anisotropic property of inherent strain and modeling.</p>
+      <p style="font-style: italic; text-align: center; font-size: 8px;">The anisotropic property of inherent strain and modeling.</p>
     </div>
 
-    <h4>3.2.3. Optimization Framework</h4>
+<h4>3.2.3. Optimization Framework</h4>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-8.png' style="width: 100%; margin-top: 10px;">
-      <p style="font-style: italic; text-align: center;">Design framework and case study.</p>
+      <p style="font-style: italic; text-align: center; font-size: 8px;">Design framework and case study.</p>
     </div>
 
 <h4>3.2.4. Related Publication</h4>
@@ -141,13 +141,13 @@ Detail coming soon...
 <h4>3.3.1. Optimization Framework</h4>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-9.png' style="width: 100%; margin-top: 10px;">
-      <p style="font-style: italic; text-align: center;">Design framework and case study.</p>
+      <p style="font-style: italic; text-align: center; font-size: 8px;">Design framework and case study.</p>
     </div>
 
 <h4>3.3.2. Optimization Results</h4>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-10.png' style="width: 100%; margin-top: 10px;">
-      <p style="font-style: italic; text-align: center;">Design framework and case study.</p>
+      <p style="font-style: italic; text-align: center; font-size: 8px;">Design framework and case study.</p>
     </div>
 
 <h4>3.3.3. Related Publication</h4>
@@ -164,7 +164,7 @@ Detail coming soon...
     <h4>3.4.1. Optimization results</h4>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-6.png' style="width: 90%; margin-top: 10px;">
-      <p style="font-style: italic;">Comparison and verification with commercial software results.</p>
+      <p style="font-style: italic; font-size: 8px;">Comparison and verification with commercial software results.</p>
     </div>
     <p><a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm" target="_blank">🔗 Related Paper</a></p>
   </div>
