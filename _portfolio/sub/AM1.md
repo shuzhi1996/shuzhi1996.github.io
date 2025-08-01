@@ -112,8 +112,18 @@ Detail coming soon...
     </div>
 
 <h4>3.2.3. Optimization Framework</h4>
-    <div style="text-align: center;">
+<div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-8.png' style="width: 100%; margin-top: 10px;">
+      <p style="font-style: italic; text-align: center; font-size: 8px;">Design framework and case study.</p>
+    </div>
+    
+<div style="text-align: center;">
+      <img src='/images/manufacturing_process/GIF55.gif' style="width: 90%; margin-top: 10px;">
+      <p style="font-style: italic; text-align: center; font-size: 8px;">Design framework and case study.</p>
+    </div>
+
+<div style="text-align: center;">
+      <img src='/images/manufacturing_process/GIF66.gif' style="width: 80%; margin-top: 10px;">
       <p style="font-style: italic; text-align: center; font-size: 8px;">Design framework and case study.</p>
     </div>
 
