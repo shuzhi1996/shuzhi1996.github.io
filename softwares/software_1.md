@@ -1,5 +1,5 @@
 ---
-title: "方向三：The driving force behind topology optimization"
+title: "3D Topology Optimization based on OpenMP"
 excerpt: "I hope I can make a small contribution to the development of the topology optimization community. Make it easier for everyone to use topology optimization programs to achieve various wonderful designs. For example, on your laptop, it takes one to two hours to implement a large-scale design :).<br/><br/><img src='/images/封面.png'>"
 collection: softwares
 ---
