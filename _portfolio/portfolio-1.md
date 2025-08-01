@@ -105,13 +105,13 @@ This research focuses on developing design methodologies tailored for hybrid man
 
 <div class="card">
   <h4>3.1. Topology Optimization for 3/4/5-axis CNC<br/><span style="font-size:14px;">（产学合作）</span></h4>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
+  <a href="{{ '/portfolio/sub/AM11/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <div class="card">
   <img src='/images/cooling/cooling.png' alt="Molding">
   <h4>3.2. Topology Optimization for Molding<br/><span style="font-size:14px;">（产学合作）</span></h4>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
+  <a href="{{ '/portfolio/sub/AM11/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 </div>
