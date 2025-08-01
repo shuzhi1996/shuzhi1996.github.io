@@ -96,9 +96,9 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
 <div class="research-card">
   <h3>Topology Optimization Meets Editable CAD</h3>
   <div style="display: flex; justify-content: space-between; align-items: center; gap: 0px;">
-    <img src='/images/about/AM4.gif' style="width: 30%; height: auto;">
-    <img src='/images/about/SDGIF_Rusult_5.gif' style="width: 30%; height: auto;">
-    <img src='/images/about/SDGIF_Rusult_6.gif' style="width: 30%; height: auto;">
+    <img src='/images/CAD/AM4.gif' style="width: 30%; height: auto;">
+    <img src='/images/CAD/SDGIF_Rusult_5.gif' style="width: 30%; height: auto;">
+    <img src='/images/CAD/SDGIF_Rusult_6.gif' style="width: 30%; height: auto;">
   </div>
   <div class="research-text">
     <p>

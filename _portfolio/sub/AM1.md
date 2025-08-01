@@ -166,8 +166,6 @@ Detail coming soon...
       <img src='/images/manufacturing_process/研究1-6.png' style="width: 90%; margin-top: 10px;">
       <p style="font-style: italic; font-size: 8px;">Comparison and verification with commercial software results.</p>
     </div>
-    <p><a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm" target="_blank">🔗 Related Paper</a></p>
-  </div>
 
 <h4>3.4.2. Related Publication</h4>
 <div class="research-text3">
