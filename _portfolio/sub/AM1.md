@@ -162,11 +162,22 @@ Detail coming soon...
   <!-- 3.4 -->
   <div class="card">
     <h3>3.4. Support Structure Design for LPBF</h3>
+    <h4>3.4.1. Optimization results</h4>
     <div style="text-align: center;">
       <img src='/images/manufacturing_process/研究1-6.png' style="width: 90%; margin-top: 10px;">
       <p style="font-style: italic;">Comparison and verification with commercial software results.</p>
     </div>
     <p><a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm" target="_blank">🔗 Related Paper</a></p>
   </div>
+
+<h4>3.4.2. Related Publication</h4>
+<div class="research-text3">
+  <p>
+    <strong>Xu, S.</strong>, Liu, J., Sun, Y., Li, X., & Ma, Y. (2024). 
+    Support structure topology optimization considering the residual distortion for laser powder bed fusion metal additive manufacturing. 
+    <em>Structural and Multidisciplinary Optimization</em>, 67(10), 1–20. 
+    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=lC1RMK0AAAAJ&sortby=pubdate&citation_for_view=lC1RMK0AAAAJ:YsMSGLbcyi4C" target="_blank">[Paper]</a>
+  </p>
+</div>
 
 </div>
