@@ -42,7 +42,7 @@ author_profile: true
 <div class="card-grid">
 <div class="card">
   <img src="/images/封面.png" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
-  <a href="{{ '/softwares/software_1/' | relative_url }}" class="btn">Go for detail →</a>
+  <a href="{{ '/softwares/software_1/' | relative_url }}" class="btn">Go for Download →</a>
 </div>
 </div>
 
