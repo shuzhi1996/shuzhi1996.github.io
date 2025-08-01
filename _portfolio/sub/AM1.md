@@ -41,15 +41,14 @@ permalink: /portfolio/sub/AM1/
   color: #0056a3;
 }
 </style>
-
+<div class="research-text3">
 This research focuses on developing advanced optimization methodologies for manufacturing processes, integrating computational mechanics, thermal-mechanical coupling, and process planning. Our work is structured into several **sub-directions** that collectively aim to enhance manufacturability, reduce residual stresses, and achieve high-precision fabrication.
-
----
+</div>
 
 ## 1.Research Background
-
-We investigate heat transfer, mechanical response, and residual stress evolution during additive and hybrid manufacturing processes. These studies form the theoretical foundation for developing optimization algorithms and predictive simulation tools.
-
+<div class="research-text3">
+We investigate heat transfer, mechanical response, and residual stress evolution during additive manufacturing processes. These studies form the theoretical foundation for developing optimization algorithms and predictive simulation tools.
+</div>
 
 ## 2.LPBF Simulation Solver
 ### 2.1.Thermal-Elastic-Plastic Solver
