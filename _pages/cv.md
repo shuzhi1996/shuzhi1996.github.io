@@ -18,11 +18,7 @@ Work Experience
 ======
 * **特任研究员 (全职)**, 大阪大学, 日本  
   * **负责项目：** トップダウン型形状設計モデリングの数理基盤構築と工学設計問題への展開  
-  * *2024.02 — 2026.04*  
-
-* **项目顾问 (兼职)**, NTT DATA XAM Technologies, 日本  
-  * **支持项目：** 考虑加工约束的火箭关键零部件的拓扑优化设计  
-  * *2024.04 — 2026.04*  
+  * *2024.02 — 2026.04*    
 
 * **研究助理**, 阿尔伯塔大学, 加拿大  
   * **支持项目：** 加拿大 NSERC 的相关资助项目  
@@ -36,24 +32,21 @@ Work Experience
   * **课题名称：** 考虑残余应力和应变的金属增材制造拓扑优化研究  
   * *2020.01 — 2021.01*  
 
-* **兼职助理设计员 (兼职)**, 齐鲁石化机械制造厂, 山东淄博, 中国  
+* **助理设计员 (兼职)**, 齐鲁石化机械制造厂, 山东淄博, 中国  
   * **负责内容：** 对 AutoCAD 进行二次开发，主要用于设计过程设备的换热器  
   * *2017.07 — 2017.10*  
 
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* MATLAB/Python/C++/C#
+* SolidWorks/AutoCAD/FreeCAD/Autodesk Inventor
+* ANSYS workbench/COMSOL
 
 Publications
 ======
 
 ### Journal Articles
-1. **Xu, S.**, Kawabe, H., & Yaji, K. (2025). Evolutionary de-homogenization using a generative model for optimizing solid-porous infill structures considering the stress concentration issue. *arXiv preprint arXiv:2412.19154*. Submitted to *International Journal of Mechanical Sciences*. **(under review, SCI, IF 7.9)**  
+1. **Xu, S.**, Kawabe, H., & Yaji, K. (2025). Evolutionary de-homogenization using a generative model for optimizing solid-porous infill structures considering the stress concentration issue. *Materials & Design*, 114380. **(SCI, IF 7.9)**  
 2. Guo, Y., **Xu, S.**, Wang, Y., Liu, J., Ahmad, R., & Ma, Y. (2025). DGTO: Derivable geodesics-coupled topology optimization for multi-axis hybrid additive and subtractive manufacturing with curved layer generation. *Additive Manufacturing*, 105, 104786.  
 3. **Xu, S.**, Liu, J., He, D., Tang, K., Yaji, K., & Lu, L. (2025). Self-Support Structure Topology Optimization for Multi-axis Additive Manufacturing Incorporated with Curved Layer Slicing. *Computer Methods in Applied Mechanics and Engineering*, 438, 117841. **(SCI, Top, IF 7.3)**  
 4. **Xu, S.**, Liu, J., Yaji, K., & Lu, L. (2024). Topology optimization for hybrid additive-subtractive manufacturing incorporating dynamic process planning. *Computer Methods in Applied Mechanics and Engineering*, 431, 117720. **(SCI, Top, IF 7.3)**  
