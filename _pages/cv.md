@@ -11,14 +11,18 @@ redirect_from:
 
 Education
 ======
-* **Ph.D. in Mechanical Engineering**, University of Alberta, Canada, 2018–2023  
+* **Ph.D. in Mechanical Engineering**, University of Alberta, Canada, 2018–2024  
 * **B.Eng. in Mechanical Engineering**, Taiyuan University of Science and Technology, China, 2014–2018  
 
 Work Experience
 ======
+* **外国人特别研究员 (全职)**, 大阪大学, 日本  
+  * **主持项目：** 「作れる設計」を実現するトポロジー最適化とハイブリッド加工の統合  
+  * *2024.09 — 2027.09*  
+
 * **特任研究员 (全职)**, 大阪大学, 日本  
   * **负责项目：** トップダウン型形状設計モデリングの数理基盤構築と工学設計問題への展開  
-  * *2024.02 — 2026.04*    
+  * *2024.02 — 2025.09*    
 
 * **研究助理**, 阿尔伯塔大学, 加拿大  
   * **支持项目：** 加拿大 NSERC 的相关资助项目  
@@ -54,12 +58,12 @@ Publications
 6. **Xu, S.**, Liu, J., Li, X., & Ma, Y. (2023). Concurrent Island scanning pattern and large-scale topology optimization method for laser powder bed fusion processed parts. *Finite Elements in Analysis and Design*, 225, 104018. **(SCI, IF 3.5)**  
 7. Liu, J., Huang, J., Zheng, Y., Hou, S., **Xu, S.**, Ma, Y., … & Li, L. (2023). Challenges in topology optimization for hybrid additive-subtractive manufacturing: A review. *Computer-Aided Design*, 103531.  
 8. Zhang, C., Wu, T., **Xu, S.**, & Liu, J. (2023). Multiscale topology optimization for solid–lattice–void hybrid structures through an ordered multi-phase interpolation. *Computer-Aided Design*, 154, 103442.  
-9. **Xu, S.**, Liu, J., Li, X., & Ma, Y. (2022). A full-scale topology optimization method for surface fiber reinforced additive manufacturing parts. *Computer Methods in Applied Mechanics and Engineering*, 401, 115632. **(SCI, Top, IF 7.1)**  
-10. **Xu, S.**, Liu, J., & Ma, Y. (2022). Residual stress constrained self-support topology optimization for metal additive manufacturing. *Computer Methods in Applied Mechanics and Engineering*, 389, 114380. **(SCI, Top, IF 7.1)**  
+9. **Xu, S.**, Liu, J., Li, X., & Ma, Y. (2022). A full-scale topology optimization method for surface fiber reinforced additive manufacturing parts. *Computer Methods in Applied Mechanics and Engineering*, 401, 115632. **(SCI, Top, IF 7.3)**  
+10. **Xu, S.**, Liu, J., & Ma, Y. (2022). Residual stress constrained self-support topology optimization for metal additive manufacturing. *Computer Methods in Applied Mechanics and Engineering*, 389, 114380. **(SCI, Top, IF 7.3)**  
 11. Zhang, C., **Xu, S.**, Liu, J., & Ma, Y. (2022). Comprehensive clustering-based topology optimization for connectable multi-scale additive manufacturing structures. *Additive Manufacturing*, 54, 102786.  
 12. **Xu, S.**, Huang, J., Liu, J., Ma, Y., & Liu, J. (2022). An Island Scanning Path-Pattern Optimization for Metal Additive Manufacturing Based on Inherent Strain Method. *Computer-Aided Design and Applications*, 19(4), 812-824.  
 13. **Xu, S.**, Liu, J., Huang, J., Zou, B., & Ma, Y. (2021). Multi-scale topology optimization with shell and interface layers for additive manufacturing. *Additive Manufacturing*, 37, 101698. **(SCI, Top, IF 11.0)**  
-14. **Xu, S.**, Liu, J., Zou, B., Li, Q., & Ma, Y. (2021). Stress constrained multi-material topology optimization with the ordered SIMP method. *Computer Methods in Applied Mechanics and Engineering*, 373, 113453. **(SCI, Top, IF 7.1)**  
+14. **Xu, S.**, Liu, J., Zou, B., Li, Q., & Ma, Y. (2021). Stress constrained multi-material topology optimization with the ordered SIMP method. *Computer Methods in Applied Mechanics and Engineering*, 373, 113453. **(SCI, Top, IF 7.3)**  
 15. Zhang, C., Liu, J., Yuan, Z., **Xu, S.**, Zou, B., Li, L., & Ma, Y. (2021). A novel lattice structure topology optimization method with extreme anisotropy. *Chinese Journal of Mechanical Engineering*, 8(5), 1367-1390.  
 16. Huang, J., **Xu, S.**, Ma, Y., & Liu, J. (2021). A topology optimization method for hyper-elastic porous structures subject to large deformation. *International Journal of Mechanics and Materials in Design*, 1-20.  
 17. **Xu, S.**, Huang, J., Liu, J., & Ma, Y. (2020). Topology Optimization for FDM Parts Considering the Hybrid Deposition Path Pattern. *Micromachines*, 11(8), 709. **(SCI, IF 3.0)**  
@@ -70,20 +74,3 @@ Publications
 2. **徐庶之**, 矢地謙太郎. (2025). Topology optimization for multi-axis additive subtractive manufacturing with curved layer generation. *Proceedings of the Conference on Computational Engineering and Science/日本計算工学会*, Vol. 30, 113-118. 東京: 日本計算工学会.  
 3. **Xu, S.**, Huang, J., Liu, J., & Ma, Y. (2021). Island Scanning Path-Pattern Optimization for Residual Distortion Control in Metal Additive Manufacturing. *CAD21*.  
 4. **Xu, S.**, Rong, Y., Ma, Y. (2020). A novel implementation of energy-based homogenization method for periodical material and stiffened plate. *Thirteenth International Tools and Methods of Competitive Engineering Symposium (TMCE)*.  
-
-
-Talks
-======
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}</ul>
-
-Teaching
-======
-<ul>{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
-
-Service and Leadership
-======
-* Currently signed in to 43 different slack teams
