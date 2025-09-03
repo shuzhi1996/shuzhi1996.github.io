@@ -37,7 +37,7 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
 </p>
 
 <p>
-我于2018年6月毕业于中国太原科技大学，获得机械工程学士学位。随后，我获得中国国家留学基金委(CSC)资助，前往<a href="https://pages.github.com/">加拿大阿尔伯塔大学</a>攻读机械工程博士学位，由 <a href="https://pages.github.com/">Yongsheng Ma</a> 教授和 <a href="https://pages.github.com/">Xinming Li 教授</a>联合指导，并于2023年12月顺利获得博士学位，博士论文题目为《考虑增材制造约束的拓扑优化》。在博士期间，我于2020年2月至2021年2月，作为访问研究生前往<a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm">中国山东大学</a>，在 Jikai Liu 教授的研究组开展合作研究，进一步深入了在计算设计与增材制造方向的探索。自2024年2月起，我在<a href="https://pages.github.com/">日本大阪大学设计工学实验室</a>担任特任研究员，指导导师为 Kentaro Yaji，主要从事拓扑优化及其在先进增材制造设计方法中的研究与应用。
+我于2018年6月毕业于太原科技大学（中国），获得机械工程学士学位。随后获得中国国家留学基金委(CSC)资助，前往<a href="https://pages.github.com/">阿尔伯塔大学（加拿大）</a>攻读机械工程博士学位，由 <a href="https://pages.github.com/">Yongsheng Ma</a> 教授和 <a href="https://pages.github.com/">Xinming Li 教授</a>联合指导，并于2023年12月顺利获得博士学位，博士论文题目为《考虑增材制造约束的拓扑优化》。在博士期间，我于2020年2月至2021年2月，作为访问研究生前往<a href="https://www.mech.sdu.edu.cn/info/1132/129552.htm">山东大学（中国）</a>，在 Jikai Liu 教授的研究组开展合作研究，进一步深入了在计算设计与增材制造方向的探索。2024年2月，我开始在<a href="https://pages.github.com/">大阪大学（日本）设计工学实验室</a>担任特任研究员，指导导师为 Kentaro Yaji，主要从事拓扑优化基础方法的研究与应用。自2025年9月起，我即将受到日本学术振兴会（JSPS）资助，继续在同一实验室担任外国人特别研究员，从事拓扑优化及其在先进增材制造设计方法中的研究与应用。
 </p>
 </div>
 
