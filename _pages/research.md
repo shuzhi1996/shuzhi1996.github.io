@@ -41,6 +41,10 @@ author_profile: true
 ## 方向一：Design for Manufacturing
 <div class="card-grid">
 <div class="card">
+  <div class="research-text2">
+    <p>
+    这是我最主要的工作，也是我一直在做的工作。
+    </p>
   <img src="/images/封面2.png" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">
   <a href="{{ '/portfolio/portfolio-1/' | relative_url }}" class="btn">Go for detail →</a>
 </div>
