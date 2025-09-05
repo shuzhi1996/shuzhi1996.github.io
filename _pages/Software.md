@@ -38,7 +38,7 @@ author_profile: true
 }
 </style>
 
-## TOP3D-openMP
+## TOP3D-openMP (MATLAB + C)
 <div class="card-grid">
 <div class="card">
   <img src="/images/封面.png" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
@@ -46,7 +46,7 @@ author_profile: true
 </div>
 </div>
 
-## Useful TopOpt MATLAB Code
+## Themral fluid TopOpt based on Darcy Flow (MATLAB Code)
 <div class="card-grid">
 <div class="card">
   <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
@@ -54,7 +54,23 @@ author_profile: true
 </div>
 </div>
 
-## Inherent Strain Method MATLAB Code
+## Iterative methods for linear systems (MATLAB Code)
+<div class="card-grid">
+<div class="card">
+  <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
+  <a href="{{ '/portfolio/software_2/' | relative_url }}" class="btn">Go for detail →</a>
+</div>
+</div>
+
+## Geometry constraints in TopOpt (MATLAB Code)
+<div class="card-grid">
+<div class="card">
+  <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
+  <a href="{{ '/portfolio/software_2/' | relative_url }}" class="btn">Go for detail →</a>
+</div>
+</div>
+
+## Inherent Strain Method (MATLAB Code)
 <div class="card-grid">
 <div class="card">
   <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
