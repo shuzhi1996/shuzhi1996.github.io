@@ -42,18 +42,17 @@ collection: portfolio
 ## 1. Evolutionary De-homogenization Framework
 <div class="research-text2">
 <p>
-This research focuses on developing design methodologies tailored for hybrid manufacturing systems that integrate additive manufacturing and subtractive machining within a single process.We investigate topology optimization methods that consider process planning, tool accessibility, and manufacturing constraints, enabling the creation of complex, high-performance structures with minimized post-processing.Our approach bridges computational design and practical manufacturing, providing a pathway to industrial-grade, manufacturable designs.
+
 </p>
 
 <p>
-面向增减材复合制造的设计研究本研究聚焦于为集成增材制造与减材加工的复合制造系统开发创新设计方法学。通过引入拓扑优化方法，综合考虑工艺规划、刀具可达性与制造约束，实现复杂高性能结构的优化设计，并最大程度地减少后处理需求。该方法有效连接了计算机辅助设计与实际制造，为工业级可制造设计提供了可行路径。
+
 </p>
 </div>
 
 <div class="card-grid">
 
 <div class="card">
-  <img src='/images/HASM/HASM1.png' alt="Hybrid Additive-Subtractive">
   <h4>1.1. Projection based Evolutionary De-homogenization<br/><span style="font-size:14px;">（专攻方向）</span></h4>
   <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">🔎 Go to Research Detail</a>
 </div>
