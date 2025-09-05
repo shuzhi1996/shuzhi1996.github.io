@@ -4,16 +4,58 @@ excerpt: "I hope I can make a small contribution to the development of the topol
 collection: softwares
 ---
 
+<style>
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.card a {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0073e6;
+}
+.card a:hover {
+  color: #0056a3;
+}
+</style>
+---
 
-Large-scale topology optimization design solution based on MATLAB environment. 
-MATLAB is one of the most user-friendly platforms for beginners in computational mechanics. Its powerful matrix operations and timely visibility are perfect for algorithm development, debugging, and learning! However, behind such intuitiveness and convenience, there must be sacrifices. For example, MATLAB can provide very little help in solving large-scale linear equations. Perhaps we can call right division directly, or use official MATLAB functions such as PCG and GMERS. However, they fall far short of what we need. We need more advanced methods.
-
+## 1. Geometry Multigrid Method
 <div class="research-text2">
-<p>Dome structure design considering bi modulus material properties:</p>
-</div>
-<img src='/images/A-Supp.gif'>
+<p>
 
-<div class="research-text2">
-<p>LPBF rapid additive manufacturing process simulation based on MGCG-openMP solver:</p>
+</p>
+
+<p>
+
+</p>
 </div>
-<img src='/images/图片3.gif'>
+
+<div class="card-grid">
+
+<div class="card">
+  <img src='/images/HASM/HASM1.png' alt="Hybrid Additive-Subtractive">
+  <h4>1.1. Topology Optimization for Hybrid Additive-Subtractive Manufacturing<br/><span style="font-size:14px;">（专攻方向）</span></h4>
+  <p style="text-align:center;">
+ 
+</p>
+  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
+</div>
