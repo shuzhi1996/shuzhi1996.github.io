@@ -46,11 +46,19 @@ author_profile: true
 </div>
 </div>
 
+## TopOpt with COMSOL (MATLAB Code)
+<div class="card-grid">
+<div class="card">
+  <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
+  <a href="{{ '/softwares/software_2/' | relative_url }}" class="btn">Go for detail →</a>
+</div>
+</div>
+
 ## Themral fluid TopOpt based on Darcy Flow (MATLAB Code)
 <div class="card-grid">
 <div class="card">
   <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
-  <a href="{{ '/portfolio/software_2/' | relative_url }}" class="btn">Go for detail →</a>
+  <a href="{{ '/softwares/software_2/' | relative_url }}" class="btn">Go for detail →</a>
 </div>
 </div>
 
@@ -58,7 +66,7 @@ author_profile: true
 <div class="card-grid">
 <div class="card">
   <img src="/images/MFTD/22.gif" alt="Coming Soon" style="width:100%; margin-top:10px; border-radius:8px;">
-  <a href="{{ '/portfolio/software_2/' | relative_url }}" class="btn">Go for detail →</a>
+  <a href="{{ '/softwares/software_2/' | relative_url }}" class="btn">Go for detail →</a>
 </div>
 </div>
 

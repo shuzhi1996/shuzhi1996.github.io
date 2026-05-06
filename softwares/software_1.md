@@ -4,9 +4,9 @@ excerpt: "I hope I can make a small contribution to the development of the topol
 collection: softwares
 ---
 
-
-Large-scale topology optimization design solution based on MATLAB environment. 
-MATLAB is one of the most user-friendly platforms for beginners in computational mechanics. Its powerful matrix operations and timely visibility are perfect for algorithm development, debugging, and learning! However, behind such intuitiveness and convenience, there must be sacrifices. For example, MATLAB can provide very little help in solving large-scale linear equations. Perhaps we can call right division directly, or use official MATLAB functions such as PCG and GMERS. However, they fall far short of what we need. We need more advanced methods.
+<div class="research-text2">
+Large-scale topology optimization design solution based on MATLAB environment. MATLAB is one of the most user-friendly platforms for beginners in computational mechanics. Its powerful matrix perations and timely visibility are perfect for algorithm development, debugging, and learning! However, behind such intuitiveness and convenience, there must be sacrifices. For example, MATLAB can provide very little help in solving large-scale linear equations. Perhaps we can call right division directly, or use official MATLAB functions such as PCG and GMERS. However, they fall far short of what we need. We need more advanced methods.
+<p>
 
 <div class="research-text2">
 <p>Dome structure design considering bi modulus material properties:</p>

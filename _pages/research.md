@@ -46,7 +46,7 @@ author_profile: true
 </div>
 </div>
 
-## 方向二：Multifidelity Topology Design
+## 方向二：Data Driven Multifidelity Topology Design
 <div class="card-grid">
 <div class="card">
   <img src="/images/MFTD/TopResult_11.gif" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">
@@ -54,7 +54,7 @@ author_profile: true
 </div>
 </div>
 
-## 方向三：Topology Optimization for CAD
+## 方向三：CAD oriented Topology Optimization
 <div class="card-grid">
 <div class="card">
   <img src="/images/CAD/图片1.png" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">
