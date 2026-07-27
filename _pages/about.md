@@ -712,7 +712,7 @@ redirect_from:
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
-                Topology Optimization for Metal Additive Manufacturing
+                Metal Additive Manufacturing oriented Design
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -736,12 +736,8 @@ redirect_from:
             class="mit-publication__media mit-publication__media--split"
             href="{{ '/softwares/software_1/' | relative_url }}">
             <img
-              src="{{ '/images/top02 (2).png' | relative_url }}"
+              src="{{ '/images/Fiber.png' | relative_url }}"
               alt="Large-scale topology optimization result"
-              loading="lazy">
-            <img
-              src="{{ '/images/top02 (3).png' | relative_url }}"
-              alt="Smooth high-resolution topology optimization result"
               loading="lazy">
           </a>
           <div>
