@@ -531,17 +531,18 @@ redirect_from:
           <div class="mit-bio__copy">
             <p>
               I am a <strong>JSPS Postdoctoral Fellow</strong> at
-              <strong>The University of Osaka</strong>. My research lies at the intersection of
-              computational mechanics, applied mathematics, and informatics.
+              <strong>The University of Osaka</strong>. My research focuses on topology optimization,
+              computational design, and design for advanced manufacturing.
             </p>
             <p>
-              I develop generative design methods for advanced mechanical products, translating
-              physical principles into mathematical formulations, scalable optimization algorithms,
-              and high-performance software.
+              I develop optimization methods that incorporate physical behavior and manufacturing
+              constraints directly into the design process. My work spans structural and thermal-fluid
+              design, additive and hybrid manufacturing, composite materials, and CAD reconstruction.
             </p>
             <p>
-              I received my Ph.D. in Mechanical Engineering from the University of Alberta, with a
-              dissertation on topology optimization under additive-manufacturing constraints.
+              I received my Ph.D. in Mechanical Engineering from the University of Alberta. My
+              doctoral research investigated topology optimization with additive-manufacturing
+              constraints.
             </p>
 
             <div class="mit-quick-links" aria-label="Profile links">
@@ -560,8 +561,8 @@ redirect_from:
             High-Performance Computing.
           </p>
           <p>
-            My current work focuses on manufacturable optimization methods that remain reliable
-            and computationally scalable for complex engineering systems.
+            My current work aims to make optimized designs physically meaningful, computationally
+            tractable, and compatible with practical manufacturing processes.
           </p>
         </div>
       </section>
@@ -573,14 +574,14 @@ redirect_from:
             <time>Since Sep. 2025</time>
             <div class="mit-experience__entry">
               <strong>JSPS Postdoctoral Fellow · The University of Osaka</strong>
-              <span>Topology optimization and advanced design methods for additive manufacturing.</span>
+              <span>Topology optimization and computational design for advanced manufacturing.</span>
             </div>
           </li>
           <li>
             <time>Feb. 2024 — Aug. 2025</time>
             <div class="mit-experience__entry">
               <strong>Specially Appointed Researcher · Osaka University</strong>
-              <span>Design Engineering Laboratory, supervised by Prof. Kentaro Yaji.</span>
+              <span>Research on topology optimization and design engineering in Prof. Kentaro Yaji’s group.</span>
             </div>
           </li>
           <li>
@@ -594,14 +595,14 @@ redirect_from:
             <time>Feb. 2020 — Feb. 2021</time>
             <div class="mit-experience__entry">
               <strong>Visiting Research Student · Shandong University</strong>
-              <span>Computational design and additive manufacturing in Prof. Jikai Liu’s group.</span>
+              <span>Research collaboration on topology optimization and additive manufacturing in Prof. Jikai Liu’s group.</span>
             </div>
           </li>
           <li>
             <time>Jun. 2018</time>
             <div class="mit-experience__entry">
               <strong>B.Eng. in Mechanical Engineering · Taiyuan University of Science and Technology</strong>
-              <span>Mechanical design, modeling, and engineering analysis.</span>
+              <span>Undergraduate study in mechanical design, modeling, and engineering analysis.</span>
             </div>
           </li>
         </ol>
@@ -610,7 +611,8 @@ redirect_from:
       <section id="research" class="mit-section" aria-labelledby="research-title">
         <h2 id="research-title">Selected Research Works</h2>
         <p class="mit-section__note">
-          Representative projects in manufacturable design, scalable computing, and geometric intelligence.
+          Representative projects in manufacturing-aware optimization, thermal-fluid design,
+          composite structures, and CAD reconstruction.
         </p>
 
         <article class="mit-publication">
@@ -624,15 +626,17 @@ redirect_from:
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
-                1. Topology Optimization for Multi-axis Hybrid Manufacturing
+                1. Topology Optimization for Multi-Axis Hybrid Manufacturing
               </a>
             </h3>
             <p class="mit-publication__description">
-              Design methods combining multi-axis forming with additive and subtractive processes
-              for complex, high-quality components at lower manufacturing cost.
+              Topology optimization methods for integrated multi-axis additive and subtractive
+              manufacturing, accounting for process accessibility when generating complex,
+              manufacturable components.
             </p>
             <p class="mit-publication__cn">
-              面向多轴增减材复合制造的拓扑优化，在降低制造成本的同时实现复杂、高质量零件设计。
+              面向多轴增材与减材复合制造的拓扑优化方法，在设计过程中考虑加工可达性，
+              以生成复杂且具备可制造性的零件结构。
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/sub/HASM/' | relative_url }}">project page</a></li>
@@ -646,22 +650,24 @@ redirect_from:
           <a class="mit-publication__media" href="{{ '/portfolio/sub/HASM/' | relative_url }}">
             <img
               src="{{ '/images/SDGIF_Rusult_7.gif' | relative_url }}"
-              alt="Hybrid additive-subtractive manufacturing optimization"
+              alt="Topology optimization for multi-axis additive manufacturing"
               loading="lazy">
           </a>
           <div>
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
-                2. Topology Optimization for Multi-axis Additive Manufacturing
+                2. Topology Optimization for Multi-Axis Additive Manufacturing
               </a>
             </h3>
             <p class="mit-publication__description">
-              Design methods combining multi-axis forming with additive and subtractive processes
-              for complex, high-quality components at lower manufacturing cost.
+              Optimization methods that exploit multiple deposition directions in multi-axis
+              additive manufacturing to reduce support requirements and expand the feasible
+              design space.
             </p>
             <p class="mit-publication__cn">
-              面向多轴增减材复合制造的拓扑优化，在降低制造成本的同时实现复杂、高质量零件设计。
+              利用多轴增材制造中的多方向沉积能力开展拓扑优化，减少支撑结构需求，
+              并拓展可制造结构的设计空间。
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/sub/HASM/' | relative_url }}">project page</a></li>
@@ -682,15 +688,17 @@ redirect_from:
             <p class="mit-publication__type">Thermal Management</p>
             <h3>
               <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
-                3. Topology Optimization for Dual Flow Heat Exchanger
+                3. Topology Optimization of Dual-Flow Heat Exchangers
               </a>
             </h3>
             <p class="mit-publication__description">
-              Intelligent cooling-channel layouts that shorten production cycles, improve surface
-              quality, and reduce the cost of advanced mold fabrication.
+              Coupled thermal-fluid topology optimization for compact dual-flow heat exchangers,
+              balancing heat-transfer performance and flow resistance within a prescribed
+              design domain.
             </p>
             <p class="mit-publication__cn">
-              通过智能冷却流道设计缩短生产周期、提升表面质量，并降低先进模具的制造成本。
+              面向紧凑型双流换热器的热流体耦合拓扑优化，在给定设计域内协调换热性能
+              与流动阻力。
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">project page</a></li>
@@ -705,22 +713,24 @@ redirect_from:
           <a class="mit-publication__media" href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
             <img
               src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
-              alt="Optimized cooling-channel design"
+              alt="Manufacturing-aware design for metal additive manufacturing"
               loading="lazy">
           </a>
           <div>
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
-                4. Metal Additive Manufacturing oriented Design
+                4. Design for Metal Additive Manufacturing
               </a>
             </h3>
             <p class="mit-publication__description">
-              Intelligent cooling-channel layouts that shorten production cycles, improve surface
-              quality, and reduce the cost of advanced mold fabrication.
+              Manufacturing-aware topology optimization for metal additive manufacturing,
+              incorporating build direction, overhang limitations, and minimum feature
+              requirements into the design process.
             </p>
             <p class="mit-publication__cn">
-              通过智能冷却流道设计缩短生产周期、提升表面质量，并降低先进模具的制造成本。
+              面向金属增材制造的可制造性拓扑优化，在设计过程中考虑成形方向、悬垂限制
+              与最小特征尺寸等工艺约束。
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">project page</a></li>
@@ -737,22 +747,24 @@ redirect_from:
             href="{{ '/softwares/software_1/' | relative_url }}">
             <img
               src="{{ '/images/Fiber.png' | relative_url }}"
-              alt="Large-scale topology optimization result"
+              alt="Topology optimization of a fiber-reinforced composite structure"
               loading="lazy">
           </a>
           <div>
-            <p class="mit-publication__type">Design for Manufacturing</p>
+            <p class="mit-publication__type">Composite Design</p>
             <h3>
               <a href="{{ '/softwares/software_1/' | relative_url }}">
-                5. Topology Optimization for Fiber Reinforced Composite Material
+                5. Topology Optimization of Fiber-Reinforced Composite Structures
               </a>
             </h3>
             <p class="mit-publication__description">
-              OpenMP- and PETSc-based solvers for high-resolution problems with tens of millions
-              of elements, producing smooth and manufacturable structures.
+              Concurrent optimization of structural topology and anisotropic material orientation
+              for fiber-reinforced composites, improving structural performance while accounting
+              for material and fabrication characteristics.
             </p>
             <p class="mit-publication__cn">
-              基于 OpenMP 与 PETSc 的高性能求解框架，面向千万级单元实现平滑、可制造的大规模设计。
+              针对纤维增强复合材料协同优化结构拓扑与各向异性材料方向，在考虑材料特性
+              和制造要求的同时提升结构性能。
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/softwares/software_1/' | relative_url }}">software page</a></li>
@@ -787,11 +799,12 @@ redirect_from:
               </a>
             </h3>
             <p class="mit-publication__description">
-              Reconstruction of optimized shapes as editable, history-based, fully parametric CAD
-              models for fast downstream refinement.
+              Reconstruction of topology-optimized geometries as editable, history-based parametric
+              CAD models, enabling efficient downstream modification and engineering reuse.
             </p>
             <p class="mit-publication__cn">
-              将优化结果重建为可编辑、保留建模历史的参数化 CAD 模型，支持快速设计迭代。
+              将拓扑优化几何重建为可编辑且保留建模历史的参数化 CAD 模型，支持后续修改、
+              工程复用与快速设计迭代。
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/portfolio-3/' | relative_url }}">project page</a></li>
@@ -814,15 +827,15 @@ redirect_from:
         <ul class="mit-focus-list">
           <li>
             <strong>Design → Manufacturing</strong>
-            Embed process constraints directly into generative design.
+            Integrate additive, subtractive, and hybrid-manufacturing constraints into topology optimization.
           </li>
           <li>
             <strong>Physics → Algorithms</strong>
-            Translate essential mechanisms into robust formulations.
+            Formulate structural and thermal-fluid behavior as computational design problems.
           </li>
           <li>
-            <strong>Algorithms → Software</strong>
-            Scale optimization through high-performance computing.
+            <strong>Optimization → Geometry</strong>
+            Connect optimized results with manufacturable structures and editable CAD models.
           </li>
         </ul>
       </section>
