@@ -539,7 +539,7 @@ collection: portfolio
 
     <!-- 单卡片居中布局 -->
 
-    <div class="card-grid single-card">
+    <div class="card-grid">
 
 
       <!-- ===================================================
