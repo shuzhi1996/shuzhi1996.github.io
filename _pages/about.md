@@ -674,7 +674,7 @@ redirect_from:
         <article class="mit-publication">
           <a class="mit-publication__media" href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
             <img
-              src="{{ '/images/cooling.png' | relative_url }}"
+              src="{{ '/images/cooling2.png' | relative_url }}"
               alt="Optimized cooling-channel design"
               loading="lazy">
           </a>
