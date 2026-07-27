@@ -621,10 +621,39 @@ redirect_from:
               loading="lazy">
           </a>
           <div>
-            <p class="mit-publication__type">Hybrid Manufacturing</p>
+            <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
                 Topology Optimization for Multi-axis Hybrid Manufacturing
+              </a>
+            </h3>
+            <p class="mit-publication__description">
+              Design methods combining multi-axis forming with additive and subtractive processes
+              for complex, high-quality components at lower manufacturing cost.
+            </p>
+            <p class="mit-publication__cn">
+              面向多轴增减材复合制造的拓扑优化，在降低制造成本的同时实现复杂、高质量零件设计。
+            </p>
+            <ul class="mit-publication__links">
+              <li><a href="{{ '/portfolio/sub/HASM/' | relative_url }}">project page</a></li>
+              <li>·</li>
+              <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="mit-publication">
+          <a class="mit-publication__media" href="{{ '/portfolio/sub/HASM/' | relative_url }}">
+            <img
+              src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
+              alt="Hybrid additive-subtractive manufacturing optimization"
+              loading="lazy">
+          </a>
+          <div>
+            <p class="mit-publication__type">Design for Manufacturing</p>
+            <h3>
+              <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
+                Topology Optimization for Multi-axis Additive Manufacturing
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -650,10 +679,10 @@ redirect_from:
               loading="lazy">
           </a>
           <div>
-            <p class="mit-publication__type">Thermal Design</p>
+            <p class="mit-publication__type">Thermal Management</p>
             <h3>
               <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
-                Topology Optimization for Cooling Channels
+                Topology Optimization for Dual Flow Heat Exchanger
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -685,10 +714,10 @@ redirect_from:
               loading="lazy">
           </a>
           <div>
-            <p class="mit-publication__type">Scalable Computing</p>
+            <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/softwares/software_1/' | relative_url }}">
-                Large-scale Topology Optimization
+                Topology Optimization for Fiber Reinforced Composite Material
               </a>
             </h3>
             <p class="mit-publication__description">
