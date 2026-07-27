@@ -101,7 +101,7 @@ I obtained my <strong>B.Eng. in Mechanical Engineering</strong> from <a href="ht
          我们开发了将拓扑优化与 CAD 建模深度融合的方法，实现了可直接编辑、具有建模历史的几何特征自动生成。基于 Autodesk Inventor，优化结果可被重建为完全参数化的模型，支持快速设计迭代与后续制造修改。
     </p>
 </div>
-  <a href="{{ '/portfolio/sub/CAD/' | relative_url }}" class="btn">Read More →</a>
+  <a href="{{ '/portfolio/portfolio-3/' | relative_url }}" class="btn">Read More →</a>
 </div>
 
 <!--
