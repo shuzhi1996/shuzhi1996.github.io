@@ -267,7 +267,7 @@ redirect_from:
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #ffffffff;
     background: #ffffffff;
   }
 
