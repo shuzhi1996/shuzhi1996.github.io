@@ -733,7 +733,7 @@ redirect_from:
 
         <article class="mit-publication">
           <a
-            class="mit-publication__media mit-publication__media--split"
+            class="mit-publication__media"
             href="{{ '/softwares/software_1/' | relative_url }}">
             <img
               src="{{ '/images/Fiber.png' | relative_url }}"
