@@ -649,18 +649,6 @@ collection: portfolio
           </p>
 
 
-          <!--
-          创建 Fiber 项目页面后，可以启用下面的按钮。
-
-          <a
-            class="card-button"
-            href="{{ '/portfolio/sub/Fiber/' | relative_url }}">
-
-            Project Page&nbsp;→
-
-          </a>
-          -->
-
         </div>
 
       </article>

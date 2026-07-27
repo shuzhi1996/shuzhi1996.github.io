@@ -7,7 +7,6 @@ author_profile: true
 ## 2026
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="/images/publications/CompositesB2026.png" alt="Composites Part B" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Composites Part B 2026</span></p>
     <p><strong>Derivable geodesic weaving driven topology optimization for continuous and controlled-spacing fiber paths incorporating tension-compression anisotropy</strong></p>
@@ -18,7 +17,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="/images/publications/Computation2026.png" alt="Computation" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Computation 2026</span></p>
     <p><strong>Multifidelity Topology Design for Thermal–Fluid Devices via SEMDOT Algorithm</strong></p>
@@ -29,7 +27,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="/images/publications/CMAME2026.png" alt="CMAME" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">CMAME 2026</span></p>
     <p><strong>DGTO: Derivable geodesics-coupled topology optimization for multi-axis 3D printing of continuous fiber-reinforced spatial structures</strong></p>
@@ -41,7 +38,6 @@ author_profile: true
 
 ## 2025
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="/images/publications/arXiv2025.png" alt="arXiv" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">arXiv 2025</span></p>
     <p><strong>Data-driven multifidelity and multiscale topology optimization based on phasor-based evolutionary de-homogenization</strong></p>
@@ -53,7 +49,6 @@ author_profile: true
 
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="/images/publications/MD2025_Yang.png" alt="Materials & Design" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Materials & Design 2025</span></p>
     <p><strong>Stress-constrained topology optimization of heterogeneous lattice structures for additive manufacturing</strong></p>
@@ -113,7 +108,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="/images/publications/no_image.png" alt="Support Structure Optimization" style="width: 100px; margin-right: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">SMO 2024</span></p>
     <p><strong>Support structure topology optimization considering the residual distortion for laser powder bed fusion metal additive manufacturing</strong></p>
@@ -127,7 +121,6 @@ author_profile: true
 ## 2023
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Concurrent Island" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">FEAD 2023</span></p>
     <p><strong>Concurrent Island scanning pattern and large-scale topology optimization method for laser powder bed fusion processed parts</strong></p>
@@ -138,7 +131,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Challenges Review" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CAD 2023</span></p>
     <p><strong>Challenges in topology optimization for hybrid additive-subtractive manufacturing: A review</strong></p>
@@ -149,7 +141,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Multiscale Topology" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CAD 2023</span></p>
     <p><strong>Multiscale topology optimization for solid–lattice–void hybrid structures through an ordered multi-phase interpolation</strong></p>
@@ -164,7 +155,6 @@ author_profile: true
 ## 2022
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Full-scale TO" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2022</span></p>
     <p><strong>A full-scale topology optimization method for surface fiber reinforced additive manufacturing parts</strong></p>
@@ -175,7 +165,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Residual stress TO" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2022</span></p>
     <p><strong>Residual stress constrained self-support topology optimization for metal additive manufacturing</strong></p>
@@ -186,7 +175,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Clustering TO" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">Additive Manufacturing 2022</span></p>
     <p><strong>Comprehensive clustering-based topology optimization for connectable multi-scale additive manufacturing structures</strong></p>
@@ -197,7 +185,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Island Scanning Path" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CAD&A 2022</span></p>
     <p><strong>An Island Scanning Path-Pattern Optimization for Metal Additive Manufacturing Based on Inherent Strain Method</strong></p>
@@ -212,7 +199,6 @@ author_profile: true
 ## 2021
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Multi-scale TO Shell" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">Additive Manufacturing 2021</span></p>
     <p><strong>Multi-scale topology optimization with shell and interface layers for additive manufacturing</strong></p>
@@ -223,7 +209,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Multi-material TO" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2021</span></p>
     <p><strong>Stress constrained multi-material topology optimization with the ordered SIMP method</strong></p>
@@ -234,7 +219,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Lattice structure TO" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">CJME 2021</span></p>
     <p><strong>A novel lattice structure topology optimization method with extreme anisotropy</strong></p>
@@ -245,7 +229,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Hyper-elastic porous structures" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">IJMMD 2021</span></p>
     <p><strong>A topology optimization method for hyper-elastic porous structures subject to large deformation</strong></p>
@@ -260,7 +243,6 @@ author_profile: true
 ## 2020
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="FDM Hybrid Path" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">Micromachines 2020</span></p>
     <p><strong>Topology Optimization for FDM Parts Considering the Hybrid Deposition Path Pattern</strong></p>
@@ -271,7 +253,6 @@ author_profile: true
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <img src="{{ site.baseurl }}/images/publications/no_image.png" alt="Energy-based homogenization" style="width: 250px; margin-right: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
   <div>
     <p><span style="background-color:#333; color:white; padding:3px 6px; border-radius:4px;">JIDPS 2020</span></p>
     <p><strong>A novel implementation of energy-based homogenization method</strong></p>

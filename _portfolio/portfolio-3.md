@@ -354,7 +354,7 @@ collection: portfolio
       <div class="card-content">
 
         <h3 class="card-title">
-          1.1. Thermal-Fluid Topology Optimization
+          1.1. Geometry driven thermal fulid topology optimization using B-spline geometric primitives
         </h3>
 
         <p class="card-description">
@@ -374,48 +374,6 @@ collection: portfolio
       </div>
 
     </article>
-
-
-    <!-- ===================================================
-         Card 2 示例
-
-         需要添加第二个卡片时，可以取消下面的注释，
-         然后修改图片、标题、介绍和链接。
-         ===================================================
-
-    <article class="card">
-
-      <div class="card-image">
-
-        <img
-          src="{{ '/images/CAD/your-image.png' | relative_url }}"
-          alt="Project image description">
-
-      </div>
-
-      <div class="card-content">
-
-        <h3 class="card-title">
-          1.2. Project Title
-        </h3>
-
-        <p class="card-description">
-          Add the project description here.
-        </p>
-
-        <a
-          class="card-button"
-          href="{{ '/project/your-project.html' | relative_url }}">
-
-          Project Page&nbsp;→
-
-        </a>
-
-      </div>
-
-    </article>
-
-    -->
 
 
   </div>
