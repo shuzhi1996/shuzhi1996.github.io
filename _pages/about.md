@@ -268,7 +268,7 @@ redirect_from:
     justify-content: center;
     overflow: hidden;
     border: 1px solid #d8d8d8;
-    background: #fafafa;
+    background: #ffffffff;
   }
 
   .mit-publication__media--split {
