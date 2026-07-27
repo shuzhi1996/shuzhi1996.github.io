@@ -1,81 +1,198 @@
 ---
-title: "方向三：CAD oriented Topology Optimization"
+title: "方向三：Geometry Driven Topology Optimization"
 excerpt: "We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.<br/><br/><img src='/images/封面.png'>"
 collection: portfolio
 ---
 
 <style>
+
+/* =========================================================
+   研究卡片整体布局：固定为一列
+   ========================================================= */
+
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-.card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
-.card img {
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 24px 0 45px 0;
   width: 100%;
-  border-radius: 8px;
 }
+
+
+/* =========================================================
+   单个卡片
+   ========================================================= */
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  background-color: #ffffff;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* 鼠标移动到卡片上时的效果 */
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   卡片图片
+   ========================================================= */
+
+.card img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+
+/* =========================================================
+   卡片文字区域
+   ========================================================= */
+
+.card-content {
+  padding: 20px 24px 24px 24px;
+  text-align: left;
+}
+
+
+/* 卡片标题 */
+
 .card h4 {
-  font-size: 16px;
-  margin-top: 10px;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
+
+
+/* 卡片说明文字 */
+
+.card p {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555555;
+}
+
+
+/* =========================================================
+   Read More 按钮
+   ========================================================= */
+
 .card a {
   display: inline-block;
   margin-top: 6px;
-  font-weight: bold;
+  padding: 8px 16px;
+
+  border-radius: 6px;
+  background-color: #0073e6;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
   text-decoration: none;
-  color: #0073e6;
+
+  transition: background-color 0.2s ease;
 }
+
 .card a:hover {
-  color: #0056a3;
+  background-color: #0056a3;
+  color: #ffffff;
 }
+
+
+/* =========================================================
+   中英文介绍文字
+   ========================================================= */
+
+.research-text2 {
+  margin-bottom: 24px;
+}
+
+.research-text2 p {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+
+/* =========================================================
+   手机端适配
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card-content {
+    padding: 16px 18px 20px 18px;
+  }
+
+  .card h4 {
+    font-size: 17px;
+  }
+
+  .card img {
+    max-height: 300px;
+  }
+}
+
 </style>
+
 
 ---
 
-## 1. Design for CAD
+## 1. Geometry-driven topology optimization using B-spline geometric primitives
+
 <div class="research-text2">
+
 <p>
 We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.
 
-Extrusion-based design is a fundamental modeling strategy in CAD and feature-based solid modeling. A 2D sketch (typically a closed profile) is extruded along a straight or curved path to form a 3D solid. This approach allows intuitive control over geometry and is widely used in parametric modeling, design automation, and manufacturing-aware optimization. Extrusions can represent key structural features like ribs, walls, and channels, and support downstream processes such as CNC machining or additive manufacturing.
-</p>
-
-<p>
-我们开发了将拓扑优化与 CAD 建模深度融合的方法，实现了可直接编辑、具有建模历史的几何特征自动生成。基于 Autodesk Inventor，优化结果可被重建为完全参数化的模型，支持快速设计迭代与后续制造修改。
-
-基于拉伸特征的设计是一种基础的 CAD 建模策略，常用于特征建模与参数化建模中。该方法通过将二维草图（通常为封闭轮廓）沿直线或曲线方向拉伸，生成三维实体几何。其直观、高效、便于参数控制，广泛应用于结构设计、自动化建模以及面向制造的优化中。拉伸特征可以用于表达关键结构，如筋板、壁厚或流道等，并兼容后续加工流程（如 CNC 或 3D 打印）。
+Extrusion-based design is a fundamental modeling strategy in CAD and feature-based solid modeling. A 2D sketch, typically represented by a closed profile, is extruded along a straight or curved path to form a three-dimensional solid. This approach provides intuitive geometric control and is widely used in parametric modeling, design automation, and manufacturing-aware optimization. Extrusion features can represent important structural components such as ribs, walls, and channels, while remaining compatible with downstream manufacturing processes such as CNC machining and additive manufacturing.
 </p>
 </div>
+
 
 <div class="card-grid">
 
-<div class="card">
-  <img src='/images/CAD/Extrusion.png' alt="Hybrid Additive-Subtractive">
-  <h4>1.1. Design Based on Extrusion Features<br/><span style="font-size:14px;">（专攻方向）</span></h4>
-  <p style="text-align:center;">
- 
-</p>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
-</div>
+  <div class="card">
 
-<div class="card">
-  <img src='/images/CAD/Loft.png' alt="Hybrid Additive-Subtractive">
-  <h4>1.2. Design Based on loft Features<br/><span style="font-size:14px;">（专攻方向）</span></h4>
-  <p style="text-align:center;">
- 
-</p>
-  <a href="{{ '/portfolio/sub/HASM/' | relative_url }}" class="btn">Read More →</a>
-</div>
-</div>
----
+    <img
+      src="{{ '/images/CAD/Extrusion.png' | relative_url }}"
+      alt="Thermal-Fluid Topology Optimization">
+    <div class="card-content">
 
-## 2. CAD oriented post-processing
+      <h4>
+        1.1. Thermal-Fluid Topology Optimization
+      </h4>
 
+      <p>
+        Geometry-driven topology optimization based on editable,
+        parameterized, and manufacturing-compatible extrusion features.
+      </p>
+
+      <a href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
+        Read More →
+      </a>
+
+    </div>
+
+  </div>
 ---

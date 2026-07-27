@@ -54,7 +54,7 @@ author_profile: true
 </div>
 </div>
 
-## 方向三：CAD oriented Topology Optimization
+## 方向三：Geometry Driven Topology Optimization
 <div class="card-grid">
 <div class="card">
   <img src="/images/CAD/图片1.png" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">

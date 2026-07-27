@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Geometry-driven topology optimization using B-spline geometric primitives." name="description"/>
+    <title>
+      Geometry Driven Topology Optimization
+    </title>
+    <style>
+      /* ======================================================
+      全局设置
+      ====================================================== */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        color: #222222;
+        background: #ffffff;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #1769aa;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img, video {
+        max-width: 100%;
+      }
+
+      /* ======================================================
+      页面主体宽度
+      ====================================================== */
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      /* ======================================================
+      顶部论文信息
+      ====================================================== */
+
+      .hero {
+        padding: 60px 0 30px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        max-width: 1000px;
+        margin: 0 auto 14px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 52px);
+        line-height: 1.18;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        max-width: 850px;
+        margin: 0 auto 24px;
+        color: #555555;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+
+      .authors {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      .authors a {
+        margin: 0 5px;
+        font-weight: 500;
+      }
+
+      .affiliations {
+        margin-top: 8px;
+        color: #555555;
+        font-size: 16px;
+      }
+
+      /* ======================================================
+      Paper / Code 按钮
+      ====================================================== */
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .project-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 112px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: #24292f;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button:hover {
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      /* ======================================================
+      页面内部导航
+      ====================================================== */
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 35px;
+        padding: 12px 15px;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(8px);
+      }
+
+      .section-nav a {
+        padding: 6px 11px;
+        border-radius: 6px;
+        color: #444444;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .section-nav a:hover {
+        background: #f2f4f6;
+        text-decoration: none;
+      }
+
+      /* ======================================================
+      通用章节
+      ====================================================== */
+
+      section {
+        padding: 52px 0 10px;
+        scroll-margin-top: 70px;
+      }
+
+      section h2 {
+        margin: 0 0 22px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      section h3 {
+        max-width: 900px;
+        margin: 35px auto 15px;
+        padding-left: 0;
+        font-size: 23px;
+      }
+
+      .section-description {
+        max-width: 900px;
+        margin: 0 auto 25px;
+        color: #444444;
+        text-align: justify;
+        font-size: 17px;
+      }
+
+      /* ======================================================
+      主图
+      ====================================================== */
+
+      .teaser {
+        margin: 35px auto 15px;
+        text-align: center;
+      }
+
+      .teaser img {
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 5px 22px rgba(0, 0, 0, 0.0);
+      }
+
+      .caption {
+        max-width: 920px;
+        margin: 12px auto 0;
+        color: #666666;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* ======================================================
+      YouTube 主展示区
+      ====================================================== */
+
+      .youtube-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding-top: 56.25%;
+        background: #000000;
+        box-shadow: 0 5px 22px rgba(0, 0, 0, 0.12);
+      }
+
+      .youtube-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* ======================================================
+      GIF 结果网格
+      ====================================================== */
+
+      .video-grid {
+        display: grid;
+
+        /* 每个卡片最大宽度为 420px */
+
+        grid-template-columns: repeat(2, minmax(0, 420px));
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        max-width: 900px;
+        margin: 25px auto 0;
+      }
+
+      .video-card {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #e1e4e8;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+      }
+
+      .video-card img {
+        display: block;
+        width: calc(100% - 30px);
+        max-width: 100%;
+        height: 260px;
+        margin: 15px auto;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .video-info {
+        padding: 14px 16px 16px;
+      }
+
+      .video-info h4 {
+        margin: 0 0 5px;
+        font-size: 17px;
+      }
+
+      .video-info p {
+        margin: 0;
+        color: #666666;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* ======================================================
+      图片结果网格
+      ====================================================== */
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 900px);
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        margin: 24px auto 0;
+      }
+
+      .image-card {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #e1e4e8;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.00);
+      }
+
+      .image-card img {
+        display: block;
+        width: 90%;
+        margin: 15px auto 0;
+      }
+
+      .image-card p {
+        margin: 0;
+        padding: 12px 15px;
+        color: #555555;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      /* ======================================================
+      表格
+      ====================================================== */
+
+      .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        margin: 24px auto 0;
+      }
+
+      .table-wrapper table {
+        width: 80%;
+        min-width: 720px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      .table-wrapper th, .table-wrapper td {
+        padding: 12px 13px;
+        border: 1px solid #dddddd;
+        text-align: center;
+      }
+
+      .table-wrapper th {
+        background: #f5f6f7;
+        font-weight: 700;
+      }
+
+      .table-wrapper tr:nth-child(even) {
+        background: #fafafa;
+      }
+
+      .table-wrapper .ours {
+        font-weight: 700;
+        background: #eef7ff;
+      }
+
+      /* ======================================================
+      BibTeX
+      ====================================================== */
+
+      pre {
+        overflow-x: auto;
+        padding: 20px;
+        border-radius: 9px;
+        background: #f5f6f7;
+        font-family: Consolas, Monaco, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      /* ======================================================
+      页脚
+      ====================================================== */
+
+      footer {
+        margin-top: 60px;
+        padding: 30px 0;
+        border-top: 1px solid #eeeeee;
+        color: #777777;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      /* ======================================================
+      手机端
+      ====================================================== */
+
+      @media screen and (max-width: 760px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          padding-top: 35px;
+        }
+
+        .hero h1 {
+          font-size: 34px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+        }
+
+        .authors {
+          font-size: 16px;
+        }
+
+        .video-grid, .image-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-nav {
+          position: static;
+        }
+
+        section {
+          padding-top: 38px;
+        }
+
+        section h2 {
+          font-size: 27px;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <!-- ==================================================
+                  标题与作者
+                  ================================================== -->
+      <header class="hero">
+        <h1>
+          Geometry-Driven Topology Optimization
+                with B-Spline Geometric Features
+        </h1>
+        <p class="subtitle">
+          A differentiable and CAD-compatible framework for
+                geometry-controlled structural and fluid topology optimization.
+        </p>
+        <div class="authors">
+          <a href="https://shuzhixu.github.io/">
+            Shuzhi Xu
+          </a>
+          <sup>
+            1
+          </sup>
+          ,
+          <a href="#">
+            Jikai Liu
+          </a>
+          <sup>
+            2
+          </sup>
+          ,
+          <a href="#">
+            Kentaro Yaji
+          </a>
+          <sup>
+            1
+          </sup>
+        </div>
+        <div class="affiliations">
+          <div>
+            <sup>
+              1
+            </sup>
+            The University of Osaka, Japan
+          </div>
+          <div>
+            <sup>
+              2
+            </sup>
+            Shandong University, China
+          </div>
+        </div>
+        <div class="button-row">
+          <a class="project-button" href="./paper.pdf" target="_blank">
+            Paper
+          </a>
+          <a class="project-button" href="https://github.com/你的用户名/你的仓库" target="_blank">
+            Code
+          </a>
+          <a class="project-button" href="#video">
+            Video
+          </a>
+          <a class="project-button" href="#citation">
+            Citation
+          </a>
+        </div>
+      </header>
+      <!-- ==================================================
+                  页面导航
+                  ================================================== -->
+      <nav class="section-nav">
+        <a href="#abstract">
+          Abstract
+        </a>
+        <a href="#method">
+          Method
+        </a>
+        <a href="#results">
+          Results
+        </a>
+        <a href="#comparison">
+          Comparison
+        </a>
+        <a href="#citation">
+          Citation
+        </a>
+      </nav>
+      <!-- ==================================================
+                  Teaser
+                  ================================================== -->
+      <div class="teaser">
+        <img alt="Geometry-driven topology optimization overview" src="./images/abstract.png"/>
+        <p class="caption">
+          Our framework directly parameterizes design geometry using
+                B-spline centerlines and sectional profiles, enabling
+                differentiable analysis, geometric constraints, and direct
+                CAD reconstruction.
+        </p>
+      </div>
+      <!-- ==================================================
+                  Abstract
+                  ================================================== -->
+      <section id="abstract">
+        <h2>
+          Abstract
+        </h2>
+        <p class="section-description">
+          Topology optimization has been widely applied to thermal–fluid design, particularly for channel-based systems. However, many conventional approaches rely on implicit density-field representations, making it difficult to preserve geometrically interpretable channel features and directly obtain editable CAD models. This study develops a geometry-driven topology optimization framework for cooling-system design based on a three-dimensional loft-based channel representation. Each channel is parameterized by a B-spline centerline and spatially varying cross-sectional profiles, enabling simultaneous control of its trajectory and sectional shape. The resulting geometry is mapped onto a fixed background mesh through a distance-field-based explicit–implicit formulation for thermal–fluid analysis. A predominantly analytical sensitivity scheme is developed for the geometry-to-field mapping, with finite-difference evaluation restricted to the computationally inexpensive rotation-minimizing-frame term. The local nature of the mapping is further exploited through narrow-band evaluation to improve computational efficiency. Curvature, domain-feasibility, adhesion, and self-support constraints are incorporated to preserve design intent and additive manufacturability. Numerical examples demonstrate that the method can generate complex two- and three-dimensional channels while retaining explicit geometric control, computationally efficient gradient evaluation, and direct reconstruction of editable CAD geometries.
+        </p>
+      </section>
+      <!-- ==================================================
+                  方法
+                  ================================================== -->
+      <section id="method">
+        <h2>
+          Method
+        </h2>
+        <p class="section-description">
+          The optimization pipeline consists of B-spline geometric
+                parameterization, signed-distance evaluation, geometry-to-grid
+                mapping, multiphysics analysis, analytical sensitivity analysis,
+                gradient-based optimization, and direct CAD reconstruction.
+        </p>
+        <div class="teaser">
+          <img alt="Optimization pipeline" src="./images/图片6.svg"/>
+          <p class="caption">
+            Fig.1 The 2-D formulation process.
+          </p>
+        </div>
+        <p class="section-description">
+          The two-dimensional explicit geometry is constructed from a B-spline guideline and its associated control points, as illustrated in Fig.1 (a). A radius field is defined along the same local coordinate system as the guideline, as shown in Fig.1 (b), and is subsequently used to generate the explicit geometric representation in Fig.1 (c). The shortest-distance field between the background mesh points and the explicit geometry is then evaluated, as presented in Fig.1 (d). Finally, this distance field is transformed into the corresponding implicit geometric representation shown in Fig.1 (e).
+        </p>
+        <div class="teaser">
+          <img alt="Optimization pipeline" src="./images/图片7.svg"/>
+          <p class="caption">
+            Fig.2 Illustration of the proposed 3D loft feature construction.
+          </p>
+        </div>
+        <p class="section-description">
+          Fig.2 (a) presents an overview of the two-dimensional formulation. This formulation is directly extended to three dimensions in Fig.2 (b), where the cross-sectional geometry is restricted to circular profiles with spatially varying radii. To improve the geometric flexibility, a two-dimensional tensor-product B-spline radius field is further introduced in Fig.2 (c), enabling the representation of more expressive and freely varying cross-sectional shapes. Fig.2 (d) illustrates the three-dimensional B-spline guideline together with its associated cross-sectional control shapes, from which the explicit three-dimensional geometry shown in Fig.2 (e) is constructed. The corresponding implicit representation is then obtained from the shortest-distance field, as presented in Fig.2 (f). Finally, Fig.2 (g) shows the CAD reconstruction generated directly from the geometric control variables defined in Fig.2 (d).
+        </p>
+        <div class="teaser">
+          <img alt="Optimization pipeline" src="./images/图片1.svg"/>
+          <p class="caption">
+            Fig.3 Illustration of the geometry constraint.
+          </p>
+        </div>
+        <p class="section-description">
+          Fig.3 (a) illustrates the ambiguity that arises when two B-spline guidelines become nearly coincident, motivating the introduction of a geometric constraint that encourages them to form a unified backbone. Candidate guideline pairs are identified according to both their spatial distance and tangential alignment, as shown in Fig.3 (b). A differentiable gating function is then used to activate only those pairs that are sufficiently close and consistently aligned, as illustrated in Fig.3 (c). Finally, the contributions of all activated pairs are aggregated into a global constraint energy, which is incorporated into the gradient-based optimization process, as shown in Fig.3 (d).
+        </p>
+        <p class="section-description">
+          In addition, conventional geometric constraints, including the curvature constraint, feasible-domain constraint, and self-support constraint, are also incorporated into the optimization framework. Since these constraints follow established formulations and are not the primary focus of this work, their detailed formulations are not repeated here.
+        </p>
+      </section>
+      <!-- ==================================================
+                  GIF 结果
+                  ================================================== -->
+      <section id="results">
+        <h2>
+          Qualitative Results
+        </h2>
+        <h3>
+          Optimization Processes
+        </h3>
+        <div class="video-grid">
+          <article class="video-card">
+            <img alt="Two-dimensional optimization process" src="./videos/SDGIF_Rusult_6.gif"/>
+            <div class="video-info">
+              <h4>
+                Two-Dimensional Example
+              </h4>
+              <p>
+                2D heat transfer design, considering the K-eps turbulent flow model.
+              </p>
+            </div>
+          </article>
+          <article class="video-card">
+            <img alt="Two-dimensional optimization process" src="./videos/SDGIF_Rusult_4.gif"/>
+            <div class="video-info">
+              <h4>
+                Three-Dimensional Example #1
+              </h4>
+              <p>
+                3D cooling channel for molding structure.
+              </p>
+            </div>
+          </article>
+          <article class="video-card">
+            <img alt="Two-dimensional optimization process" src="./videos/SDGIF_Rusult_5.gif"/>
+            <div class="video-info">
+              <h4>
+                Three-Dimensional Example #2
+              </h4>
+              <p>
+                3D conformal cooling channel for complex geometry.
+              </p>
+            </div>
+          </article>
+          <article class="video-card">
+            <img alt="Two-dimensional optimization process" src="./videos/image11.gif"/>
+            <div class="video-info">
+              <h4>
+                CAD Reconstruction Process
+              </h4>
+              <p>
+                CAD Reconstruction for the results obtained from our work.
+              </p>
+            </div>
+          </article>
+        </div>
+        <h3>
+          Optimized Designs
+        </h3>
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./images/图片8.svg"/>
+            <p>
+              The optimized results with different weighting ratio w: (a) the final optimized material distribution and convergence history; and (b) the pareto plot for the structural performance.
+            </p>
+          </article>
+          <article class="image-card">
+            <img alt="Optimized result two" src="./images/图片9.svg"/>
+            <p>
+              The optimized results for molding structure considering the self-support constraint (g_5). The geometric configurations and corresponding response field distributions are presented in (a). The convergence histories are shown in (b), while the geometry evolution processes are illustrated in (c).
+            </p>
+          </article>
+          <article class="image-card">
+            <img alt="Optimized result two" src="./images/图片10.svg"/>
+            <p>
+              Illustration of the CAD reconstruction detail results. (a) Construction of the channel feature using loft and Boolean operations, where a DSL representation is directly generated from the optimized design variables; (b) generation of the full-scale molding part via Boolean subtraction between the design domain and the channel feature; (c) final reconstructed CAD model; (d) detailed view of the channel feature.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- ==================================================
+                  定量结果
+                  ================================================== -->
+      <section id="comparison">
+        <h2>
+          Quantitative Results
+        </h2>
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./images/图片13.svg"/>
+          </article>
+        </div>
+        <p class="section-description">
+          In the ablation studies, we implemented the three designs shown in the figure above, based on their respective degrees of freedom and constraints.
+        </p>
+
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./images/图片11.svg"/>
+            <p>
+              High-fidelity analysis results for Designs 1–3. The conformal meshes, fluid velocity fields, and temperature distributions are presented.
+            </p>
+          </article>
+        </div>
+        <p class="section-description">
+          Based on the reconstructed CAD models, high-fidelity simulations are performed for Designs 1–3 by solving the NS equations, while maintaining consistent material properties and boundary conditions. Specifically, the exported STEP models are converted into conformal body-fitted tetrahedral meshes, on which the Navier–Stokes-based flow and heat transfer simulations are conducted. All other numerical settings are kept consistent with those adopted in the low-fidelity Darcy-flow simulations based on voxelized meshes. Overall, good agreement between the optimized predictions and high-fidelity simulations is observed in terms of temperature distribution, thereby validating the effectiveness and reliability of the proposed framework. Then the detail data comparison is shown in below Table. 
+        </p>
+        <div class="table-wrapper">
+          <table class="fidelity-table">
+            <caption>
+              Comparison between high-fidelity and low-fidelity analysis results.
+            </caption>
+            <thead>
+              <tr>
+                <th rowspan="3">
+                  Case name
+                </th>
+                <th colspan="2">
+                  Low-fidelity analysis
+                </th>
+                <th colspan="2">
+                  High-fidelity analysis
+                </th>
+              </tr>
+              <tr>
+                <th colspan="2">
+                  (Darcy and voxel mesh)
+                </th>
+                <th colspan="2">
+                  (NS and conformal tetrahedral mesh)
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  Element number
+                </th>
+                <th>
+                  Maximum temperature
+                </th>
+                <th>
+                  Mesh number
+                </th>
+                <th>
+                  Maximum temperature
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Design 1
+                </td>
+                <td>
+                  576,000
+                </td>
+                <td>
+                  924.43 K
+                </td>
+                <td>
+                  2,134,566
+                </td>
+                <td>
+                  948.52 K
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Design 2
+                </td>
+                <td>
+                  576,000
+                </td>
+                <td>
+                  989.24 K
+                </td>
+                <td>
+                  1,875,369
+                </td>
+                <td>
+                  972.44 K
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Design 3
+                </td>
+                <td>
+                  576,000
+                </td>
+                <td>
+                  932.13 K
+                </td>
+                <td>
+                  2,345,369
+                </td>
+                <td>
+                  954.39 K
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="section-description">
+          Below figure presents the self-supportability analysis of the optimized designs, where the color map denotes the angle between facet normal vectors and the building direction. Following commonly adopted additive manufacturing criteria, facets with angles below 45° are considered self-supporting, whereas larger angles indicate increased overhang risk.
+        </p>
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./images/图片12.svg"/>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================================================
+                  引用
+                  ================================================== -->
+      <section id="citation">
+        <h2>
+          Citation
+        </h2>
+        <pre>@article{xu2026geometry,
+  title   = {Geometry-Driven Topology Optimization
+             with B-Spline Geometric Features},
+  author  = {Xu, Shuzhi and Others},
+  journal = {Journal Name},
+  year    = {2026}
+}</pre>
+      </section>
+      <!-- ==================================================
+                  致谢
+                  ================================================== -->
+      <section id="acknowledgements">
+        <h2>
+          Acknowledgements
+        </h2>
+
+        <div class="teaser">
+        <img alt="Geometry-driven topology optimization overview" src="./images/sup.png"/>
+      </div>
+
+        <p class="section-description">
+          This work was supported by The University of Osaka, Shandong University, and the Japan Society
+                for the Promotion of Science.
+        </p>
+
+        <p class="section-description">
+          We also gratefully acknowledge Dr.<a href="https://shuzhixu.github.io/">
+            Yifan Guo
+          </a> for his insightful discussions on code implementation and constraint construction.
+        </p>
+      </section>
+    </main>
+    <footer>
+      Geometry-Driven Topology Optimization · Osaka University
+    </footer>
+  </body>
+</html>
