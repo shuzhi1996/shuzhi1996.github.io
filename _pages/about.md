@@ -645,7 +645,7 @@ redirect_from:
         <article class="mit-publication">
           <a class="mit-publication__media" href="{{ '/portfolio/sub/HASM/' | relative_url }}">
             <img
-              src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
+              src="{{ '/images/SDGIF_Rusult_7.gif' | relative_url }}"
               alt="Hybrid additive-subtractive manufacturing optimization"
               loading="lazy">
           </a>
