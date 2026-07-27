@@ -624,7 +624,7 @@ redirect_from:
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
-                Topology Optimization for Multi-axis Hybrid Manufacturing
+                1. Topology Optimization for Multi-axis Hybrid Manufacturing
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -653,7 +653,7 @@ redirect_from:
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
-                Topology Optimization for Multi-axis Additive Manufacturing
+                2. Topology Optimization for Multi-axis Additive Manufacturing
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -682,7 +682,7 @@ redirect_from:
             <p class="mit-publication__type">Thermal Management</p>
             <h3>
               <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
-                Topology Optimization for Dual Flow Heat Exchanger
+                3. Topology Optimization for Dual Flow Heat Exchanger
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -712,7 +712,7 @@ redirect_from:
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
-                Metal Additive Manufacturing oriented Design
+                4. Metal Additive Manufacturing oriented Design
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -744,7 +744,7 @@ redirect_from:
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
               <a href="{{ '/softwares/software_1/' | relative_url }}">
-                Topology Optimization for Fiber Reinforced Composite Material
+                5. Topology Optimization for Fiber Reinforced Composite Material
               </a>
             </h3>
             <p class="mit-publication__description">
@@ -783,7 +783,7 @@ redirect_from:
             <p class="mit-publication__type">Geometric Intelligence</p>
             <h3>
               <a href="{{ '/portfolio/portfolio-3/' | relative_url }}">
-                Topology Optimization Meets Editable CAD
+                6. Topology Optimization Meets Editable CAD
               </a>
             </h3>
             <p class="mit-publication__description">
