@@ -700,6 +700,37 @@ redirect_from:
           </div>
         </article>
 
+
+        <article class="mit-publication">
+          <a class="mit-publication__media" href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
+            <img
+              src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
+              alt="Optimized cooling-channel design"
+              loading="lazy">
+          </a>
+          <div>
+            <p class="mit-publication__type">Design for Manufacturing</p>
+            <h3>
+              <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
+                Topology Optimization for Metal Additive Manufacturing
+              </a>
+            </h3>
+            <p class="mit-publication__description">
+              Intelligent cooling-channel layouts that shorten production cycles, improve surface
+              quality, and reduce the cost of advanced mold fabrication.
+            </p>
+            <p class="mit-publication__cn">
+              通过智能冷却流道设计缩短生产周期、提升表面质量，并降低先进模具的制造成本。
+            </p>
+            <ul class="mit-publication__links">
+              <li><a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">project page</a></li>
+              <li>·</li>
+              <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
+            </ul>
+          </div>
+        </article>
+
+
         <article class="mit-publication">
           <a
             class="mit-publication__media mit-publication__media--split"
