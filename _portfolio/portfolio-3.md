@@ -175,7 +175,7 @@ Extrusion-based design is a fundamental modeling strategy in CAD and feature-bas
   <div class="card">
 
     <img
-      src="{{ '/images/CAD/Extrusion.png' | relative_url }}"
+      src="{{ '/images/CAD/图片9.svg' | relative_url }}"
       alt="Thermal-Fluid Topology Optimization">
     <div class="card-content">
 
@@ -184,8 +184,8 @@ Extrusion-based design is a fundamental modeling strategy in CAD and feature-bas
       </h4>
 
       <p>
-        Geometry-driven topology optimization based on editable,
-        parameterized, and manufacturing-compatible extrusion features.
+        Geometry-driven topology optimization for thermal fluid problem based on editable,
+        parameterized, and manufacturing-compatible loft features.
       </p>
 
       <a href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
