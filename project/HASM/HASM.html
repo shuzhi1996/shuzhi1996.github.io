@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Geometry driven thermal fulid topology optimization using B-spline geometric primitives." name="description"/>
+    <title>
+      Geometry Driven Topology Optimization
+    </title>
+    <style>
+      /* ======================================================
+      全局设置
+      ====================================================== */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        color: #222222;
+        background: #ffffff;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #1769aa;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img, video {
+        max-width: 100%;
+      }
+
+      /* ======================================================
+      页面主体宽度
+      ====================================================== */
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      /* ======================================================
+      顶部论文信息
+      ====================================================== */
+
+      .hero {
+        padding: 60px 0 30px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        max-width: 1000px;
+        margin: 0 auto 14px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 52px);
+        line-height: 1.18;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        max-width: 850px;
+        margin: 0 auto 24px;
+        color: #555555;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+
+      .authors {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      .authors a {
+        margin: 0 5px;
+        font-weight: 500;
+      }
+
+      .affiliations {
+        margin-top: 8px;
+        color: #555555;
+        font-size: 16px;
+      }
+
+      /* ======================================================
+      Paper / Code 按钮
+      ====================================================== */
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .project-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 112px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: #24292f;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button:hover {
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      /* ======================================================
+      页面内部导航
+      ====================================================== */
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 35px;
+        padding: 12px 15px;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(8px);
+      }
+
+      .section-nav a {
+        padding: 6px 11px;
+        border-radius: 6px;
+        color: #444444;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .section-nav a:hover {
+        background: #f2f4f6;
+        text-decoration: none;
+      }
+
+      /* ======================================================
+      通用章节
+      ====================================================== */
+
+      section {
+        padding: 52px 0 10px;
+        scroll-margin-top: 70px;
+      }
+
+      section h2 {
+        margin: 0 0 22px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      section h3 {
+        max-width: 900px;
+        margin: 35px auto 15px;
+        padding-left: 0;
+        font-size: 23px;
+      }
+
+      .section-description {
+        max-width: 900px;
+        margin: 0 auto 25px;
+        color: #444444;
+        text-align: justify;
+        font-size: 17px;
+      }
+
+      /* ======================================================
+      主图
+      ====================================================== */
+
+      .teaser {
+        margin: 35px auto 15px;
+        text-align: center;
+      }
+
+      .teaser img {
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 5px 22px rgba(0, 0, 0, 0.0);
+      }
+
+      .caption {
+        max-width: 920px;
+        margin: 12px auto 0;
+        color: #666666;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* ======================================================
+      YouTube 主展示区
+      ====================================================== */
+
+      .youtube-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding-top: 56.25%;
+        background: #000000;
+        box-shadow: 0 5px 22px rgba(0, 0, 0, 0.12);
+      }
+
+      .youtube-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* ======================================================
+      GIF 结果网格
+      ====================================================== */
+
+      .video-grid {
+        display: grid;
+
+        /* 每个卡片最大宽度为 420px */
+
+        grid-template-columns: repeat(2, minmax(0, 420px));
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        max-width: 900px;
+        margin: 25px auto 0;
+      }
+
+      .video-card {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #e1e4e8;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+      }
+
+      .video-card img {
+        display: block;
+        width: calc(100% - 30px);
+        max-width: 100%;
+        height: 260px;
+        margin: 15px auto;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .video-info {
+        padding: 14px 16px 16px;
+      }
+
+      .video-info h4 {
+        margin: 0 0 5px;
+        font-size: 17px;
+      }
+
+      .video-info p {
+        margin: 0;
+        color: #666666;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* ======================================================
+      图片结果网格
+      ====================================================== */
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 900px);
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        margin: 24px auto 0;
+      }
+
+      .image-card {
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #e1e4e8;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.00);
+      }
+
+      .image-card img {
+        display: block;
+        width: 90%;
+        margin: 15px auto 0;
+      }
+
+      .image-card p {
+        margin: 0;
+        padding: 12px 15px;
+        color: #555555;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      /* ======================================================
+      表格
+      ====================================================== */
+
+      .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        margin: 24px auto 0;
+      }
+
+      .table-wrapper table {
+        width: 80%;
+        min-width: 720px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      .table-wrapper th, .table-wrapper td {
+        padding: 12px 13px;
+        border: 1px solid #dddddd;
+        text-align: center;
+      }
+
+      .table-wrapper th {
+        background: #f5f6f7;
+        font-weight: 700;
+      }
+
+      .table-wrapper tr:nth-child(even) {
+        background: #fafafa;
+      }
+
+      .table-wrapper .ours {
+        font-weight: 700;
+        background: #eef7ff;
+      }
+
+      /* ======================================================
+      BibTeX
+      ====================================================== */
+
+      pre {
+        overflow-x: auto;
+        padding: 20px;
+        border-radius: 9px;
+        background: #f5f6f7;
+        font-family: Consolas, Monaco, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      /* ======================================================
+      页脚
+      ====================================================== */
+
+      footer {
+        margin-top: 60px;
+        padding: 30px 0;
+        border-top: 1px solid #eeeeee;
+        color: #777777;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      /* ======================================================
+      手机端
+      ====================================================== */
+
+      @media screen and (max-width: 760px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          padding-top: 35px;
+        }
+
+        .hero h1 {
+          font-size: 34px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+        }
+
+        .authors {
+          font-size: 16px;
+        }
+
+        .video-grid, .image-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-nav {
+          position: static;
+        }
+
+        section {
+          padding-top: 38px;
+        }
+
+        section h2 {
+          font-size: 27px;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <!-- ==================================================
+                  标题与作者
+                  ================================================== -->
+      <header class="hero">
+          <h1>
+              Topology optimization for hybrid additive-subtractive manufacturing incorporating dynamic process planning
+          </h1>
+          <p class="subtitle">
+              A differentiable and geometry-controlled framework for
+              hybrid additive-subtractive manufacturing structural topology optimization design method.
+          </p>
+        <div class="authors">
+            <a href="https://shuzhixu.github.io/">
+                Shuzhi Xu
+            </a>
+            <sup>
+                1
+            </sup>
+            ,
+            <a href="#">
+                Jikai Liu*
+            </a>
+            <sup>
+                2
+            </sup>
+            ,
+            <a href="#">
+                Kentaro Yaji
+            </a>
+            <sup>
+                1
+            </sup>
+            ,
+            <a href="#">
+                Lin Lu
+            </a>
+            <sup>
+                3
+            </sup>
+        </div>
+        <div class="affiliations">
+            <div>
+                <sup>
+                    1
+                </sup>
+                Department of Mechanical Engineering, Graduate School of Engineering, Osaka University, Japan
+            </div>
+            <div>
+                <sup>
+                    2
+                </sup>
+                Key Laboratory of High Efficiency and Clean Mechanical Manufacture (Ministry of Education), School of Mechanical Engineering, Shandong University, China
+            </div>
+            <div>
+                <sup>
+                    3
+                </sup>
+                School of Computer Science and Technology, Shandong University, China
+            </div>
+        </div>
+        <div class="button-row">
+          <a class="project-button" href="#video">
+            Video
+          </a>
+          <a class="project-button" href="#citation">
+            Citation
+          </a>
+        </div>
+      </header>
+      <!-- ==================================================
+                  页面导航
+                  ================================================== -->
+      <nav class="section-nav">
+        <a href="#abstract">
+          Abstract
+        </a>
+        <a href="#method">
+          Method
+        </a>
+        <a href="#results">
+          Results
+        </a>
+        <a href="#comparison">
+          Comparison
+        </a>
+        <a href="#citation">
+          Citation
+        </a>
+      </nav>
+      <!-- ==================================================
+                  Teaser
+                  ================================================== -->
+      <div class="teaser">
+        <img alt="Geometry-driven topology optimization overview" src="./images/abstract.png"/>
+        <p class="caption">
+            Our work achieves topology optimization design tailored for multi-axis hybrid additive and subtractive manufacturing. This enables the consideration of complex manufacturing constraints—inherent to multi-axis hybrid processes—at the design stage, thereby ensuring that structural manufacturing requirements are met while simultaneously optimizing structural performance.
+        </p>
+      </div>
+      <!-- ==================================================
+                  Abstract
+                  ================================================== -->
+      <section id="abstract">
+        <h2>
+          Abstract
+        </h2>
+        <p class="section-description">
+            Hybrid additive–subtractive manufacturing (HASM) is a revolutionary technique that, the interplay between additive and subtractive processes within an integrated machine tool allows for the fabrication of traditionally challenging complex geometries with excellent quality. However, part design for hybrid manufacturing has mostly been done by experts with rare support from computational design algorithms. Hence, the primary contribution of this work is to propose a solution for HASM-oriented structural topology optimization that incorporates both dynamic process planning and accessibility constraints. This novel optimization algorithm is developed under a unified SIMP and magic needle framework. Two sets of design variables are proposed: one for the topological description while the other for identifying the printing stage-related subdivisions. Accordingly, a series of additive manufacturing (AM) and subtractive manufacturing (SM) dedicated geometric constraints are developed based on these design variables to enable the cutting tool and laser head accessibility. Supported by the sensitivities, the structural geometry and fabrication fields can be simultaneously optimized. The effectiveness of the algorithm is proved through several numerical and experimental case studies. All the factors of cutting tool directions, HASM stages, and specific tool shapes are thorough investigated.
+        </p>
+      </section>
+      <!-- ==================================================
+                  方法
+                  ================================================== -->
+      <section id="method">
+          <h2>
+              Method
+          </h2>
+          <p class="section-description">
+              A cooperative optimization algorithm is proposed, primarily comprising the SM formulation, the AM formulation, and the HASM formulation.
+          </p>
+          <div class="teaser">
+              <img alt="Optimization pipeline" src="./images/图片6.svg" />
+              <p class="caption">
+                  Fig.1 The whole optimization pipeline.
+              </p>
+          </div>
+          <p class="section-description">
+              By employing a convolution algorithm to embed the tool shape into the convolution kernel, the non-machinable regions of the structure are determined.
+          </p>
+          <div class="teaser">
+              <img alt="Optimization pipeline" src="./images/图片7.svg" />
+              <p class="caption">
+                  Fig.2 Illustration of the SM formulation.
+              </p>
+          </div>
+          <p class="section-description">
+              For the additive manufacturing component, we introduce the "geodesic-in-heat" concept and leverage multiphysics coupling to achieve a differentiable representation of multi-axis slicing for curved surfaces.
+          </p>
+          <div class="teaser">
+              <img alt="Optimization pipeline" src="./images/2.png" />
+              <p class="caption">
+                  Fig.3 Illustration of the AM formulation.
+              </p>
+          </div>
+          <p class="section-description">
+              Finally, we propose the "Magic Needle" algorithm. By integrating this with prior surface slicing techniques, we achieve a differentiable representation of regions designated for additive and subtractive manufacturing steps, while also enabling the number of regions to be treated as a differentiable variable. This allows for the simultaneous optimization of partition locations and the number of manufacturing steps.
+          </p>
+          <div class="teaser">
+              <img alt="Optimization pipeline" src="./images/3.png" />
+              <p class="caption">
+                  Fig.4 Illustration of the HASM formulation.
+              </p>
+          </div>
+      </section>
+      <!-- ==================================================
+                  GIF 结果
+                  ================================================== -->
+      <section id="results">
+        <h2>
+          Qualitative Results
+        </h2>
+        <h3>
+          Optimization Processes
+        </h3>
+        <div class="video-grid">
+          <article class="video-card">
+            <img alt="Two-dimensional optimization process" src="./videos/image40.gif"/>
+            <div class="video-info">
+              <h4>
+                Two-Dimensional Example #1
+              </h4>
+              <p>
+                2D heat sink design.
+              </p>
+            </div>
+          </article>
+          <article class="video-card">
+            <img alt="Two-dimensional optimization process" src="./videos/image39.gif"/>
+            <div class="video-info">
+              <h4>
+                Two-Dimensional Example #2
+              </h4>
+              <p>
+                  2D heat sink design with another tool configuration.
+              </p>
+            </div>
+          </article>
+        </div>
+        <h3>
+          Optimized Designs
+        </h3>
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./images/4.png"/>
+            <p>
+              The optimized results for 2D heat sink.
+            </p>
+          </article>
+          <article class="image-card">
+            <img alt="Optimized result two" src="./images/5.png"/>
+            <p>
+                The optimized results for 3D heat sink
+            </p>
+          </article>
+          <article class="image-card">
+              <img alt="Optimized result two" src="./videos/TopResult_111.gif" />
+              <p>
+                  The fabrication process for the optimized 3D heat sink
+              </p>
+          </article>
+        </div>
+      </section>
+      <!-- ==================================================
+                  定量结果
+                  ================================================== -->
+      <section id="comparison">
+        <h2>
+          Quantitative Results
+        </h2>
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./images/图片13.svg"/>
+          </article>
+        </div>
+        <p class="section-description">
+            In the ablation studies, we designed and compared the classic cantilever beam under various geometric constraints in both 2D and 3D settings.
+        </p>
+
+        <div class="image-grid">
+          <article class="image-card">
+            <img alt="Optimized result one" src="./videos/TopResult_222.gif"/>
+            <p>
+                Comparison of AM and HASM Processing for Plastic and Metal Materials.
+            </p>
+          </article>
+        </div>
+        <p class="section-description">
+            Finally, the optimized 3D heat sink components were fabricated using both plastic and metal materials, and the results obtained via HASM were compared with those from AM alone. It is evident that our designs could be successfully fabricated using both HASM and AM; notably, the surface roughness of the components produced via HASM was significantly better controlled.
+        </p>
+        
+      </section>
+
+      <!-- ==================================================
+                  引用
+                  ================================================== -->
+      <section id="citation">
+        <h2>
+          Citation
+        </h2>
+        <pre>@article{xu2026geometry,
+  title   = {Geometry-Driven Topology Optimization
+             with B-Spline Geometric Features},
+  author  = {Xu, Shuzhi and Others},
+  journal = {Journal Name},
+  year    = {2026}
+}</pre>
+      </section>
+      <!-- ==================================================
+                  致谢
+                  ================================================== -->
+      <section id="acknowledgements">
+        <h2>
+          Acknowledgements
+        </h2>
+
+        <div class="teaser">
+        <img alt="Geometry-driven topology optimization overview" src="./images/sup.png"/>
+      </div>
+
+        <p class="section-description">
+            This work was supported by Shandong University and The University of Osaka.
+        </p>
+
+      </section>
+    </main>
+    <footer>
+      Design for Hybrid Manufacturing · Shandong University
+    </footer>
+  </body>
+</html>

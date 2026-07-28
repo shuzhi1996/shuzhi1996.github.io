@@ -625,7 +625,7 @@ redirect_from:
           <div>
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
-              <a href="{{ '/portfolio/sub/HASM/' | relative_url }}">
+              <a href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
                 1. Topology Optimization for Multi-Axis Hybrid Manufacturing
               </a>
             </h3>

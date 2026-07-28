@@ -461,7 +461,7 @@ collection: portfolio
 
           <a
             class="card-button"
-            href="{{ '/portfolio/sub/HASM/' | relative_url }}">
+            href="{{ '/project/HASM/HASM.html' | relative_url }}">
 
             Project Page&nbsp;→
 
