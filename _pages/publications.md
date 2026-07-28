@@ -6,6 +6,28 @@ author_profile: true
 ---
 ## 2026
 
+<p><small><sup>∗</sup> Corresponding author</small></p>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+  <div>
+    <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">CMAME 2026</span></p>
+    <p><strong>Topology optimization of additively manufactured continuous fiber-reinforced composites using B-spline components</strong></p>
+    <p>Guo, Y., Liu, J., <strong>Xu, S.</strong>, Yaji, K., & Yamada, T.</p>
+    <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 2026, 461(B), 119224.</p>
+    <p><a href="https://doi.org/10.1016/j.cma.2026.119224" target="_blank"><strong>Paper</strong></a></p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+  <div>
+    <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">SMO 2026</span></p>
+    <p><strong>B-DGTO: a new topology optimization approach enabling derivable signed distance feature in density method</strong></p>
+    <p>Liang, K., Liu, J.<sup>∗</sup>, & <strong>Xu, S.</strong></p>
+    <p><em>Structural and Multidisciplinary Optimization</em>, 2026, 69, 170.</p>
+    <p><a href="https://doi.org/10.1007/s00158-026-04363-1" target="_blank"><strong>Paper</strong></a></p>
+  </div>
+</div>
+
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Advances in Structural Engineering 2026</span></p>
@@ -30,7 +52,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Computation 2026</span></p>
     <p><strong>Multifidelity Topology Design for Thermal–Fluid Devices via SEMDOT Algorithm</strong></p>
-    <p>Sun, Y., Fu, Y. F., <strong>Xu, S.</strong>, & Guo, Y.</p>
+    <p>Sun, Y., Fu, Y. F., <strong>Xu, S.</strong><sup>∗</sup>, & Guo, Y.<sup>∗</sup></p>
     <p><em>Computation</em>, 2026, 14(1), 19.</p>
     <p><a href="https://doi.org/10.3390/computation14010019" target="_blank"><strong>Paper</strong></a></p>
   </div>
