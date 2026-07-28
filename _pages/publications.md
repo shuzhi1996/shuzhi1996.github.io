@@ -8,10 +8,20 @@ author_profile: true
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
   <div>
+    <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Advances in Structural Engineering 2026</span></p>
+    <p><strong>Data-driven reliability-based optimization framework for concrete-encased steel composite columns toward cost-effective design: Methodology and interactive tool</strong></p>
+    <p>Wang, H., Zhang, Y., Liu, J., Zhao, Y., He, R., <strong>Xu, S.</strong>, Wang, W., & Lyu, X.</p>
+    <p><em>Advances in Structural Engineering</em>, 2026, OnlineFirst, 13694332261447524.</p>
+    <p><a href="https://doi.org/10.1177/13694332261447524" target="_blank"><strong>Paper</strong></a></p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+  <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Composites Part B 2026</span></p>
-    <p><strong>Derivable geodesic weaving driven topology optimization for continuous and controlled-spacing fiber paths incorporating tension-compression anisotropy</strong></p>
+    <p><strong>Derivable geodesic weaving: enabling tension-compression anisotropic topology optimization of densified continuous fiber paths with controlled-spacing</strong></p>
     <p>Guo, Y., Su, C., Liu, J., <strong>Xu, S.</strong>, & Yamada, T.</p>
-    <p><em>Composites Part B: Engineering</em>, 2026, 316, 113604.</p>
+    <p><em>Composites Part B: Engineering</em>, 2026, 317, 113604.</p>
     <p><a href="https://doi.org/10.1016/j.compositesb.2026.113604" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
@@ -32,7 +42,7 @@ author_profile: true
     <p><strong>DGTO: Derivable geodesics-coupled topology optimization for multi-axis 3D printing of continuous fiber-reinforced spatial structures</strong></p>
     <p>Liang, K., Liu, J., <strong>Xu, S.</strong>, & Guo, Y.</p>
     <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 2026, 448, 118419.</p>
-    <p><a href="https://doi.org/10.1016/j.cma.2024.118419" target="_blank"><strong>Paper</strong></a></p>
+    <p><a href="https://doi.org/10.1016/j.cma.2025.118419" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
 
@@ -53,8 +63,8 @@ author_profile: true
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Materials & Design 2025</span></p>
     <p><strong>Stress-constrained topology optimization of heterogeneous lattice structures for additive manufacturing</strong></p>
     <p>Yang, Z., Liu, J., <strong>Xu, S.</strong>, & Guo, Y.</p>
-    <p><em>Materials & Design</em>, 2025, 114792.</p>
-    <p><a href="https://www.sciencedirect.com/science/article/pii/S0264127525009009" target="_blank"><strong>Paper</strong></a></p>
+    <p><em>Materials & Design</em>, 2025, 259, 114792.</p>
+    <p><a href="https://doi.org/10.1016/j.matdes.2025.114792" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
 
@@ -86,7 +96,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2025</span></p>
     <p><strong>Self-Support Structure Topology Optimization for Multi-axis Additive Manufacturing Incorporated with Curved Layer Slicing</strong></p>
-    <p><strong>Xu, S.</strong>, Liu, J*., He, D., Tang, K., Yaji, K*., & Lu, L.</p>
+    <p><strong>Xu, S.</strong>, Liu, J*., He, D., Tang, K., & Yaji, K*.</p>
     <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 438, 117841. <strong>(SCI, Top, IF 7.3)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -102,7 +112,7 @@ author_profile: true
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CMAME 2024</span></p>
     <p><strong>Topology optimization for hybrid additive-subtractive manufacturing incorporating dynamic process planning</strong></p>
     <p><strong>Xu, S.</strong>, Liu, J*., Yaji, K., & Lu, L.</p>
-    <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 431, 117720. <strong>(SCI, Top, IF 7.3)</strong></p>
+    <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 431, 117270. <strong>(SCI, Top, IF 7.3)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
@@ -112,7 +122,7 @@ author_profile: true
     <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">SMO 2024</span></p>
     <p><strong>Support structure topology optimization considering the residual distortion for laser powder bed fusion metal additive manufacturing</strong></p>
     <p><strong>Xu, S.</strong>, Liu, J., Sun, Y., Li, X*., & Ma, Y*.</p>
-    <p><em>Structural and Multidisciplinary Optimization</em>, 67(10), 1-20. <strong>(SCI, IF 3.6)</strong></p>
+    <p><em>Structural and Multidisciplinary Optimization</em>, 67(10), 182. <strong>(SCI, IF 3.6)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
@@ -134,8 +144,8 @@ author_profile: true
   <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CAD 2023</span></p>
     <p><strong>Challenges in topology optimization for hybrid additive-subtractive manufacturing: A review</strong></p>
-    <p>Liu, J., Huang, J., Zheng, Y., Hou, S., <strong>Xu, S.</strong>, Ma, Y., … & Li, L.</p>
-    <p><em>Computer-Aided Design</em>, 103531.</p>
+    <p>Liu, J., Huang, J., Zheng, Y., Hou, S., <strong>Xu, S.</strong>, Ma, Y., Huang, C., Zou, B., & Li, L.</p>
+    <p><em>Computer-Aided Design</em>, 161, 103531.</p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
@@ -145,7 +155,7 @@ author_profile: true
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CAD 2023</span></p>
     <p><strong>Multiscale topology optimization for solid–lattice–void hybrid structures through an ordered multi-phase interpolation</strong></p>
     <p>Zhang, C., Wu, T., <strong>Xu, S.</strong>, & Liu, J.</p>
-    <p><em>Computer-Aided Design</em>, 154, 103442.</p>
+    <p><em>Computer-Aided Design</em>, 154, 103424.</p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>
@@ -186,9 +196,19 @@ author_profile: true
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
   <div>
+    <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">IJMMD 2022</span></p>
+    <p><strong>A topology optimization method for hyperelastic porous structures subject to large deformation</strong></p>
+    <p>Huang, J., <strong>Xu, S.</strong>, Ma, Y., & Liu, J.</p>
+    <p><em>International Journal of Mechanics and Materials in Design</em>, 18(2), 289-308.</p>
+    <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
+  <div>
     <p><span style="background-color:#ff9900; color:white; padding:3px 6px; border-radius:4px;">CAD&A 2022</span></p>
     <p><strong>An Island Scanning Path-Pattern Optimization for Metal Additive Manufacturing Based on Inherent Strain Method</strong></p>
-    <p><strong>Xu, S.</strong>, Huang, J., Liu, J., Ma, Y., & Liu, J.</p>
+    <p><strong>Xu, S.</strong>, Huang, J., Liu, J., & Ma, Y.</p>
     <p><em>Computer-Aided Design and Applications</em>, 19(4), 812-824.</p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -221,19 +241,9 @@ author_profile: true
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">CJME 2021</span></p>
-    <p><strong>A novel lattice structure topology optimization method with extreme anisotropy</strong></p>
+    <p><strong>A novel lattice structure topology optimization method with extreme anisotropic lattice properties</strong></p>
     <p>Zhang, C., Liu, J., Yuan, Z., <strong>Xu, S.</strong>, Zou, B., Li, L., & Ma, Y.</p>
-    <p><em>Chinese Journal of Mechanical Engineering</em>, 8(5), 1367-1390.</p>
-    <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
-  </div>
-</div>
-
-<div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-  <div>
-    <p><span style="background-color:#009933; color:white; padding:3px 6px; border-radius:4px;">IJMMD 2021</span></p>
-    <p><strong>A topology optimization method for hyper-elastic porous structures subject to large deformation</strong></p>
-    <p>Huang, J., <strong>Xu, S.</strong>, Ma, Y., & Liu, J.</p>
-    <p><em>International Journal of Mechanics and Materials in Design</em>, 1-20.</p>
+    <p><em>Journal of Computational Design and Engineering</em>, 8(5), 1367-1390.</p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
 </div>

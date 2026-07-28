@@ -862,6 +862,7 @@ redirect_from:
         <h2>Contact &amp; Links</h2>
         <ul class="mit-contact-list">
           <li><a href="mailto:shuzhi@ualberta.ca">shuzhi@ualberta.ca</a></li>
+          <li>WeChat: xushuzhi1996</li>
           <li>
             <a href="https://scholar.google.com.hk/citations?user=lC1RMK0AAAAJ&amp;hl=zh-CN&amp;oi=sra">
               Google Scholar
