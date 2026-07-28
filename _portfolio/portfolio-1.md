@@ -647,7 +647,7 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/LPBF1.png' | relative_url }}"
+            src="{{ '/images/LPBF2.png' | relative_url }}"
             alt="Topology optimization for LPBF metal additive manufacturing">
 
         </div>
@@ -695,7 +695,7 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/LPBF2.png' | relative_url }}"
+            src="{{ '/images/LPBF3.png' | relative_url }}"
             alt="Topology optimization for LPBF metal additive manufacturing">
 
         </div>
@@ -743,7 +743,7 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/LPBF3.png' | relative_url }}"
+            src="{{ '/images/LPBF1.png' | relative_url }}"
             alt="Topology optimization for LPBF metal additive manufacturing">
 
         </div>
