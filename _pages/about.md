@@ -262,7 +262,7 @@ redirect_from:
 
   .mit-publication {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-columns: 350px minmax(0, 1fr);
     gap: 18px;
     padding: 17px 0;
     border-bottom: 1px solid var(--line);
