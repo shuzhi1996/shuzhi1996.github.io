@@ -274,7 +274,7 @@ redirect_from:
 
   .mit-publication__media {
     display: flex;
-    min-height: 132px;
+    min-height: 0;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -295,8 +295,10 @@ redirect_from:
 
   .mit-publication__media img {
     display: block;
-    width: 100%;
-    height: 132px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 240px;
     margin: 0;
     border: 0;
     object-fit: contain;
@@ -472,11 +474,12 @@ redirect_from:
     }
 
     .mit-publication__media {
-      min-height: 165px;
+      min-height: 0;
     }
 
     .mit-publication__media img {
-      height: 165px;
+      height: auto;
+      max-height: 320px;
     }
 
     .mit-sidebar {
