@@ -672,7 +672,9 @@ redirect_from:
               并拓展可制造结构的设计空间。
             </p>
             <ul class="mit-publication__links">
-              <li><a href="{{ '/portfolio/sub/HASM/' | relative_url }}">project page</a></li>
+              <li><a href="{{ '/portfolio/portfolio-1/' | relative_url }}">research page</a></li>
+              <li>·</li>
+              <li><a href="{{ '/project/HASM/HASM.html' | relative_url }}">project page</a></li>
               <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
