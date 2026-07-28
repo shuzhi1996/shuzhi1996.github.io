@@ -433,7 +433,7 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/HASM/HASM.png' | relative_url }}"
+            src="{{ '/images/HASM.png' | relative_url }}"
             alt="Topology optimization for hybrid additive-subtractive manufacturing">
 
         </div>
@@ -481,7 +481,7 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/multi-axis AM/图片1.png' | relative_url }}"
+            src="{{ '/images/SDGIF_Rusult_7.gif' | relative_url }}"
             alt="Topology optimization for multi-axis additive manufacturing">
 
         </div>

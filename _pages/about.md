@@ -639,7 +639,9 @@ redirect_from:
               以生成复杂且具备可制造性的零件结构。
             </p>
             <ul class="mit-publication__links">
-              <li><a href="{{ '/portfolio/portfolio-1/' | relative_url }}">project page</a></li>
+              <li><a href="{{ '/portfolio/portfolio-1/' | relative_url }}">research page</a></li>
+              <li>·</li>
+              <li><a href="{{ '/project/HASM/HASM.html' | relative_url }}">project page</a></li>
               <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
