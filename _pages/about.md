@@ -18,6 +18,17 @@ redirect_from:
     display: none;
   }
 
+  /* Release the theme's unused author-sidebar space on desktop. */
+  @media (min-width: 57.8125em) {
+    #main > .page {
+      width: 100%;
+      float: none;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .mit-home {
     --ink: #333333;
     --muted: #666666;
