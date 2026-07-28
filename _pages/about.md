@@ -616,7 +616,7 @@ redirect_from:
         </p>
 
         <article class="mit-publication">
-          <a class="mit-publication__media" href="{{ '/portfolio/sub/HASM/' | relative_url }}">
+          <a class="mit-publication__media" href="{{ '/project/HASM/HASM.html' | relative_url }}">
             <img
               src="{{ '/images/HASM.png' | relative_url }}"
               alt="Hybrid additive-subtractive manufacturing optimization"
@@ -625,7 +625,7 @@ redirect_from:
           <div>
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
-              <a href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
+              <a href="{{ '/project/HASM/HASM.html' | relative_url }}">
                 1. Topology Optimization for Multi-Axis Hybrid Manufacturing
               </a>
             </h3>
@@ -639,7 +639,7 @@ redirect_from:
               以生成复杂且具备可制造性的零件结构。
             </p>
             <ul class="mit-publication__links">
-              <li><a href="{{ '/portfolio/sub/HASM/' | relative_url }}">project page</a></li>
+              <li><a href="{{ '/portfolio/portfolio-3/' | relative_url }}">project page</a></li>
               <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
