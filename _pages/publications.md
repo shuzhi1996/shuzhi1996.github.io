@@ -12,7 +12,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">CMAME 2026</span></p>
     <p><strong>Topology optimization of additively manufactured continuous fiber-reinforced composites using B-spline components</strong></p>
-    <p>Guo, Y., Liu, J., <strong>Xu, S.</strong>, Yaji, K., & Yamada, T.</p>
+    <p>Guo, Y., Liu, J., <strong>Xu, S.<sup>∗</sup></strong>, Yaji, K., & Yamada, T.</p>
     <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 2026, 461(B), 119224.</p>
     <p><a href="https://doi.org/10.1016/j.cma.2026.119224" target="_blank"><strong>Paper</strong></a></p>
   </div>
