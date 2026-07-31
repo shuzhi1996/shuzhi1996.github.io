@@ -42,7 +42,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Composites Part B 2026</span></p>
     <p><strong>Derivable geodesic weaving: enabling tension-compression anisotropic topology optimization of densified continuous fiber paths with controlled-spacing</strong></p>
-    <p>Guo, Y., Su, C., Liu, J., <strong>Xu, S.</strong>, & Yamada, T.</p>
+    <p>Guo, Y., Su, C., Liu, J.<sup>∗</sup>, <strong>Xu, S.<sup>∗</sup></strong>, & Yamada, T.</p>
     <p><em>Composites Part B: Engineering</em>, 2026, 317, 113604.</p>
     <p><a href="https://doi.org/10.1016/j.compositesb.2026.113604" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -52,7 +52,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Computation 2026</span></p>
     <p><strong>Multifidelity Topology Design for Thermal–Fluid Devices via SEMDOT Algorithm</strong></p>
-    <p>Sun, Y., Fu, Y. F., <strong>Xu, S.</strong><sup>∗</sup>, & Guo, Y.<sup>∗</sup></p>
+    <p>Sun, Y., Fu, Y. F., <strong>Xu, S.<sup>∗</sup></strong>, & Guo, Y.<sup>∗</sup></p>
     <p><em>Computation</em>, 2026, 14(1), 19.</p>
     <p><a href="https://doi.org/10.3390/computation14010019" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -62,7 +62,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">CMAME 2026</span></p>
     <p><strong>DGTO: Derivable geodesics-coupled topology optimization for multi-axis 3D printing of continuous fiber-reinforced spatial structures</strong></p>
-    <p>Liang, K., Liu, J., <strong>Xu, S.</strong>, & Guo, Y.</p>
+    <p>Liang, K., Liu, J.<sup>∗</sup>, <strong>Xu, S.</strong>, & Guo, Y.</p>
     <p><em>Computer Methods in Applied Mechanics and Engineering</em>, 2026, 448, 118419.</p>
     <p><a href="https://doi.org/10.1016/j.cma.2025.118419" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -73,7 +73,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">arXiv 2025</span></p>
     <p><strong>Data-driven multifidelity and multiscale topology optimization based on phasor-based evolutionary de-homogenization</strong></p>
-    <p><strong>Xu, S.</strong>, Guo, Y., Kawabe, H., & Yaji, K.</p>
+    <p><strong>Xu, S.</strong>, Guo, Y., Kawabe, H., & Yaji, K.<sup>∗</sup></p>
     <p><em>arXiv preprint</em>, arXiv:2510.08830.</p>
     <p><a href="https://arxiv.org/abs/2510.08830" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -84,7 +84,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Materials & Design 2025</span></p>
     <p><strong>Stress-constrained topology optimization of heterogeneous lattice structures for additive manufacturing</strong></p>
-    <p>Yang, Z., Liu, J., <strong>Xu, S.</strong>, & Guo, Y.</p>
+    <p>Yang, Z., Liu, J.<sup>∗</sup>, <strong>Xu, S.</strong>, & Guo, Y.<sup>∗</sup></p>
     <p><em>Materials & Design</em>, 2025, 259, 114792.</p>
     <p><a href="https://doi.org/10.1016/j.matdes.2025.114792" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -95,7 +95,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Materials & Design 2025</span></p>
     <p><strong>Evolutionary de-homogenization using a generative model for optimizing solid-porous infill structures considering the stress concentration issue</strong></p>
-    <p><strong>Xu, S.</strong>, Kawabe, H., & Yaji, K*.</p>
+    <p><strong>Xu, S.</strong>, Kawabe, H., & Yaji, K.<sup>∗</sup></p>
     <p><em>Materials & Design</em>, 2025, 114380.</p>
     <p><a href="https://www.sciencedirect.com/science/article/pii/S0264127525008007" target="_blank"><strong>Paper</strong></a>
     </p>
