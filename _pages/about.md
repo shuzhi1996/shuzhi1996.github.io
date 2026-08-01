@@ -594,12 +594,12 @@ redirect_from:
           <li>
             <time>Feb. 2024 — Aug. 2025</time>
             <div class="mit-experience__entry">
-              <strong>Specially Appointed Researcher · Osaka University</strong>
+              <strong>Specially Appointed Researcher · The University of Osaka</strong>
               <span>Research on topology optimization and design engineering in Prof. Kentaro Yaji’s group.</span>
             </div>
           </li>
           <li>
-            <time>Dec. 2023</time>
+            <time>Sep. 2018 — Dec. 2023</time>
             <div class="mit-experience__entry">
               <strong>Ph.D. in Mechanical Engineering · University of Alberta</strong>
               <span>Topology Optimization Considering Additive Manufacturing Constraints.</span>
@@ -613,7 +613,7 @@ redirect_from:
             </div>
           </li>
           <li>
-            <time>Jun. 2018</time>
+            <time>Sep. 2014 — Jun. 2018</time>
             <div class="mit-experience__entry">
               <strong>B.Eng. in Mechanical Engineering · Taiyuan University of Science and Technology</strong>
               <span>Undergraduate study in mechanical design, modeling, and engineering analysis.</span>

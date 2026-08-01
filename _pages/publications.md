@@ -32,7 +32,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#004aad; color:white; padding:3px 6px; border-radius:4px;">Advances in Structural Engineering 2026</span></p>
     <p><strong>Data-driven reliability-based optimization framework for concrete-encased steel composite columns toward cost-effective design: Methodology and interactive tool</strong></p>
-    <p>Wang, H., Zhang, Y., Liu, J., Zhao, Y., He, R., <strong>Xu, S.</strong>, Wang, W., & Lyu, X.</p>
+    <p>Wang, H., Zhang, Y., Liu, J.<sup>∗</sup>, Zhao, Y., He, R., <strong>Xu, S.</strong>, Wang, W., & Lyu, X.</p>
     <p><em>Advances in Structural Engineering</em>, 2026, OnlineFirst, 13694332261447524.</p>
     <p><a href="https://doi.org/10.1177/13694332261447524" target="_blank"><strong>Paper</strong></a></p>
   </div>
@@ -156,7 +156,7 @@ author_profile: true
   <div>
     <p><span style="background-color:#0073e6; color:white; padding:3px 6px; border-radius:4px;">FEAD 2023</span></p>
     <p><strong>Concurrent Island scanning pattern and large-scale topology optimization method for laser powder bed fusion processed parts</strong></p>
-    <p><strong>Xu, S.</strong>, Liu, J., Li, X., & Ma, Y.</p>
+    <p><strong>Xu, S.</strong>, Liu, J.<sup>∗</sup>, Li, X., & Ma, Y.<sup>∗</sup></p>
     <p><em>Finite Elements in Analysis and Design</em>, 225, 104018. <strong>(SCI, IF 3.5)</strong></p>
     <p><a href="#" target="_blank"><strong>Paper</strong></a></p>
   </div>
