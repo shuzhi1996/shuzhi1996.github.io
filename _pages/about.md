@@ -786,7 +786,9 @@ redirect_from:
             </p>
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/portfolio-1/' | relative_url }}">Research page</a></li>
+              <li>·</li>
               <li><a href="{{ '/project/GeodesicWaving/geodesic-waving.html' | relative_url }}">Project page</a></li>
+              <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
           </div>
