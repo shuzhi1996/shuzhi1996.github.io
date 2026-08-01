@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project page for derivable geodesic weaving and topology optimization of continuous fiber-reinforced composites."
+    />
+    <title>Derivable Geodesic Weaving</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: #20242a;
+        background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #1769aa;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 62px 0 32px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #1769aa;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 1040px;
+        margin: 0 auto 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 52px);
+        font-weight: 700;
+        line-height: 1.18;
+      }
+
+      .subtitle {
+        max-width: 890px;
+        margin: 0 auto 24px;
+        color: #555c66;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+
+      .authors {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.9;
+      }
+
+      .authors a,
+      .authors span {
+        margin: 0 4px;
+        font-weight: 600;
+      }
+
+      .corresponding {
+        color: #c94d2d;
+      }
+
+      .affiliations {
+        max-width: 900px;
+        margin: 8px auto 0;
+        color: #5b626c;
+        font-size: 15px;
+      }
+
+      .affiliations div {
+        margin: 2px 0;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .project-button {
+        display: inline-flex;
+        min-width: 120px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #24292f;
+        font-size: 15px;
+        font-weight: 700;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button.secondary {
+        border: 1px solid #c9d1d9;
+        color: #24292f;
+        background: #ffffff;
+      }
+
+      .project-button:hover {
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      .project-button.secondary:hover {
+        color: #1769aa;
+        background: #f4f8fb;
+      }
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 34px;
+        padding: 12px 15px;
+        border-top: 1px solid #e7ebef;
+        border-bottom: 1px solid #e7ebef;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+      }
+
+      .section-nav a {
+        padding: 6px 11px;
+        border-radius: 6px;
+        color: #444b54;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .section-nav a:hover {
+        background: #f2f5f7;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 54px 0 8px;
+        scroll-margin-top: 72px;
+      }
+
+      section h2 {
+        margin: 0 0 22px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      section h3 {
+        max-width: 940px;
+        margin: 38px auto 16px;
+        font-size: 23px;
+      }
+
+      .section-description {
+        max-width: 920px;
+        margin: 0 auto 24px;
+        color: #40464e;
+        text-align: justify;
+        font-size: 17px;
+      }
+
+      .teaser {
+        margin: 34px auto 10px;
+        text-align: center;
+      }
+
+      .teaser img {
+        width: min(100%, 1040px);
+        border-radius: 10px;
+      }
+
+      .caption {
+        max-width: 940px;
+        margin: 12px auto 0;
+        color: #666e78;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .key-points {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto 0;
+      }
+
+      .key-point {
+        padding: 20px;
+        border: 1px solid #dfe5ea;
+        border-radius: 12px;
+        background: #fbfcfd;
+      }
+
+      .key-point strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1769aa;
+        font-size: 16px;
+      }
+
+      .key-point p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin: 26px auto 0;
+      }
+
+      .figure-card {
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .figure-card.wide {
+        grid-column: 1 / -1;
+      }
+
+      .figure-card img {
+        display: block;
+        width: calc(100% - 28px);
+        max-height: 680px;
+        margin: 14px auto 0;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .figure-card figcaption {
+        padding: 13px 16px 16px;
+        color: #59616b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto;
+      }
+
+      .metric {
+        padding: 22px 18px;
+        border: 1px solid #dce7ef;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #f8fbfd, #ffffff);
+        text-align: center;
+      }
+
+      .metric .value {
+        display: block;
+        color: #1769aa;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .metric .label {
+        display: block;
+        margin-top: 7px;
+        color: #59616b;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .result-list {
+        max-width: 900px;
+        margin: 22px auto;
+        padding-left: 24px;
+        color: #40464e;
+        font-size: 16px;
+      }
+
+      .result-list li {
+        margin: 9px 0;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 20px;
+        border-radius: 9px;
+        background: #f4f6f8;
+        font-family: Consolas, Monaco, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      footer {
+        margin-top: 62px;
+        padding: 30px 0;
+        border-top: 1px solid #e7ebef;
+        color: #747b84;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 900px) {
+        .key-points,
+        .metric-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media screen and (max-width: 760px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          padding-top: 36px;
+        }
+
+        .hero h1 {
+          font-size: 34px;
+        }
+
+        .subtitle,
+        .authors {
+          font-size: 16px;
+        }
+
+        .section-nav {
+          position: static;
+        }
+
+        section {
+          padding-top: 40px;
+        }
+
+        section h2 {
+          font-size: 27px;
+        }
+
+        .figure-grid,
+        .key-points,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .figure-card.wide {
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Composites Part B: Engineering · 2026</p>
+        <h1>
+          Derivable geodesic weaving: enabling tension-compression anisotropic
+          topology optimization of densified continuous fiber paths with
+          controlled-spacing
+        </h1>
+        <p class="subtitle">
+          A dual-field topology optimization framework that converts differentiable
+          geodesic fields into dense, continuous, fabrication-ready fiber paths while
+          accounting for the bi-modulus behavior of printed composites.
+        </p>
+
+        <div class="authors">
+          <span>Yifan Guo<sup>1,3</sup></span>,
+          <span>Chang Su<sup>1</sup></span>,
+          <a href="https://www.mech.sdu.edu.cn/info/1153/129553.htm">Jikai Liu<sup>1,*</sup></a>,
+          <a href="https://shuzhi1996.github.io/">Shuzhi Xu<sup>2,*</sup></a>,
+          <span>Takayuki Yamada<sup>3</sup></span>
+        </div>
+
+        <div class="affiliations">
+          <div><sup>1</sup> School of Mechanical Engineering, Shandong University, China</div>
+          <div><sup>2</sup> Graduate School of Engineering, The University of Osaka, Japan</div>
+          <div><sup>3</sup> Graduate School of Engineering, The University of Tokyo, Japan</div>
+          <div class="corresponding"><sup>*</sup> Corresponding authors</div>
+        </div>
+
+        <div class="button-row">
+          <a class="project-button" href="./1-s2.0-S1359836826002258-main.pdf">Paper PDF</a>
+          <a
+            class="project-button secondary"
+            href="https://doi.org/10.1016/j.compositesb.2026.113604"
+            target="_blank"
+            rel="noopener noreferrer"
+          >DOI</a>
+          <a class="project-button secondary" href="#citation">Citation</a>
+        </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#citation">Citation</a>
+      </nav>
+
+      <div class="teaser">
+        <img
+          src="./images/framework-overview.jpg"
+          alt="Overview of the dual-field geodesic weaving framework"
+        />
+        <p class="caption">
+          The workflow couples derivable geodesic fields, a homogenized continuous-fiber
+          model, tension-compression-aware analysis, and post-processing for executable
+          fiber trajectories.
+        </p>
+      </div>
+
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p class="section-description">
+          Conventional homogenized optimization is computationally efficient, but its
+          density and orientation fields do not directly provide printable fiber paths.
+          This work closes that gap with two orthogonal geodesic fields whose gradients
+          define globally consistent path directions. Structural topology, field phases,
+          orientation, and fiber spacing are optimized together. A bi-modulus material
+          model steers reinforcement toward tensile load paths, while a dedicated
+          alignment-and-bridging procedure converts the optimized fields into continuous
+          G-code-ready trajectories. Numerical studies and printed specimens show that
+          the method improves path continuity, fiber utilization, stiffness, and peak
+          load capacity.
+        </p>
+
+        <div class="key-points">
+          <article class="key-point">
+            <strong>Dual geodesic fields</strong>
+            <p>Two interleaved path families avoid orientation ambiguity and local path conflicts.</p>
+          </article>
+          <article class="key-point">
+            <strong>Controlled spacing</strong>
+            <p>A fiber-density variable controls local spacing and overall reinforcement usage.</p>
+          </article>
+          <article class="key-point">
+            <strong>Bi-modulus mechanics</strong>
+            <p>Tension-compression asymmetry is embedded directly in analysis and optimization.</p>
+          </article>
+          <article class="key-point">
+            <strong>Fabrication ready</strong>
+            <p>Field alignment, path extraction, and bridge selection produce continuous toolpaths.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method">
+        <h2>Method</h2>
+        <p class="section-description">
+          Five coupled design fields are optimized: material density, two selective
+          variables, fiber orientation, and fiber spacing. The selective variables split
+          the domain into two phases, each associated with a derivable geodesic field.
+          Their orthogonal streamline families provide a continuous representation of
+          fiber direction and allow the homogenized constitutive model to remain
+          consistent with the final printable paths.
+        </p>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide">
+            <img src="./images/dual-geodesic-fields.jpg" alt="Construction of two derivable geodesic fields" />
+            <figcaption>
+              Density and phase-selection fields are transformed into two complementary geodesic fields.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/fiber-model.jpg" alt="Continuous fiber path generation and homogenized model" />
+            <figcaption>
+              Geodesic gradients define continuous path directions and the local homogenized fiber response.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/bi-modulus-analysis.jpg" alt="Bi-modulus analysis coupled with fiber paths" />
+            <figcaption>
+              Signed principal stress separates tensile and compressive response along the fiber direction.
+            </figcaption>
+          </figure>
+          <figure class="figure-card wide">
+            <img src="./images/post-processing.jpg" alt="Continuous fiber path post-processing pipeline" />
+            <figcaption>
+              Field alignment, iso-contour extraction, endpoint matching, bridge screening, and smoothing produce continuous paths for G-code conversion.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results">
+        <h2>Numerical Results</h2>
+        <p class="section-description">
+          L-bracket, double-clamped beam, and bridge-shaped benchmarks evaluate the
+          influence of dual fields, fiber-density limits, and tension-compression
+          asymmetry. Across the examples, the optimized paths remain continuous and
+          concentrate reinforcement along the mechanically relevant trajectories.
+        </p>
+
+        <div class="metric-grid">
+          <article class="metric">
+            <span class="value">6.036</span>
+            <span class="label">Lowest L-bracket compliance with the dual-field formulation</span>
+          </article>
+          <article class="metric">
+            <span class="value">0.2194</span>
+            <span class="label">Dual-field fiber fraction under the same density cap</span>
+          </article>
+          <article class="metric">
+            <span class="value">4.40</span>
+            <span class="label">Compliance at maximum fiber density d<sub>0</sub> = 0.5</span>
+          </article>
+          <article class="metric">
+            <span class="value">0.3617</span>
+            <span class="label">Global fiber fraction at d<sub>0</sub> = 0.5</span>
+          </article>
+        </div>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide">
+            <img src="./images/l-bracket-comparison.jpg" alt="Single-field and dual-field L-bracket comparison" />
+            <figcaption>
+              The dual-field design is less sensitive to initialization and achieves a denser, more uniform fiber layout with lower compliance.
+            </figcaption>
+          </figure>
+          <figure class="figure-card wide">
+            <img src="./images/fiber-density-study.jpg" alt="Fiber density study and convergence history" />
+            <figcaption>
+              Increasing the allowable fiber density first stabilizes the topology and then densifies the principal load paths.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/bi-modulus-ratios.jpg" alt="Optimized designs for different bi-modulus ratios" />
+            <figcaption>
+              Lower compressive modulus shifts the optimized architecture toward tension-dominant members.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/bridge-results.jpg" alt="Bridge topology and fiber-path results" />
+            <figcaption>
+              Bridge-shaped designs show the same coupled influence of fiber density and bi-modulus behavior.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="experiments">
+        <h2>Fabrication and Experiments</h2>
+        <p class="section-description">
+          Material tests identify the anisotropic, tension-compression-dependent
+          constitutive parameters of the printed composite. The double-clamped beam is
+          then re-optimized with these measured properties. Optimized boundaries are
+          exported as STL geometry, while geodesic iso-contours are converted to fiber
+          toolpaths and G-code for dual-nozzle printing.
+        </p>
+
+        <div class="metric-grid">
+          <article class="metric">
+            <span class="value">+21.3%</span>
+            <span class="label">Increase in measured structural stiffness</span>
+          </article>
+          <article class="metric">
+            <span class="value">+39.5%</span>
+            <span class="label">Increase in average peak load</span>
+          </article>
+          <article class="metric">
+            <span class="value">0.365</span>
+            <span class="label">Stiffness with bi-modulus design (kN/mm)</span>
+          </article>
+          <article class="metric">
+            <span class="value">2.550</span>
+            <span class="label">Average peak load with bi-modulus design (kN)</span>
+          </article>
+        </div>
+
+        <ul class="result-list">
+          <li>The compared specimens have similar average mass, enabling a fair mechanical comparison.</li>
+          <li>The bi-modulus-aware design suppresses premature compression-driven buckling.</li>
+          <li>Continuous fibers are preferentially aligned with tensile load-transfer paths.</li>
+          <li>The resulting load-displacement response remains more stable before final failure.</li>
+        </ul>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide">
+            <img src="./images/fabrication-workflow.jpg" alt="Printing workflow and fabricated specimens" />
+            <figcaption>
+              From optimized geometry and geodesic iso-contours to slicing, G-code, and printed specimens.
+            </figcaption>
+          </figure>
+          <figure class="figure-card wide">
+            <img src="./images/experimental-results.jpg" alt="Mechanical testing and quantitative experimental results" />
+            <figcaption>
+              Compression tests confirm higher stiffness and peak load for the design that includes bi-modulus behavior.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/failure-without-bimodulus.jpg" alt="Failure sequence without bi-modulus consideration" />
+            <figcaption>
+              Without bi-modulus modeling, local compression buckling triggers progressive damage and multiple load drops.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/failure-with-bimodulus.jpg" alt="Failure sequence with bi-modulus consideration" />
+            <figcaption>
+              The bi-modulus-aware design delays local instability and sustains a larger load before failure.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="citation">
+        <h2>Citation</h2>
+        <pre>@article{guo2026derivable,
+  title   = {Derivable geodesic weaving: enabling tension-compression
+             anisotropic topology optimization of densified continuous
+             fiber paths with controlled-spacing},
+  author  = {Guo, Yifan and Su, Chang and Liu, Jikai and Xu, Shuzhi
+             and Yamada, Takayuki},
+  journal = {Composites Part B: Engineering},
+  volume  = {317},
+  pages   = {113604},
+  year    = {2026},
+  doi     = {10.1016/j.compositesb.2026.113604}
+}</pre>
+      </section>
+
+      <section id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p class="section-description">
+          This work was supported by the National Natural Science Foundation of China
+          under Grant 52475290. The authors also acknowledge Professor Bin Zou for
+          providing the continuous-fiber 3D-printing equipment used in the experiments.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Derivable Geodesic Weaving · Composites Part B: Engineering 317 (2026) 113604
+    </footer>
+  </body>
+</html>

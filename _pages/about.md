@@ -762,7 +762,7 @@ redirect_from:
         <article class="mit-publication">
           <a
             class="mit-publication__media"
-            href="{{ '/softwares/software_1/' | relative_url }}">
+            href="{{ '/project/GeodesicWaving/geodesic-waving.html' | relative_url }}">
             <img
               src="{{ '/images/Fiber.png' | relative_url }}"
               alt="Topology optimization of a fiber-reinforced composite structure"
@@ -771,7 +771,7 @@ redirect_from:
           <div>
             <p class="mit-publication__type">Composite Design</p>
             <h3>
-              <a href="{{ '/softwares/software_1/' | relative_url }}">
+              <a href="{{ '/project/GeodesicWaving/geodesic-waving.html' | relative_url }}">
                 5. Topology Optimization of Fiber-Reinforced Composite Structures
               </a>
             </h3>
@@ -785,8 +785,8 @@ redirect_from:
               和制造要求的同时提升结构性能。
             </p>
             <ul class="mit-publication__links">
-              <li><a href="{{ '/softwares/software_1/' | relative_url }}">software page</a></li>
-              <li>·</li>
+              <li><a href="{{ '/portfolio/portfolio-1/' | relative_url }}">Research page</a></li>
+              <li><a href="{{ '/project/GeodesicWaving/geodesic-waving.html' | relative_url }}">Project page</a></li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
           </div>
