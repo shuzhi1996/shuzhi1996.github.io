@@ -1,5 +1,5 @@
 ---
-title: "方向三：Geometry Driven Topology Optimization"
+title: "方向四：Composite Structure Design"
 excerpt: "We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.<br/><br/><img src='/images/封面.png'>"
 collection: portfolio
 ---
@@ -404,17 +404,17 @@ collection: portfolio
   <section class="research-section">
 
     <h2 class="section-title">
-      3. Design for Composite Materials
+      1. Design for Composite Structure
     </h2>
 
 
     <!-- 单卡片居中布局 -->
 
-    <div class="card-grid single-card">
+    <div class="card-grid">
 
 
       <!-- ===================================================
-           Card 3.1
+           Card 1.1
            =================================================== -->
 
       <article class="card">
@@ -423,7 +423,7 @@ collection: portfolio
 
           <img
             src="{{ '/images/fiber/fiber.png' | relative_url }}"
-            alt="Topology optimization for fiber-reinforced materials">
+            alt="Topology optimization for boundary fiber-reinforced materials">
 
         </div>
 
@@ -432,11 +432,11 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            3.1. Topology Optimization for Fiber-Reinforced
+            3.1. Topology Optimization for Boundary Fiber-Reinforced
             Materials
 
             <span class="card-tag">
-              合作方向
+              灌水工作
             </span>
 
           </h3>
@@ -453,7 +453,42 @@ collection: portfolio
 
       </article>
 
+      <!-- ===================================================
+           Card 1.1
+           =================================================== -->
 
+      <article class="card">
+
+        <div class="card-image">
+
+          <img
+            src="{{ '/images/Fiber.png' | relative_url }}"
+            alt="Topology optimization for boundary fiber-reinforced materials">
+
+        </div>
+
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+
+            3.2. Derivable geodesic weaving: tension-compression anisotropic continuous fiber topology optimization
+
+            <span class="card-tag">
+              指导方向
+            </span>
+
+          </h3>
+
+
+          <p class="card-description">
+            A dual-field topology optimization framework that converts differentiable geodesic fields into dense, continuous, fabrication-ready fiber paths while accounting for the bi-modulus behavior of printed composites.
+          </p>
+
+
+        </div>
+
+      </article>
     </div>
 
   </section>
