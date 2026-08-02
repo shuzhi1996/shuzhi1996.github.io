@@ -46,7 +46,7 @@ author_profile: true
 </div>
 </div>
 
-## 方向二：Data Driven Multifidelity Topology Design
+## 方向二：Data Driven Design
 <div class="card-grid">
 <div class="card">
   <img src="/images/MFTD/TopResult_11.gif" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">
@@ -59,5 +59,13 @@ author_profile: true
 <div class="card">
   <img src="/images/CAD/图片1.png" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">
   <a href="{{ '/portfolio/portfolio-3/' | relative_url }}" class="btn">Go for detail →</a>
+</div>
+</div>
+
+## 方向四：Composite Structure Design
+<div class="card-grid">
+<div class="card">
+  <img src="/images/Fiber.png" alt="Design for Manufacturing" style="width:100%; margin-top:10px; border-radius:8px;">
+  <a href="{{ '/portfolio/portfolio-4/' | relative_url }}" class="btn">Go for detail →</a>
 </div>
 </div>

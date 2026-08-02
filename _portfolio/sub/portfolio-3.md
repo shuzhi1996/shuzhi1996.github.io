@@ -1,6 +1,6 @@
 ---
-title: "方向一：Design for Manufacturing"
-excerpt: "Considering manufacturing constraints during topology optimization brings designs closer to practical implementation.<br/><img src='/images/封面2.png'>"
+title: "方向三：Geometry Driven Topology Optimization"
+excerpt: "We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.<br/><br/><img src='/images/封面.png'>"
 collection: portfolio
 ---
 
@@ -399,21 +399,17 @@ collection: portfolio
   <section class="research-section">
 
     <h2 class="section-title">
-      1. Design for Hybrid Manufacturing
+      1. Geometry-Driven Topology Optimization Using B-Spline Geometric Primitives
     </h2>
 
 
     <div class="research-text">
 
       <p>
-        This research focuses on developing design methodologies tailored
-        for hybrid manufacturing systems that integrate additive manufacturing
-        and subtractive machining within a single process. We investigate
-        topology optimization methods that consider process planning, tool
-        accessibility, and manufacturing constraints, enabling the creation
-        of complex, high-performance structures with minimized post-processing.
-        Our approach bridges computational design and practical manufacturing,
-        providing a pathway toward industrial-grade and manufacturable designs.
+        We develop geometry-driven topology optimization methods based on
+      B-spline geometric primitives. The optimized structures are represented
+      using editable centerlines and sectional profiles, enabling direct
+      reconstruction as parameterized and manufacturing-compatible CAD models.
       </p>
 
     </div>
@@ -433,7 +429,7 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/HASM.png' | relative_url }}"
+            src="{{ '/images/CAD/图片9.svg' | relative_url }}"
             alt="Topology optimization for hybrid additive-subtractive manufacturing">
 
         </div>
@@ -443,8 +439,7 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            1.1. Topology Optimization for Hybrid
-            Additive-Subtractive Manufacturing
+            1.1. Geometry driven thermal fulid topology optimization using B-spline geometric primitives
 
             <span class="card-tag">
               专攻方向
@@ -454,14 +449,15 @@ collection: portfolio
 
 
           <p class="card-description">
-            Topology optimization and process-planning methods for integrated
-            additive and subtractive manufacturing.
+            Geometry-driven topology optimization for thermal-fluid problems
+          based on editable, parameterized, and manufacturing-compatible
+          B-spline loft features.
           </p>
 
 
           <a
             class="card-button"
-            href="{{ '/project/HASM/HASM.html' | relative_url }}">
+            href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
 
             Project Page&nbsp;→
 
@@ -473,7 +469,7 @@ collection: portfolio
 
 
       <!-- ===================================================
-           Card 1.2
+           Card 1.1
            =================================================== -->
 
       <article class="card">
@@ -481,8 +477,8 @@ collection: portfolio
         <div class="card-image">
 
           <img
-            src="{{ '/images/SDGIF_Rusult_7.gif' | relative_url }}"
-            alt="Topology optimization for multi-axis additive manufacturing">
+            src="{{ '/images/CAD/图片9.svg' | relative_url }}"
+            alt="Topology optimization for hybrid additive-subtractive manufacturing">
 
         </div>
 
@@ -491,8 +487,7 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            1.2. Topology Optimization for Multi-Axis
-            Additive Manufacturing
+            1.2. Explicit Geometry Driven Topology Optimization for Dual Fluid Heat Exchanger
 
             <span class="card-tag">
               专攻方向
@@ -502,275 +497,17 @@ collection: portfolio
 
 
           <p class="card-description">
-            Manufacturing-aware topology optimization for multi-axis
-            deposition, support reduction, and improved build accessibility.
+            Geometry-driven topology optimization for dual fluid heat exchanger
+          based on editable, parameterized, and manufacturing-compatible
+          B-spline loft features.
           </p>
 
 
           <a
             class="card-button"
-            href="{{ '/portfolio/sub/AM2/' | relative_url }}">
+            href="{{ '/project/BsplineTO/' | relative_url }}">
 
-            Project Page&nbsp;→
-
-          </a>
-
-        </div>
-
-      </article>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       第二部分：增材制造
-       该 section 只有一个卡片，因此使用 single-card
-       ===================================================== -->
-
-  <section class="research-section">
-
-    <h2 class="section-title">
-      2. Design for Additive Manufacturing
-    </h2>
-
-
-    <!-- 单卡片居中布局 -->
-
-    <div class="card-grid">
-
-
-      <!-- ===================================================
-           Card 2.1
-           =================================================== -->
-
-      <article class="card">
-
-        <div class="card-image">
-
-          <img
-            src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
-
-        </div>
-
-
-        <div class="card-content">
-
-          <h3 class="card-title">
-
-            2.1. Inherent Strain Method based LPBF Simulation Solver
-
-            <span class="card-tag">
-              博士课题
-            </span>
-
-          </h3>
-
-
-          <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
-          </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/portfolio/sub/AM1/' | relative_url }}">
-
-            Project Page&nbsp;→
-
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ===================================================
-           Card 2.2
-           =================================================== -->
-
-      <article class="card">
-
-        <div class="card-image">
-
-          <img
-            src="{{ '/images/LPBF0.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
-
-        </div>
-
-
-        <div class="card-content">
-
-          <h3 class="card-title">
-
-            2.2. Residual Stress Constrained Structure Topology Optimization
-
-            <span class="card-tag">
-              博士课题
-            </span>
-
-          </h3>
-
-
-          <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
-          </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/portfolio/sub/AM1/' | relative_url }}">
-
-            Project Page&nbsp;→
-
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ===================================================
-           Card 2.3
-           =================================================== -->
-
-      <article class="card">
-
-        <div class="card-image">
-
-          <img
-            src="{{ '/images/LPBF2.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
-
-        </div>
-
-
-        <div class="card-content">
-
-          <h3 class="card-title">
-
-            2.3. Scanning Path Optimization for Residual Distortion Reduction
-
-            <span class="card-tag">
-              博士课题
-            </span>
-
-          </h3>
-
-
-          <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
-          </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/portfolio/sub/AM1/' | relative_url }}">
-
-            Project Page&nbsp;→
-
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ===================================================
-           Card 2.4
-           =================================================== -->
-
-      <article class="card">
-
-        <div class="card-image">
-
-          <img
-            src="{{ '/images/LPBF3.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
-
-        </div>
-
-
-        <div class="card-content">
-
-          <h3 class="card-title">
-
-            2.4. Support Structure Design for LPBF
-
-            <span class="card-tag">
-              博士课题
-            </span>
-
-          </h3>
-
-
-          <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
-          </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/portfolio/sub/AM1/' | relative_url }}">
-
-            Project Page&nbsp;→
-
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <!-- ===================================================
-           Card 2.5
-           =================================================== -->
-
-      <article class="card">
-
-        <div class="card-image">
-
-          <img
-            src="{{ '/images/LPBF1.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
-
-        </div>
-
-
-        <div class="card-content">
-
-          <h3 class="card-title">
-            2.5. Concurrent Structure and Path Optimization for Residual Distortion Reduction
-            <span class="card-tag">
-              博士课题
-            </span>
-          </h3>
-
-
-          <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
-          </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/portfolio/sub/AM1/' | relative_url }}">
-
-            Project Page&nbsp;→
+            Coming soon&nbsp;→
 
           </a>
 
@@ -781,9 +518,5 @@ collection: portfolio
     </div>
 
   </section>
-
-
-  
-
 
 </div>

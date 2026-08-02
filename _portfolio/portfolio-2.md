@@ -1,5 +1,5 @@
 ---
-title: "方向二：Multifidelity Topology Design"
+title: "方向二：Data Driven Design"
 excerpt: "Short description of portfolio item number 1<br/><img src='/images/MFTD/TopResult_11.gif'>"
 collection: portfolio
 ---
@@ -59,10 +59,6 @@ collection: portfolio
 
 <div class="card">
   <h4>1.2. Phasor based Evolutionary De-homogenization<br/><span style="font-size:14px;">（专攻方向）</span></h4>
-</div>
-
-<div class="card">
-  <h4>1.3. Evolutionary De-homogenization for Non-linear Buckling<br/><span style="font-size:14px;">（专攻方向）</span></h4>
 </div>
 
 </div>
