@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project page for self-support topology optimization with curved layer slicing for multi-axis additive manufacturing."
+    />
+    <title>Self-support Topology Optimization for Multi-axis Additive Manufacturing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: #20242a;
+        background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #1769aa;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 62px 0 32px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #1769aa;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 1040px;
+        margin: 0 auto 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 52px);
+        font-weight: 700;
+        line-height: 1.18;
+      }
+
+      .subtitle {
+        max-width: 890px;
+        margin: 0 auto 24px;
+        color: #555c66;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+
+      .authors {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.9;
+      }
+
+      .authors span {
+        margin: 0 4px;
+        font-weight: 600;
+      }
+
+      .corresponding {
+        color: #c94d2d;
+      }
+
+      .affiliations {
+        max-width: 960px;
+        margin: 8px auto 0;
+        color: #5b626c;
+        font-size: 15px;
+      }
+
+      .affiliations div {
+        margin: 2px 0;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .project-button {
+        display: inline-flex;
+        min-width: 120px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #24292f;
+        font-size: 15px;
+        font-weight: 700;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button.secondary {
+        border: 1px solid #c9d1d9;
+        color: #24292f;
+        background: #ffffff;
+      }
+
+      .project-button:hover {
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      .project-button.secondary:hover {
+        color: #1769aa;
+        background: #f4f8fb;
+      }
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 34px;
+        padding: 12px 15px;
+        border-top: 1px solid #e7ebef;
+        border-bottom: 1px solid #e7ebef;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+      }
+
+      .section-nav a {
+        padding: 6px 11px;
+        border-radius: 6px;
+        color: #444b54;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .section-nav a:hover {
+        background: #f2f5f7;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 54px 0 8px;
+        scroll-margin-top: 72px;
+      }
+
+      section h2 {
+        margin: 0 0 22px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      .section-description {
+        max-width: 920px;
+        margin: 0 auto 24px;
+        color: #40464e;
+        text-align: justify;
+        font-size: 17px;
+      }
+
+      .teaser {
+        margin: 34px auto 10px;
+        text-align: center;
+      }
+
+      .teaser img {
+        width: min(100%, 1040px);
+        border-radius: 10px;
+      }
+
+      .caption {
+        max-width: 940px;
+        margin: 12px auto 0;
+        color: #666e78;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .key-points {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto 0;
+      }
+
+      .key-point {
+        padding: 20px;
+        border: 1px solid #dfe5ea;
+        border-radius: 12px;
+        background: #fbfcfd;
+      }
+
+      .key-point strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1769aa;
+        font-size: 16px;
+      }
+
+      .key-point p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin: 26px auto 0;
+      }
+
+      .figure-card {
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .figure-card.wide {
+        grid-column: 1 / -1;
+      }
+
+      .figure-card img {
+        display: block;
+        width: calc(100% - 28px);
+        max-height: 680px;
+        margin: 14px auto 0;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .figure-card figcaption {
+        padding: 13px 16px 16px;
+        color: #59616b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto;
+      }
+
+      .metric {
+        padding: 22px 18px;
+        border: 1px solid #dce7ef;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #f8fbfd, #ffffff);
+        text-align: center;
+      }
+
+      .metric .value {
+        display: block;
+        color: #1769aa;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .metric .label {
+        display: block;
+        margin-top: 7px;
+        color: #59616b;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .result-list {
+        max-width: 900px;
+        margin: 22px auto;
+        padding-left: 24px;
+        color: #40464e;
+        font-size: 16px;
+      }
+
+      .result-list li {
+        margin: 9px 0;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 20px;
+        border-radius: 9px;
+        background: #f4f6f8;
+        font-family: Consolas, Monaco, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      footer {
+        margin-top: 62px;
+        padding: 30px 0;
+        border-top: 1px solid #e7ebef;
+        color: #747b84;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 900px) {
+        .key-points,
+        .metric-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media screen and (max-width: 760px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          padding-top: 36px;
+        }
+
+        .hero h1 {
+          font-size: 34px;
+        }
+
+        .subtitle,
+        .authors {
+          font-size: 16px;
+        }
+
+        .section-nav {
+          position: static;
+        }
+
+        section {
+          padding-top: 40px;
+        }
+
+        section h2 {
+          font-size: 27px;
+        }
+
+        .figure-grid,
+        .key-points,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .figure-card.wide {
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Computer Methods in Applied Mechanics and Engineering - 2025</p>
+        <h1>
+          Self-support structure topology optimization for multi-axis additive
+          manufacturing incorporated with curved layer slicing
+        </h1>
+        <p class="subtitle">
+          A differentiable framework that concurrently optimizes structural topology
+          and curved fabrication layers, enabling self-supporting designs for multi-axis
+          additive manufacturing without sacrificing unnecessary structural performance.
+        </p>
+
+        <div class="authors">
+          <span>Shuzhi Xu<sup>1</sup></span>,
+          <span>Jikai Liu<sup>2,*</sup></span>,
+          <span>Dong He<sup>3</sup></span>,
+          <span>Kai Tang<sup>4</sup></span>,
+          <span>Kentaro Yaji<sup>1,*</sup></span>
+        </div>
+
+        <div class="affiliations">
+          <div><sup>1</sup> Department of Mechanical Engineering, Graduate School of Engineering, Osaka University, Japan</div>
+          <div><sup>2</sup> School of Mechanical Engineering, Shandong University, China</div>
+          <div><sup>3</sup> Department of Mechanical and Aerospace Engineering, Hong Kong University of Science and Technology, Hong Kong</div>
+          <div><sup>4</sup> Smart Manufacturing Thrust, Hong Kong University of Science and Technology (Guangzhou), China</div>
+          <div class="corresponding"><sup>*</sup> Corresponding authors</div>
+        </div>
+
+        <div class="button-row">
+          <a class="project-button" href="./1-s2.0-S0045782525001136-main.pdf">Paper PDF</a>
+          <a
+            class="project-button secondary"
+            href="https://doi.org/10.1016/j.cma.2025.117841"
+            target="_blank"
+            rel="noopener noreferrer"
+          >DOI</a>
+          <a class="project-button secondary" href="#citation">Citation</a>
+        </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#manufacturing">Path and Print</a>
+        <a href="#citation">Citation</a>
+      </nav>
+
+      <div class="teaser">
+        <img
+          src="./images/cam-workflow.png"
+          alt="Workflow from concurrent optimization to curved layers and manufacturing paths"
+        />
+        <p class="caption">
+          The optimized structural density and process fields are converted into curved
+          layers, slice geometry, toolpaths, G-code, and a manufacturable part.
+        </p>
+      </div>
+
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p class="section-description">
+          Multi-axis additive manufacturing expands the range of printable geometries,
+          but the slicing strategy directly affects support requirements and nozzle
+          accessibility. This work embeds a numerically tractable process-planning model
+          into density-based topology optimization. Heat diffusion first supplies a
+          fabrication sequence, and a Poisson problem transforms it into a geodesic-like
+          process field with nearly uniform gradient magnitude. Curved layer normals and
+          structural boundary gradients then define a differentiable self-support measure.
+          By optimizing the structural and pseudo-density fields together, the method
+          balances physical performance, continuous curved slicing, and support-free
+          manufacturability.
+        </p>
+
+        <div class="key-points">
+          <article class="key-point">
+            <strong>Curved layer slicing</strong>
+            <p>A scalar process field provides continuous layer sequence and spatial distance information.</p>
+          </article>
+          <article class="key-point">
+            <strong>Self-support control</strong>
+            <p>Layer normals and part-boundary gradients identify regions that violate the overhang requirement.</p>
+          </article>
+          <article class="key-point">
+            <strong>Concurrent design</strong>
+            <p>Structural density and process pseudo-density evolve together in one optimization framework.</p>
+          </article>
+          <article class="key-point">
+            <strong>Differentiable pipeline</strong>
+            <p>Linear PDEs and adjoint sensitivities allow the use of mature gradient-based optimizers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method">
+        <h2>Method</h2>
+        <p class="section-description">
+          The method begins with a heat-diffusion problem defined between the printing
+          start and end boundaries. Normalized temperature gradients guide a Poisson
+          equation whose solution is the process field. Iso-values of this field define
+          successive curved layers. In parallel, filtered and projected structural
+          densities describe the part boundary. Comparing the curved-layer normal with
+          the local boundary gradient yields a non-support field that is aggregated as an
+          explicit optimization constraint.
+        </p>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide">
+            <img src="./images/curved-layer-generation.png" alt="Curved layer generation from a scalar process field" />
+            <figcaption>
+              A process field with nearly uniform gradient magnitude is sampled at constant intervals to create curved fabrication layers.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/self-support-analysis.png" alt="Non-support area analysis workflow" />
+            <figcaption>
+              Structural and process design fields are filtered, projected, and coupled to evaluate unsupported boundary regions.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/optimization-framework.png" alt="Concurrent topology and process optimization framework" />
+            <figcaption>
+              The optimization loop couples structural analysis, heat diffusion, the Poisson process field, self-support evaluation, sensitivities, and MMA updates.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results">
+        <h2>Numerical Results</h2>
+        <p class="section-description">
+          Two-dimensional cantilever and bridge examples, together with three-dimensional
+          bracket and heat-sink cases, demonstrate that the process field can evolve with
+          structural topology while retaining smooth, continuous layer patterns. The
+          comparison uses conventional topology optimization, planar-layer self-support
+          optimization, and the proposed multi-axis formulation.
+        </p>
+
+        <div class="metric-grid">
+          <article class="metric">
+            <span class="value">6.4%</span>
+            <span class="label">2D performance improvement over planar-layer optimization</span>
+          </article>
+          <article class="metric">
+            <span class="value">4.7%</span>
+            <span class="label">3D performance improvement over planar-layer optimization</span>
+          </article>
+          <article class="metric">
+            <span class="value">84.566 J</span>
+            <span class="label">Compliance of the proposed multi-axis method in the 2D comparison</span>
+          </article>
+          <article class="metric">
+            <span class="value">330.866 J</span>
+            <span class="label">Compliance of the proposed multi-axis method in the 3D comparison</span>
+          </article>
+        </div>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide">
+            <img src="./images/cantilever-result.png" alt="Optimized short cantilever with curved slicing fields" />
+            <figcaption>
+              Short cantilever example: boundary conditions, optimized topology and layers, and the coupled structural and process fields.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/bracket-result.png" alt="Optimized bracket, curved slices, and displacement simulation" />
+            <figcaption>
+              The three-dimensional bracket combines a self-supporting topology with curved slicing and displacement verification.
+            </figcaption>
+          </figure>
+          <figure class="figure-card">
+            <img src="./images/heatsink-result.png" alt="Optimized heat sink, curved slices, and thermal simulation" />
+            <figcaption>
+              The heat-sink case demonstrates the same concurrent strategy for a thermal topology optimization problem.
+            </figcaption>
+          </figure>
+          <figure class="figure-card wide">
+            <img src="./images/performance-comparison.png" alt="Performance comparison of three topology optimization strategies" />
+            <figcaption>
+              The proposed Multi-Axis-OPT preserves more geometric freedom and improves performance relative to planar-layer self-support design in both 2D and 3D.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="manufacturing">
+        <h2>Manufacturability and Printing</h2>
+        <p class="section-description">
+          Directly slicing an unconstrained topology can create unavoidable nozzle
+          collisions or unstable deposition around horizontal connections. The proposed
+          concurrent formulation modifies both topology and layer geometry to reduce
+          these conflicts. For the demonstrated heat-sink workflow, normalized process
+          iso-surfaces are converted into 175 STL layers with an average thickness of
+          0.50 mm plus or minus 0.02 mm. Boundary paths are extracted, converted to
+          G-code, verified in CAM software, and finally used for printing.
+        </p>
+
+        <ul class="result-list">
+          <li>The process field supplies both fabrication order and curved layer geometry.</li>
+          <li>Self-support constraints remain explicit and differentiable within the optimization problem.</li>
+          <li>Post-processing connects optimized fields to STL slices, path planning, G-code, and machine execution.</li>
+          <li>The numerical path and the physical printing process are validated in the paper.</li>
+        </ul>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide">
+            <img src="./images/manufacturability-analysis.png" alt="Manufacturability comparison showing nozzle collision and powder leakage" />
+            <figcaption>
+              Manufacturability analysis shows how incompatible layer geometry can cause nozzle collision or an unstable melt pool, while the optimized design avoids these conflicts.
+            </figcaption>
+          </figure>
+          <figure class="figure-card wide">
+            <img src="./images/printing-validation.png" alt="Conversion of optimized paths to G-code and final printing validation" />
+            <figcaption>
+              Additive-axis vector planning, toolpath generation, G-code simulation, and the final manufacturing validation.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="citation">
+        <h2>Citation</h2>
+        <pre>@article{xu2025selfsupport,
+  title   = {Self-support structure topology optimization for multi-axis
+             additive manufacturing incorporated with curved layer slicing},
+  author  = {Xu, Shuzhi and Liu, Jikai and He, Dong and Tang, Kai and Yaji, Kentaro},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume  = {438},
+  pages   = {117841},
+  year    = {2025},
+  doi     = {10.1016/j.cma.2025.117841}
+}</pre>
+      </section>
+
+      <section id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p class="section-description">
+          This work acknowledges support from the National Natural Science Foundation
+          of China under Grant 52105462, the Aeronautical Science Foundation of China
+          under Grant 2022Z008001001, and JSPS KAKENHI under Grant 23H03799.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Self-support Topology Optimization for Multi-axis Additive Manufacturing - CMAME 438 (2025) 117841
+    </footer>
+  </body>
+</html>
