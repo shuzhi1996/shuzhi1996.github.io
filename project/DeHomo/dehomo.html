@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project page for evolutionary de-homogenization of hybrid solid-porous infill structures using data-driven multifidelity optimization."
+    />
+    <title>Evolutionary De-homogenization for Solid-Porous Infill Structures</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: #20242a;
+        background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #1769aa;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 62px 0 32px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #1769aa;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 1040px;
+        margin: 0 auto 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 52px);
+        font-weight: 700;
+        line-height: 1.18;
+      }
+
+      .subtitle {
+        max-width: 890px;
+        margin: 0 auto 24px;
+        color: #555c66;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+
+      .authors {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.9;
+      }
+
+      .authors a,
+      .authors span {
+        margin: 0 4px;
+        font-weight: 600;
+      }
+
+      .corresponding {
+        color: #c94d2d;
+      }
+
+      .affiliations {
+        max-width: 960px;
+        margin: 8px auto 0;
+        color: #5b626c;
+        font-size: 15px;
+      }
+
+      .affiliations div {
+        margin: 2px 0;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .project-button {
+        display: inline-flex;
+        min-width: 120px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #24292f;
+        font-size: 15px;
+        font-weight: 700;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button.secondary {
+        border: 1px solid #c9d1d9;
+        color: #24292f;
+        background: #ffffff;
+      }
+
+      .project-button:hover {
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      .project-button.secondary:hover {
+        color: #1769aa;
+        background: #f4f8fb;
+      }
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 34px;
+        padding: 12px 15px;
+        border-top: 1px solid #e7ebef;
+        border-bottom: 1px solid #e7ebef;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+      }
+
+      .section-nav a {
+        padding: 6px 11px;
+        border-radius: 6px;
+        color: #444b54;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .section-nav a:hover {
+        background: #f2f5f7;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 54px 0 8px;
+        scroll-margin-top: 72px;
+      }
+
+      section h2 {
+        margin: 0 0 22px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      .section-description {
+        max-width: 920px;
+        margin: 0 auto 24px;
+        color: #40464e;
+        text-align: justify;
+        font-size: 17px;
+      }
+
+      .teaser {
+        margin: 34px auto 10px;
+        text-align: center;
+      }
+
+      .teaser img {
+        width: min(100%, 1040px);
+        border-radius: 10px;
+      }
+
+      .caption {
+        max-width: 940px;
+        margin: 12px auto 0;
+        color: #666e78;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .key-points {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto 0;
+      }
+
+      .key-point {
+        padding: 20px;
+        border: 1px solid #dfe5ea;
+        border-radius: 12px;
+        background: #fbfcfd;
+      }
+
+      .key-point strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1769aa;
+        font-size: 16px;
+      }
+
+      .key-point p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin: 26px auto 0;
+      }
+
+      .figure-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .figure-card.wide {
+        grid-column: 1 / -1;
+      }
+
+      .figure-card.panorama img {
+        width: calc(100% - 24px);
+        max-height: none;
+        margin-top: 12px;
+      }
+
+      .figure-card.portrait {
+        grid-column: 1 / -1;
+        width: min(100%, 620px);
+        justify-self: center;
+      }
+
+      .figure-card.portrait img {
+        width: min(calc(100% - 36px), 500px);
+        max-height: 760px;
+        margin-top: 18px;
+      }
+
+      .figure-card.medium {
+        grid-column: 1 / -1;
+        width: min(100%, 820px);
+        justify-self: center;
+      }
+
+      .figure-card.medium img {
+        width: min(calc(100% - 32px), 760px);
+        max-height: 680px;
+        margin-top: 16px;
+      }
+
+      .figure-card.result-pair img {
+        width: calc(100% - 28px);
+        height: 320px;
+      }
+
+      .figure-card img {
+        display: block;
+        width: calc(100% - 28px);
+        max-height: 680px;
+        margin: 14px auto 0;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .figure-card figcaption {
+        margin-top: auto;
+        padding: 13px 16px 16px;
+        color: #59616b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto;
+      }
+
+      .metric {
+        padding: 22px 18px;
+        border: 1px solid #dce7ef;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #f8fbfd, #ffffff);
+        text-align: center;
+      }
+
+      .metric .value {
+        display: block;
+        color: #1769aa;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .metric .label {
+        display: block;
+        margin-top: 7px;
+        color: #59616b;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .result-list {
+        max-width: 900px;
+        margin: 22px auto;
+        padding-left: 24px;
+        color: #40464e;
+        font-size: 16px;
+      }
+
+      .result-list li {
+        margin: 9px 0;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 20px;
+        border-radius: 9px;
+        background: #f4f6f8;
+        font-family: Consolas, Monaco, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      footer {
+        margin-top: 62px;
+        padding: 30px 0;
+        border-top: 1px solid #e7ebef;
+        color: #747b84;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 900px) {
+        .key-points,
+        .metric-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media screen and (max-width: 760px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          padding-top: 36px;
+        }
+
+        .hero h1 {
+          font-size: 34px;
+        }
+
+        .subtitle,
+        .authors {
+          font-size: 16px;
+        }
+
+        .section-nav {
+          position: static;
+        }
+
+        section {
+          padding-top: 40px;
+        }
+
+        section h2 {
+          font-size: 27px;
+        }
+
+        .figure-grid,
+        .key-points,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .figure-card.wide {
+          grid-column: auto;
+        }
+
+        .figure-card.portrait,
+        .figure-card.medium {
+          grid-column: auto;
+          width: 100%;
+        }
+
+        .figure-card.result-pair img {
+          height: auto;
+          max-height: 520px;
+        }
+      }
+    
+
+      section h3 {
+        max-width: 940px;
+        margin: 38px auto 16px;
+        font-size: 23px;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 420px));
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        max-width: 900px;
+        margin: 26px auto 0;
+      }
+
+      .video-card,
+      .image-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .video-card img {
+        display: block;
+        width: calc(100% - 30px);
+        height: 300px;
+        margin: 15px auto;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .video-info {
+        flex: 1;
+        padding: 14px 16px 18px;
+        border-top: 1px solid #eef1f3;
+      }
+
+      .video-info h4 {
+        margin: 0 0 5px;
+        color: #20242a;
+        font-size: 17px;
+      }
+
+      .video-info p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        max-width: 1120px;
+        margin: 26px auto 0;
+      }
+
+      .image-card {
+        width: 100%;
+        justify-self: center;
+      }
+
+      .image-card img {
+        display: block;
+        width: calc(100% - 28px);
+        margin: 15px auto 0;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .image-card.panorama {
+        max-width: 1120px;
+      }
+
+      .image-card.panorama img {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+      }
+
+      .image-card.wide {
+        max-width: 1040px;
+      }
+
+      .image-card.medium {
+        max-width: 820px;
+      }
+
+      .image-card.standard {
+        max-width: 920px;
+      }
+
+      .image-card.standard img {
+        width: calc(100% - 36px);
+        margin-top: 18px;
+      }
+
+      .image-card > p {
+        margin: auto 0 0;
+        padding: 13px 18px 17px;
+        color: #59616b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        margin: 28px auto 0;
+      }
+
+      .table-wrapper table {
+        width: min(100%, 940px);
+        min-width: 720px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      .table-wrapper caption {
+        padding: 0 0 12px;
+        color: #59616b;
+        font-size: 14px;
+      }
+
+      .table-wrapper th,
+      .table-wrapper td {
+        padding: 12px 13px;
+        border: 1px solid #dfe5ea;
+        text-align: center;
+      }
+
+      .table-wrapper th {
+        background: #f4f7f9;
+        font-weight: 700;
+      }
+
+      .table-wrapper tr:nth-child(even) {
+        background: #fafbfd;
+      }
+
+      @media screen and (max-width: 760px) {
+        .video-grid,
+        .image-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .video-card img {
+          height: auto;
+          max-height: 420px;
+        }
+
+        .image-card,
+        .image-card.panorama,
+        .image-card.wide,
+        .image-card.medium,
+        .image-card.standard {
+          max-width: 100%;
+        }
+      }
+    
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Materials &amp; Design - 2025</p>
+        <h1>
+          Evolutionary de-homogenization using a generative model for optimizing
+          solid-porous infill structures considering the stress concentration issue
+        </h1>
+        <p class="subtitle">
+          A data-driven multifidelity framework that connects low-fidelity topology
+          variables with precise, CAD-compatible hybrid solid-porous geometries and
+          high-fidelity stress evaluation.
+        </p>
+
+        <div class="authors">
+          <a href="https://shuzhi1996.github.io/">Shuzhi Xu<sup>1</sup></a>,
+          <span>Hiroki Kawabe<sup>1</sup></span>,
+          <span>Kentaro Yaji<sup>1,*</sup></span>
+        </div>
+
+        <div class="affiliations">
+          <div><sup>1</sup> Department of Mechanical Engineering, Graduate School of Engineering, The University of Osaka, Japan</div>
+          <div class="corresponding"><sup>*</sup> Corresponding author</div>
+        </div>
+
+        <div class="button-row">
+          <a class="project-button" href="./1-s2.0-S0264127525008007-main.pdf">Paper PDF</a>
+          <a
+            class="project-button secondary"
+            href="https://doi.org/10.1016/j.matdes.2025.114380"
+            target="_blank"
+            rel="noopener noreferrer"
+          >DOI</a>
+          <a class="project-button secondary" href="#citation">Citation</a>
+        </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#citation">Citation</a>
+      </nav>
+
+      <div class="teaser">
+        <img src="./images/mftd-framework.png" alt="Data-driven multifidelity topology design framework" />
+        <p class="caption">
+          Low-fidelity optimization, de-homogenization, high-fidelity evaluation,
+          NSGA-II selection, and VAE-based generation are coupled in one evolutionary loop.
+        </p>
+      </div>
+
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p class="section-description">
+          Porous infill structures offer low weight and high mechanical efficiency, but
+          voxel-based topology optimization can introduce geometric mismatch and local
+          stress concentrations when a design is converted into a manufacturable model.
+          This work proposes evolutionary de-homogenization, a data-driven multifidelity
+          framework for hybrid solid-porous infill design. Density-based control fields
+          provide an efficient low-fidelity representation, while de-homogenization maps
+          them to detailed CAD-compatible geometries for adaptive meshing and high-fidelity
+          stress analysis. A multi-objective evolutionary process selects promising
+          candidates, and a multi-channel variational autoencoder generates new designs.
+          The resulting workflow directly optimizes precise solid-porous geometries while
+          concentrating solid material in structurally critical regions.
+        </p>
+
+        <div class="key-points">
+          <article class="key-point">
+            <strong>Hybrid infill design</strong>
+            <p>Solid material reinforces critical regions while porous infill preserves lightweight performance.</p>
+          </article>
+          <article class="key-point">
+            <strong>Multifidelity mapping</strong>
+            <p>Compact control fields are mapped to precise CAD and CAE geometries for reliable evaluation.</p>
+          </article>
+          <article class="key-point">
+            <strong>Generative evolution</strong>
+            <p>A multi-channel VAE supports crossover and expands the candidate design population.</p>
+          </article>
+          <article class="key-point">
+            <strong>Stress control</strong>
+            <p>High-fidelity analysis guides material toward local stress-concentration regions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method">
+        <h2>Method</h2>
+        <p class="section-description">
+          Three low-fidelity fields describe the base material, solid reinforcement, and
+          principal stress direction. The fields are refined and transformed into a shell,
+          spatially oriented lattice infill, and solid domains. Explicit boundaries are then
+          extracted for CAD reconstruction and conformal meshing. High-fidelity mass and
+          maximum von Mises stress define a multi-objective problem solved through NSGA-II,
+          while the VAE learns the selected population and proposes new control-field candidates.
+        </p>
+
+        <div class="image-grid">
+          <article class="image-card panorama">
+            <img src="./images/hybrid-concept.png" alt="Hybrid solid-porous infill design concept" />
+            <p>
+              The workflow moves from boundary conditions and a homogenization-based design to a detailed solid-porous geometry and high-fidelity model.
+            </p>
+          </article>
+          <article class="image-card wide">
+            <img src="./images/dehomogenization-pipeline.png" alt="De-homogenization and geometry reconstruction pipeline" />
+            <p>
+              Refined control fields generate the shell, lattice infill, explicit boundary, CAD model, and conformal CAE mesh.
+            </p>
+          </article>
+          <article class="image-card wide">
+            <img src="./images/vae-architecture.png" alt="Architecture of the multi-channel variational autoencoder" />
+            <p>
+              The multi-channel VAE encodes three low-fidelity fields into an eight-dimensional latent space and decodes new candidate designs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="results">
+        <h2>Evolutionary Optimization Results</h2>
+        <p class="section-description">
+          L-bracket studies evaluate mesh independence, convergence, population size,
+          topology diversity, and detailed stress response. The evolutionary process
+          improves the Pareto population over successive iterations, while larger candidate
+          populations expose additional topologies and reduce the maximum stress at matched
+          volume fractions.
+        </p>
+
+        <div class="metric-grid">
+          <article class="metric">
+            <span class="value">3 fields</span>
+            <span class="label">Base material, solid material, and principal stress direction controls</span>
+          </article>
+          <article class="metric">
+            <span class="value">8D</span>
+            <span class="label">Latent representation used by the multi-channel VAE</span>
+          </article>
+          <article class="metric">
+            <span class="value">200</span>
+            <span class="label">Iterations in the symmetric tension-beam MFTD study</span>
+          </article>
+          <article class="metric">
+            <span class="value">200</span>
+            <span class="label">Largest L-bracket population used in the diversity study</span>
+          </article>
+        </div>
+
+        <div class="image-grid">
+          <article class="image-card medium">
+            <img src="./images/evolution-and-populations.png" alt="Pareto evolution, convergence, and optimized populations" />
+            <p>
+              Pareto-front evolution, hypervolume convergence, and the final low- and high-fidelity L-bracket populations.
+            </p>
+          </article>
+          <article class="image-card wide">
+            <img src="./images/l-bracket-results.png" alt="Optimized L-bracket stress and displacement results with CAD reconstruction" />
+            <p>
+              Representative L-bracket designs include detailed stress and displacement fields, extracted boundaries, CAD reconstruction, and conformal meshes.
+            </p>
+          </article>
+          <article class="image-card wide">
+            <img src="./images/population-comparison.png" alt="L-bracket solutions obtained with three population sizes" />
+            <p>
+              Designs produced with 100, 150, and 200 candidates at two target volume fractions show the effect of population size on diversity and stress.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="comparison">
+        <h2>Performance Comparison</h2>
+        <p class="section-description">
+          Comparisons with conventional stress-based topology optimization and with the
+          low-fidelity-only process show the benefit of evaluating detailed geometries
+          throughout optimization. In the symmetric tension-beam study, MFTD produces more
+          continuous solid-filled regions aligned with the primary load paths and reduces
+          peak stress at closely matched mass ratios.
+        </p>
+
+        <div class="metric-grid">
+          <article class="metric">
+            <span class="value">13.0%</span>
+            <span class="label">Maximum-stress improvement near a 10.3% volume fraction</span>
+          </article>
+          <article class="metric">
+            <span class="value">15.6%</span>
+            <span class="label">Maximum-stress improvement near a 12.3% volume fraction</span>
+          </article>
+          <article class="metric">
+            <span class="value">18.2%</span>
+            <span class="label">Maximum-stress improvement near a 17.0% volume fraction</span>
+          </article>
+          <article class="metric">
+            <span class="value">2.3%</span>
+            <span class="label">Weight reduction in the highest-volume comparison group</span>
+          </article>
+        </div>
+
+        <div class="image-grid">
+          <article class="image-card medium">
+            <img src="./images/stress-to-comparison.png" alt="Comparison between low-fidelity optimization and stress-based topology optimization" />
+            <p>
+              Low-fidelity solid-porous optimization expands the favorable Pareto region and reduces stress relative to single-material Stress-TO.
+            </p>
+          </article>
+          <article class="image-card medium">
+            <img src="./images/symmetric-beam-evolution.png" alt="Symmetric tension-beam MFTD evolution and populations" />
+            <p>
+              The symmetric tension-beam study tracks Pareto improvement, hypervolume convergence, and population evolution over 200 iterations.
+            </p>
+          </article>
+          <article class="image-card medium">
+            <img src="./images/mftd-performance.png" alt="MFTD performance and detailed symmetric tension-beam structures" />
+            <p>
+              MFTD lowers maximum stress while maintaining similar or lower volume fractions across three representative design groups.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="citation">
+        <h2>Citation</h2>
+        <pre>@article{xu2025evolutionary,
+  title   = {Evolutionary de-homogenization using a generative model for
+             optimizing solid-porous infill structures considering the
+             stress concentration issue},
+  author  = {Xu, Shuzhi and Kawabe, Hiroki and Yaji, Kentaro},
+  journal = {Materials &amp; Design},
+  volume  = {257},
+  pages   = {114380},
+  year    = {2025},
+  doi     = {10.1016/j.matdes.2025.114380}
+}</pre>
+      </section>
+
+      <section id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p class="section-description">
+          This work was supported by JSPS KAKENHI Grant Number 23H03799.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Evolutionary De-homogenization - Materials &amp; Design 257 (2025) 114380
+    </footer>
+  </body>
+</html>

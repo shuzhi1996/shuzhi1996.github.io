@@ -3,15 +3,9 @@
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="Geometry driven thermal fulid topology optimization using B-spline geometric primitives." name="description"/>
-    <title>
-      Geometry Driven Topology Optimization
-    </title>
+    <meta content="Geometry-driven thermal-fluid topology optimization using B-spline geometric primitives." name="description"/>
+    <title>Geometry-driven Thermal-fluid Topology Optimization</title>
     <style>
-      /* ======================================================
-      全局设置
-      ====================================================== */
-
       * {
         box-sizing: border-box;
       }
@@ -22,10 +16,9 @@
 
       body {
         margin: 0;
-        padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        color: #222222;
+        color: #20242a;
         background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
         line-height: 1.7;
       }
 
@@ -38,41 +31,42 @@
         text-decoration: underline;
       }
 
-      img, video {
+      img {
         max-width: 100%;
       }
-
-      /* ======================================================
-      页面主体宽度
-      ====================================================== */
 
       .container {
         width: min(1120px, calc(100% - 40px));
         margin: 0 auto;
       }
 
-      /* ======================================================
-      顶部论文信息
-      ====================================================== */
-
       .hero {
-        padding: 60px 0 30px;
+        padding: 62px 0 32px;
         text-align: center;
       }
 
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #1769aa;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
       .hero h1 {
-        max-width: 1000px;
-        margin: 0 auto 14px;
+        max-width: 1040px;
+        margin: 0 auto 16px;
         font-family: Georgia, "Times New Roman", serif;
         font-size: clamp(32px, 5vw, 52px);
-        line-height: 1.18;
         font-weight: 700;
+        line-height: 1.18;
       }
 
       .subtitle {
-        max-width: 850px;
+        max-width: 890px;
         margin: 0 auto 24px;
-        color: #555555;
+        color: #555c66;
         font-size: 19px;
         line-height: 1.6;
       }
@@ -80,44 +74,56 @@
       .authors {
         margin-top: 18px;
         font-size: 18px;
-        line-height: 1.8;
+        line-height: 1.9;
       }
 
-      .authors a {
-        margin: 0 5px;
-        font-weight: 500;
+      .authors a,
+      .authors span {
+        margin: 0 4px;
+        font-weight: 600;
+      }
+
+      .corresponding {
+        color: #c94d2d;
       }
 
       .affiliations {
-        margin-top: 8px;
-        color: #555555;
-        font-size: 16px;
+        max-width: 960px;
+        margin: 8px auto 0;
+        color: #5b626c;
+        font-size: 15px;
       }
 
-      /* ======================================================
-      Paper / Code 按钮
-      ====================================================== */
+      .affiliations div {
+        margin: 2px 0;
+      }
 
       .button-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
-        margin-top: 24px;
+        margin-top: 26px;
       }
 
       .project-button {
         display: inline-flex;
+        min-width: 120px;
         align-items: center;
         justify-content: center;
-        min-width: 112px;
         padding: 10px 18px;
         border-radius: 999px;
-        background: #24292f;
         color: #ffffff;
+        background: #24292f;
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 700;
         transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button.secondary {
+        border: 1px solid #c9d1d9;
+        color: #24292f;
+        background: #ffffff;
       }
 
       .project-button:hover {
@@ -127,9 +133,10 @@
         transform: translateY(-2px);
       }
 
-      /* ======================================================
-      页面内部导航
-      ====================================================== */
+      .project-button.secondary:hover {
+        color: #1769aa;
+        background: #f4f8fb;
+      }
 
       .section-nav {
         position: sticky;
@@ -139,34 +146,30 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-        margin-top: 35px;
+        margin-top: 34px;
         padding: 12px 15px;
-        border-top: 1px solid #eeeeee;
-        border-bottom: 1px solid #eeeeee;
-        background: rgba(255, 255, 255, 0.94);
+        border-top: 1px solid #e7ebef;
+        border-bottom: 1px solid #e7ebef;
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(8px);
       }
 
       .section-nav a {
         padding: 6px 11px;
         border-radius: 6px;
-        color: #444444;
+        color: #444b54;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 700;
       }
 
       .section-nav a:hover {
-        background: #f2f4f6;
+        background: #f2f5f7;
         text-decoration: none;
       }
 
-      /* ======================================================
-      通用章节
-      ====================================================== */
-
       section {
-        padding: 52px 0 10px;
-        scroll-margin-top: 70px;
+        padding: 54px 0 8px;
+        scroll-margin-top: 72px;
       }
 
       section h2 {
@@ -177,225 +180,204 @@
         line-height: 1.3;
       }
 
-      section h3 {
-        max-width: 900px;
-        margin: 35px auto 15px;
-        padding-left: 0;
-        font-size: 23px;
-      }
-
       .section-description {
-        max-width: 900px;
-        margin: 0 auto 25px;
-        color: #444444;
+        max-width: 920px;
+        margin: 0 auto 24px;
+        color: #40464e;
         text-align: justify;
         font-size: 17px;
       }
 
-      /* ======================================================
-      主图
-      ====================================================== */
-
       .teaser {
-        margin: 35px auto 15px;
+        margin: 34px auto 10px;
         text-align: center;
       }
 
       .teaser img {
-        width: 80%;
+        width: min(100%, 1040px);
         border-radius: 10px;
-        box-shadow: 0 5px 22px rgba(0, 0, 0, 0.0);
       }
 
       .caption {
-        max-width: 920px;
+        max-width: 940px;
         margin: 12px auto 0;
-        color: #666666;
+        color: #666e78;
         font-size: 14px;
         line-height: 1.6;
         text-align: center;
       }
 
-      /* ======================================================
-      YouTube 主展示区
-      ====================================================== */
-
-      .youtube-wrapper {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        border-radius: 10px;
-        padding-top: 56.25%;
-        background: #000000;
-        box-shadow: 0 5px 22px rgba(0, 0, 0, 0.12);
-      }
-
-      .youtube-wrapper iframe {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-
-      /* ======================================================
-      GIF 结果网格
-      ====================================================== */
-
-      .video-grid {
+      .key-points {
         display: grid;
-
-        /* 每个卡片最大宽度为 420px */
-
-        grid-template-columns: repeat(4, minmax(0, 420px));
-        justify-content: center;
-        gap: 22px;
-        width: 100%;
-        max-width: 900px;
-        margin: 25px auto 0;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto 0;
       }
 
-      .video-card {
-        width: 100%;
-        overflow: hidden;
-        border: 1px solid #e1e4e8;
-        border-radius: 10px;
-        background: #ffffff;
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+      .key-point {
+        padding: 20px;
+        border: 1px solid #dfe5ea;
+        border-radius: 12px;
+        background: #fbfcfd;
       }
 
-      .video-card img {
+      .key-point strong {
         display: block;
-        width: calc(100% - 30px);
-        max-width: 100%;
-        height: 260px;
-        margin: 15px auto;
+        margin-bottom: 6px;
+        color: #1769aa;
+        font-size: 16px;
+      }
+
+      .key-point p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin: 26px auto 0;
+      }
+
+      .figure-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .figure-card.wide {
+        grid-column: 1 / -1;
+      }
+
+      .figure-card.panorama img {
+        width: calc(100% - 24px);
+        max-height: none;
+        margin-top: 12px;
+      }
+
+      .figure-card.portrait {
+        grid-column: 1 / -1;
+        width: min(100%, 620px);
+        justify-self: center;
+      }
+
+      .figure-card.portrait img {
+        width: min(calc(100% - 36px), 500px);
+        max-height: 760px;
+        margin-top: 18px;
+      }
+
+      .figure-card.medium {
+        grid-column: 1 / -1;
+        width: min(100%, 820px);
+        justify-self: center;
+      }
+
+      .figure-card.medium img {
+        width: min(calc(100% - 32px), 760px);
+        max-height: 680px;
+        margin-top: 16px;
+      }
+
+      .figure-card.result-pair img {
+        width: calc(100% - 28px);
+        height: 320px;
+      }
+
+      .figure-card img {
+        display: block;
+        width: calc(100% - 28px);
+        max-height: 680px;
+        margin: 14px auto 0;
         object-fit: contain;
         background: #ffffff;
       }
 
-      .video-info {
-        padding: 14px 16px 16px;
-      }
-
-      .video-info h4 {
-        margin: 0 0 5px;
-        font-size: 17px;
-      }
-
-      .video-info p {
-        margin: 0;
-        color: #666666;
+      .figure-card figcaption {
+        margin-top: auto;
+        padding: 13px 16px 16px;
+        color: #59616b;
+        text-align: center;
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.55;
       }
 
-      /* ======================================================
-      图片结果网格
-      ====================================================== */
-
-      .image-grid {
+      .metric-grid {
         display: grid;
-        grid-template-columns: minmax(0, 900px);
-        justify-content: center;
-        gap: 22px;
-        width: 100%;
-        margin: 24px auto 0;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto;
       }
 
-      .image-card {
-        width: 100%;
-        overflow: hidden;
-        border: 1px solid #e1e4e8;
-        border-radius: 10px;
-        background: #ffffff;
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.00);
+      .metric {
+        padding: 22px 18px;
+        border: 1px solid #dce7ef;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #f8fbfd, #ffffff);
+        text-align: center;
       }
 
-      .image-card img {
+      .metric .value {
         display: block;
-        width: 90%;
-        margin: 15px auto 0;
-      }
-
-      .image-card p {
-        margin: 0;
-        padding: 12px 15px;
-        color: #555555;
-        text-align: center;
-        font-size: 14px;
-      }
-
-      /* ======================================================
-      表格
-      ====================================================== */
-
-      .table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-        margin: 24px auto 0;
-      }
-
-      .table-wrapper table {
-        width: 80%;
-        min-width: 720px;
-        margin: 0 auto;
-        border-collapse: collapse;
-        font-size: 15px;
-      }
-
-      .table-wrapper th, .table-wrapper td {
-        padding: 12px 13px;
-        border: 1px solid #dddddd;
-        text-align: center;
-      }
-
-      .table-wrapper th {
-        background: #f5f6f7;
+        color: #1769aa;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px;
         font-weight: 700;
+        line-height: 1.2;
       }
 
-      .table-wrapper tr:nth-child(even) {
-        background: #fafafa;
+      .metric .label {
+        display: block;
+        margin-top: 7px;
+        color: #59616b;
+        font-size: 13px;
+        line-height: 1.45;
       }
 
-      .table-wrapper .ours {
-        font-weight: 700;
-        background: #eef7ff;
+      .result-list {
+        max-width: 900px;
+        margin: 22px auto;
+        padding-left: 24px;
+        color: #40464e;
+        font-size: 16px;
       }
 
-      /* ======================================================
-      BibTeX
-      ====================================================== */
+      .result-list li {
+        margin: 9px 0;
+      }
 
       pre {
         overflow-x: auto;
         padding: 20px;
         border-radius: 9px;
-        background: #f5f6f7;
+        background: #f4f6f8;
         font-family: Consolas, Monaco, "Courier New", monospace;
         font-size: 14px;
         line-height: 1.6;
       }
 
-      /* ======================================================
-      页脚
-      ====================================================== */
-
       footer {
-        margin-top: 60px;
+        margin-top: 62px;
         padding: 30px 0;
-        border-top: 1px solid #eeeeee;
-        color: #777777;
+        border-top: 1px solid #e7ebef;
+        color: #747b84;
         text-align: center;
         font-size: 14px;
       }
 
-      /* ======================================================
-      手机端
-      ====================================================== */
+      @media screen and (max-width: 900px) {
+        .key-points,
+        .metric-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
 
       @media screen and (max-width: 760px) {
         .container {
@@ -403,23 +385,16 @@
         }
 
         .hero {
-          padding-top: 35px;
+          padding-top: 36px;
         }
 
         .hero h1 {
           font-size: 34px;
         }
 
-        .subtitle {
-          font-size: 16px;
-        }
-
+        .subtitle,
         .authors {
           font-size: 16px;
-        }
-
-        .video-grid, .image-grid {
-          grid-template-columns: 1fr;
         }
 
         .section-nav {
@@ -427,13 +402,198 @@
         }
 
         section {
-          padding-top: 38px;
+          padding-top: 40px;
         }
 
         section h2 {
           font-size: 27px;
         }
 
+        .figure-grid,
+        .key-points,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .figure-card.wide {
+          grid-column: auto;
+        }
+
+        .figure-card.portrait,
+        .figure-card.medium {
+          grid-column: auto;
+          width: 100%;
+        }
+
+        .figure-card.result-pair img {
+          height: auto;
+          max-height: 520px;
+        }
+      }
+    
+
+      section h3 {
+        max-width: 940px;
+        margin: 38px auto 16px;
+        font-size: 23px;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 420px));
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        max-width: 900px;
+        margin: 26px auto 0;
+      }
+
+      .video-card,
+      .image-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .video-card img {
+        display: block;
+        width: calc(100% - 30px);
+        height: 300px;
+        margin: 15px auto;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .video-info {
+        flex: 1;
+        padding: 14px 16px 18px;
+        border-top: 1px solid #eef1f3;
+      }
+
+      .video-info h4 {
+        margin: 0 0 5px;
+        color: #20242a;
+        font-size: 17px;
+      }
+
+      .video-info p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        justify-content: center;
+        gap: 22px;
+        width: 100%;
+        max-width: 1120px;
+        margin: 26px auto 0;
+      }
+
+      .image-card {
+        width: 100%;
+        justify-self: center;
+      }
+
+      .image-card img {
+        display: block;
+        width: calc(100% - 28px);
+        margin: 15px auto 0;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .image-card.panorama {
+        max-width: 1120px;
+      }
+
+      .image-card.panorama img {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+      }
+
+      .image-card.wide {
+        max-width: 1040px;
+      }
+
+      .image-card.standard {
+        max-width: 920px;
+      }
+
+      .image-card.standard img {
+        width: calc(100% - 36px);
+        margin-top: 18px;
+      }
+
+      .image-card > p {
+        margin: auto 0 0;
+        padding: 13px 18px 17px;
+        color: #59616b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        margin: 28px auto 0;
+      }
+
+      .table-wrapper table {
+        width: min(100%, 940px);
+        min-width: 720px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+
+      .table-wrapper caption {
+        padding: 0 0 12px;
+        color: #59616b;
+        font-size: 14px;
+      }
+
+      .table-wrapper th,
+      .table-wrapper td {
+        padding: 12px 13px;
+        border: 1px solid #dfe5ea;
+        text-align: center;
+      }
+
+      .table-wrapper th {
+        background: #f4f7f9;
+        font-weight: 700;
+      }
+
+      .table-wrapper tr:nth-child(even) {
+        background: #fafbfd;
+      }
+
+      @media screen and (max-width: 760px) {
+        .video-grid,
+        .image-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .video-card img {
+          height: auto;
+          max-height: 420px;
+        }
+
+        .image-card,
+        .image-card.panorama,
+        .image-card.wide,
+        .image-card.standard {
+          max-width: 100%;
+        }
       }
     </style>
   </head>
@@ -443,77 +603,40 @@
                   标题与作者
                   ================================================== -->
       <header class="hero">
+        <p class="eyebrow">Research Project - 2026</p>
         <h1>
-          Geometry driven thermal fulid topology optimization using B-spline geometric primitives
+          Geometry-driven thermal-fluid topology optimization using B-spline geometric primitives
         </h1>
         <p class="subtitle">
-          A differentiable and CAD-compatible framework for
-                geometry-controlled structural and fluid topology optimization.
+          A differentiable and CAD-compatible framework for geometry-controlled
+          thermal-fluid topology optimization and direct CAD reconstruction.
         </p>
+
         <div class="authors">
-          <a href="https://shuzhi1996.github.io/">
-            Shuzhi Xu
-          </a>
-          <sup>
-            1
-          </sup>
-          ,
-          <a href="https://www.mech.sdu.edu.cn/info/1153/129553.htm">
-            Jikai Liu
-          </a>
-          <sup>
-            2
-          </sup>
-          ,
-          <a href="https://sites.google.com/view/yajiken">
-            Kentaro Yaji
-          </a>
-          <sup>
-            1
-          </sup>
+          <a href="https://shuzhi1996.github.io/">Shuzhi Xu<sup>1</sup></a>,
+          <a href="https://www.mech.sdu.edu.cn/info/1153/129553.htm">Jikai Liu<sup>2</sup></a>,
+          <a href="https://sites.google.com/view/yajiken">Kentaro Yaji<sup>1</sup></a>
         </div>
+
         <div class="affiliations">
-          <div>
-            <sup>
-              1
-            </sup>
-            The University of Osaka, Japan
-          </div>
-          <div>
-            <sup>
-              2
-            </sup>
-            Shandong University, China
-          </div>
+          <div><sup>1</sup> The University of Osaka, Japan</div>
+          <div><sup>2</sup> Shandong University, China</div>
         </div>
+
         <div class="button-row">
-          <a class="project-button" href="#video">
-            Video
-          </a>
-          <a class="project-button" href="#citation">
-            Citation
-          </a>
+          <a class="project-button" href="#results">Video</a>
+          <a class="project-button secondary" href="#citation">Citation</a>
         </div>
       </header>
       <!-- ==================================================
                   页面导航
                   ================================================== -->
-      <nav class="section-nav">
-        <a href="#abstract">
-          Abstract
-        </a>
-        <a href="#method">
-          Method
-        </a>
-        <a href="#results">
-          Results
-        </a>
-        <a href="#comparison">
-          Comparison
-        </a>
-        <a href="#citation">
-          Citation
-        </a>
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#comparison">Comparison</a>
+        <a href="#citation">Citation</a>
       </nav>
       <!-- ==================================================
                   Teaser
@@ -537,6 +660,25 @@
         <p class="section-description">
           Topology optimization has been widely applied to thermal–fluid design, particularly for channel-based systems. However, many conventional approaches rely on implicit density-field representations, making it difficult to preserve geometrically interpretable channel features and directly obtain editable CAD models. This study develops a geometry-driven topology optimization framework for cooling-system design based on a three-dimensional loft-based channel representation. Each channel is parameterized by a B-spline centerline and spatially varying cross-sectional profiles, enabling simultaneous control of its trajectory and sectional shape. The resulting geometry is mapped onto a fixed background mesh through a distance-field-based explicit–implicit formulation for thermal–fluid analysis. A predominantly analytical sensitivity scheme is developed for the geometry-to-field mapping, with finite-difference evaluation restricted to the computationally inexpensive rotation-minimizing-frame term. The local nature of the mapping is further exploited through narrow-band evaluation to improve computational efficiency. Curvature, domain-feasibility, adhesion, and self-support constraints are incorporated to preserve design intent and additive manufacturability. Numerical examples demonstrate that the method can generate complex two- and three-dimensional channels while retaining explicit geometric control, computationally efficient gradient evaluation, and direct reconstruction of editable CAD geometries.
         </p>
+      
+        <div class="key-points">
+          <article class="key-point">
+            <strong>B-spline geometry</strong>
+            <p>Centerlines and spatially varying sections retain explicit, editable geometric control.</p>
+          </article>
+          <article class="key-point">
+            <strong>CAD compatible</strong>
+            <p>Optimized variables can be reconstructed directly as editable CAD channel features.</p>
+          </article>
+          <article class="key-point">
+            <strong>Efficient sensitivities</strong>
+            <p>Analytical derivatives and narrow-band evaluation reduce geometry-to-field cost.</p>
+          </article>
+          <article class="key-point">
+            <strong>Manufacturability</strong>
+            <p>Curvature, feasibility, adhesion, and self-support constraints preserve design intent.</p>
+          </article>
+        </div>
       </section>
       <!-- ==================================================
                   方法
@@ -642,19 +784,19 @@
           Optimized Designs
         </h3>
         <div class="image-grid">
-          <article class="image-card">
+          <article class="image-card panorama">
             <img alt="Optimized result one" src="./images/图片8.svg"/>
             <p>
               The optimized results with different weighting ratio w: (a) the final optimized material distribution and convergence history; and (b) the pareto plot for the structural performance.
             </p>
           </article>
-          <article class="image-card">
+          <article class="image-card wide">
             <img alt="Optimized result two" src="./images/图片9.svg"/>
             <p>
               The optimized results for molding structure considering the self-support constraint (g_5). The geometric configurations and corresponding response field distributions are presented in (a). The convergence histories are shown in (b), while the geometry evolution processes are illustrated in (c).
             </p>
           </article>
-          <article class="image-card">
+          <article class="image-card wide">
             <img alt="Optimized result two" src="./images/图片10.svg"/>
             <p>
               Illustration of the CAD reconstruction detail results. (a) Construction of the channel feature using loft and Boolean operations, where a DSL representation is directly generated from the optimized design variables; (b) generation of the full-scale molding part via Boolean subtraction between the design domain and the channel feature; (c) final reconstructed CAD model; (d) detailed view of the channel feature.
@@ -670,7 +812,7 @@
           Quantitative Results
         </h2>
         <div class="image-grid">
-          <article class="image-card">
+          <article class="image-card panorama">
             <img alt="Optimized result one" src="./images/图片13.svg"/>
           </article>
         </div>
@@ -679,7 +821,7 @@
         </p>
 
         <div class="image-grid">
-          <article class="image-card">
+          <article class="image-card standard">
             <img alt="Optimized result one" src="./images/图片11.svg"/>
             <p>
               High-fidelity analysis results for Designs 1–3. The conformal meshes, fluid velocity fields, and temperature distributions are presented.
@@ -788,7 +930,7 @@
           Below figure presents the self-supportability analysis of the optimized designs, where the color map denotes the angle between facet normal vectors and the building direction. Following commonly adopted additive manufacturing criteria, facets with angles below 45° are considered self-supporting, whereas larger angles indicate increased overhang risk.
         </p>
         <div class="image-grid">
-          <article class="image-card">
+          <article class="image-card panorama">
             <img alt="Optimized result one" src="./images/图片12.svg"/>
           </article>
         </div>
@@ -801,12 +943,12 @@
         <h2>
           Citation
         </h2>
-        <pre>@article{xu2026geometry,
-  title   = {Geometry-Driven Topology Optimization
-             with B-Spline Geometric Features},
-  author  = {Xu, Shuzhi and Others},
-  journal = {Journal Name},
-  year    = {2026}
+        <pre>@misc{xu2026geometry,
+  title  = {Geometry-driven thermal-fluid topology optimization
+            using B-spline geometric primitives},
+  author = {Xu, Shuzhi and Liu, Jikai and Yaji, Kentaro},
+  year   = {2026},
+  note   = {Manuscript in preparation}
 }</pre>
       </section>
       <!-- ==================================================
@@ -827,14 +969,14 @@
         </p>
 
         <p class="section-description">
-          We also gratefully acknowledge Dr.<a href="https://shuzhixu.github.io/">
+          We also gratefully acknowledge Dr. <a href="https://shuzhixu.github.io/">
             Yifan Guo
           </a> for his insightful discussions on code implementation and constraint construction.
         </p>
       </section>
     </main>
     <footer>
-      Geometry-Driven Topology Optimization · Osaka University
+      Geometry-driven Thermal-fluid Topology Optimization - The University of Osaka
     </footer>
   </body>
 </html>

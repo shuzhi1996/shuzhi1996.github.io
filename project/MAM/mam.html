@@ -245,6 +245,8 @@
       }
 
       .figure-card {
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
         border: 1px solid #e1e5e9;
         border-radius: 12px;
@@ -254,6 +256,41 @@
 
       .figure-card.wide {
         grid-column: 1 / -1;
+      }
+
+      .figure-card.panorama img {
+        width: calc(100% - 24px);
+        max-height: none;
+        margin-top: 12px;
+      }
+
+      .figure-card.portrait {
+        grid-column: 1 / -1;
+        width: min(100%, 620px);
+        justify-self: center;
+      }
+
+      .figure-card.portrait img {
+        width: min(calc(100% - 36px), 500px);
+        max-height: 760px;
+        margin-top: 18px;
+      }
+
+      .figure-card.medium {
+        grid-column: 1 / -1;
+        width: min(100%, 820px);
+        justify-self: center;
+      }
+
+      .figure-card.medium img {
+        width: min(calc(100% - 32px), 760px);
+        max-height: 680px;
+        margin-top: 16px;
+      }
+
+      .figure-card.result-pair img {
+        width: calc(100% - 28px);
+        height: 320px;
       }
 
       .figure-card img {
@@ -266,6 +303,7 @@
       }
 
       .figure-card figcaption {
+        margin-top: auto;
         padding: 13px 16px 16px;
         color: #59616b;
         text-align: center;
@@ -382,6 +420,17 @@
         .figure-card.wide {
           grid-column: auto;
         }
+
+        .figure-card.portrait,
+        .figure-card.medium {
+          grid-column: auto;
+          width: 100%;
+        }
+
+        .figure-card.result-pair img {
+          height: auto;
+          max-height: 520px;
+        }
       }
     </style>
   </head>
@@ -494,19 +543,19 @@
         </p>
 
         <div class="figure-grid">
-          <figure class="figure-card wide">
+          <figure class="figure-card wide panorama">
             <img src="./images/curved-layer-generation.png" alt="Curved layer generation from a scalar process field" />
             <figcaption>
               A process field with nearly uniform gradient magnitude is sampled at constant intervals to create curved fabrication layers.
             </figcaption>
           </figure>
-          <figure class="figure-card">
+          <figure class="figure-card wide panorama">
             <img src="./images/self-support-analysis.png" alt="Non-support area analysis workflow" />
             <figcaption>
               Structural and process design fields are filtered, projected, and coupled to evaluate unsupported boundary regions.
             </figcaption>
           </figure>
-          <figure class="figure-card">
+          <figure class="figure-card portrait">
             <img src="./images/optimization-framework.png" alt="Concurrent topology and process optimization framework" />
             <figcaption>
               The optimization loop couples structural analysis, heat diffusion, the Poisson process field, self-support evaluation, sensitivities, and MMA updates.
@@ -551,19 +600,19 @@
               Short cantilever example: boundary conditions, optimized topology and layers, and the coupled structural and process fields.
             </figcaption>
           </figure>
-          <figure class="figure-card">
+          <figure class="figure-card result-pair">
             <img src="./images/bracket-result.png" alt="Optimized bracket, curved slices, and displacement simulation" />
             <figcaption>
               The three-dimensional bracket combines a self-supporting topology with curved slicing and displacement verification.
             </figcaption>
           </figure>
-          <figure class="figure-card">
+          <figure class="figure-card result-pair">
             <img src="./images/heatsink-result.png" alt="Optimized heat sink, curved slices, and thermal simulation" />
             <figcaption>
               The heat-sink case demonstrates the same concurrent strategy for a thermal topology optimization problem.
             </figcaption>
           </figure>
-          <figure class="figure-card wide">
+          <figure class="figure-card medium">
             <img src="./images/performance-comparison.png" alt="Performance comparison of three topology optimization strategies" />
             <figcaption>
               The proposed Multi-Axis-OPT preserves more geometric freedom and improves performance relative to planar-layer self-support design in both 2D and 3D.
@@ -592,13 +641,13 @@
         </ul>
 
         <div class="figure-grid">
-          <figure class="figure-card wide">
+          <figure class="figure-card wide panorama">
             <img src="./images/manufacturability-analysis.png" alt="Manufacturability comparison showing nozzle collision and powder leakage" />
             <figcaption>
               Manufacturability analysis shows how incompatible layer geometry can cause nozzle collision or an unstable melt pool, while the optimized design avoids these conflicts.
             </figcaption>
           </figure>
-          <figure class="figure-card wide">
+          <figure class="figure-card wide panorama">
             <img src="./images/printing-validation.png" alt="Conversion of optimized paths to G-code and final printing validation" />
             <figcaption>
               Additive-axis vector planning, toolpath generation, G-code simulation, and the final manufacturing validation.
