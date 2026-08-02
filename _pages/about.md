@@ -835,16 +835,16 @@ redirect_from:
         </article>
 
         <article class="mit-publication">
-          <a class="mit-publication__media" href="{{ '/project/dehomo/dehomo.html' | relative_url }}">
+          <a class="mit-publication__media" href="{{ '/project/DeHomo/dehomo.html' | relative_url }}">
             <img
-              src="{{ '/project/dehomo/main.jpg' | relative_url }}"
+              src="{{ '/project/DeHomo/main.jpg' | relative_url }}"
               alt="Evolutionary de-homogenization for hybrid solid-porous infill structures"
               loading="lazy">
           </a>
           <div>
             <p class="mit-publication__type">Data-Driven Design</p>
             <h3>
-              <a href="{{ '/project/dehomo/dehomo.html' | relative_url }}">
+              <a href="{{ '/project/DeHomo/dehomo.html' | relative_url }}">
                 7. Evolutionary De-homogenization for Solid-Porous Infill Structures
               </a>
             </h3>
@@ -860,7 +860,7 @@ redirect_from:
             <ul class="mit-publication__links">
               <li><a href="{{ '/portfolio/portfolio-2/' | relative_url }}">research page</a></li>
               <li>·</li>
-              <li><a href="{{ '/project/dehomo/dehomo.html' | relative_url }}">project page</a></li>
+              <li><a href="{{ '/project/DeHomo/dehomo.html' | relative_url }}">project page</a></li>
               <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
