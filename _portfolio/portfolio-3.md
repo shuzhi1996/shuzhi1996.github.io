@@ -468,6 +468,53 @@ collection: portfolio
       </article>
 
 
+      <!-- ===================================================
+           Card 1.1
+           =================================================== -->
+
+      <article class="card">
+
+        <div class="card-image">
+
+          <img
+            src="{{ '/images/CAD/图片9.svg' | relative_url }}"
+            alt="Topology optimization for hybrid additive-subtractive manufacturing">
+
+        </div>
+
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+
+            1.2. Explicit Geometry Driven Topology Optimization for Dual Fluid Heat Exchanger
+
+            <span class="card-tag">
+              专攻方向
+            </span>
+
+          </h3>
+
+
+          <p class="card-description">
+            Geometry-driven topology optimization for dual fluid heat exchanger
+          based on editable, parameterized, and manufacturing-compatible
+          B-spline loft features.
+          </p>
+
+
+          <a
+            class="card-button"
+            href="{{ '/project/BsplineTO/' | relative_url }}">
+
+            Coming soon&nbsp;→
+
+          </a>
+
+        </div>
+
+      </article>
+
     </div>
 
   </section>
