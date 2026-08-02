@@ -527,7 +527,7 @@ collection: portfolio
 
   <!-- =====================================================
        第二部分：增材制造
-       该 section 只有一个卡片，因此使用 single-card
+       该 section 包含五个研究主题，使用响应式两列布局
        ===================================================== -->
 
   <section class="research-section">
@@ -537,7 +537,7 @@ collection: portfolio
     </h2>
 
 
-    <!-- 单卡片居中布局 -->
+    <!-- 响应式卡片布局 -->
 
     <div class="card-grid">
 
@@ -552,7 +552,7 @@ collection: portfolio
 
           <img
             src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
+            alt="Inherent-strain-based LPBF simulation">
 
         </div>
 
@@ -561,7 +561,7 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            2.1. Inherent Strain Method based LPBF Simulation Solver
+            2.1. Inherent-Strain-Method-Based LPBF Simulation Solver
 
             <span class="card-tag">
               博士课题
@@ -571,9 +571,7 @@ collection: portfolio
 
 
           <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
+            Efficient inherent-strain-based simulation for predicting process-induced deformation in laser powder bed fusion.
           </p>
 
 
@@ -600,7 +598,7 @@ collection: portfolio
 
           <img
             src="{{ '/images/LPBF0.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
+            alt="Residual-stress-constrained topology optimization for LPBF">
 
         </div>
 
@@ -609,7 +607,7 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            2.2. Residual Stress Constrained Structure Topology Optimization
+            2.2. Residual-Stress-Constrained Structural Topology Optimization
 
             <span class="card-tag">
               博士课题
@@ -619,9 +617,7 @@ collection: portfolio
 
 
           <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
+            Structural topology optimization that incorporates process-induced residual-stress constraints during LPBF design.
           </p>
 
 
@@ -648,7 +644,7 @@ collection: portfolio
 
           <img
             src="{{ '/images/LPBF2.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
+            alt="Island scanning-path optimization for LPBF">
 
         </div>
 
@@ -657,7 +653,7 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            2.3. Scanning Path Optimization for Residual Distortion Reduction
+            2.3. Scanning-Path Optimization for Residual-Distortion Reduction
 
             <span class="card-tag">
               博士课题
@@ -667,9 +663,7 @@ collection: portfolio
 
 
           <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
+            Island scanning-pattern optimization for reducing residual distortion through controllable laser-path planning.
           </p>
 
 
@@ -696,7 +690,7 @@ collection: portfolio
 
           <img
             src="{{ '/images/LPBF3.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
+            alt="Support-structure optimization for LPBF">
 
         </div>
 
@@ -705,7 +699,7 @@ collection: portfolio
 
           <h3 class="card-title">
 
-            2.4. Support Structure Design for LPBF
+            2.4. Support-Structure Design for LPBF
 
             <span class="card-tag">
               博士课题
@@ -715,9 +709,7 @@ collection: portfolio
 
 
           <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
+            Support-structure topology optimization that accounts for residual distortion and LPBF manufacturability.
           </p>
 
 
@@ -744,7 +736,7 @@ collection: portfolio
 
           <img
             src="{{ '/images/LPBF1.png' | relative_url }}"
-            alt="Topology optimization for LPBF metal additive manufacturing">
+            alt="Concurrent structure and scanning-path optimization for LPBF">
 
         </div>
 
@@ -752,7 +744,7 @@ collection: portfolio
         <div class="card-content">
 
           <h3 class="card-title">
-            2.5. Concurrent Structure and Path Optimization for Residual Distortion Reduction
+            2.5. Concurrent Structure and Scanning-Path Optimization for Residual-Distortion Reduction
             <span class="card-tag">
               博士课题
             </span>
@@ -760,9 +752,7 @@ collection: portfolio
 
 
           <p class="card-description">
-            Topology optimization considering process-induced constraints,
-            residual deformation, and manufacturability in metal additive
-            manufacturing.
+            Concurrent optimization of part topology and island scanning patterns for large-scale residual-distortion control.
           </p>
 
 

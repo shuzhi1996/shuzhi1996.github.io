@@ -696,7 +696,7 @@ redirect_from:
         </article>
 
         <article class="mit-publication">
-          <a class="mit-publication__media" href="{{ '/portfolio/sub/' | relative_url }}">
+          <a class="mit-publication__media" href="{{ '/portfolio/portfolio-3/' | relative_url }}">
             <img
               src="{{ '/images/cooling2.png' | relative_url }}"
               alt="Optimized cooling-channel design"
@@ -705,7 +705,7 @@ redirect_from:
           <div>
             <p class="mit-publication__type">Thermal Management</p>
             <h3>
-              <a href="{{ '/portfolio/sub/' | relative_url }}">
+              <a href="{{ '/portfolio/portfolio-3/' | relative_url }}">
                 3. Topology Optimization of Dual-Flow Heat Exchangers
               </a>
             </h3>
@@ -719,7 +719,7 @@ redirect_from:
               与流动阻力。
             </p>
             <ul class="mit-publication__links">
-              <li><a href="{{ '/portfolio/sub/' | relative_url }}">project page</a></li>
+              <li><a href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">project page</a></li>
               <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>
@@ -728,7 +728,7 @@ redirect_from:
 
 
         <article class="mit-publication">
-          <a class="mit-publication__media" href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
+          <a class="mit-publication__media" href="{{ '/portfolio/sub/AM1/' | relative_url }}">
             <img
               src="{{ '/images/SDGIF_Rusult_6.gif' | relative_url }}"
               alt="Manufacturing-aware design for metal additive manufacturing"
@@ -737,7 +737,7 @@ redirect_from:
           <div>
             <p class="mit-publication__type">Design for Manufacturing</p>
             <h3>
-              <a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">
+              <a href="{{ '/portfolio/sub/AM1/' | relative_url }}">
                 4. Design for Metal Additive Manufacturing
               </a>
             </h3>
@@ -751,7 +751,7 @@ redirect_from:
               与最小特征尺寸等工艺约束。
             </p>
             <ul class="mit-publication__links">
-              <li><a href="{{ '/portfolio/sub/MOLD/' | relative_url }}">project page</a></li>
+              <li><a href="{{ '/portfolio/sub/AM1/' | relative_url }}">project page</a></li>
               <li>·</li>
               <li><a href="{{ '/publications/' | relative_url }}">related publications</a></li>
             </ul>

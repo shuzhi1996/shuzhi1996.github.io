@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="B-spline-driven topology and continuous fiber-path optimization for additively manufactured continuous fiber-reinforced composites."/>
+    <title>B-Spline Topology Optimization for Continuous Fiber Composites</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: #20242a;
+        background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #1769aa;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        padding: 62px 0 32px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #1769aa;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 1040px;
+        margin: 0 auto 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(32px, 5vw, 52px);
+        font-weight: 700;
+        line-height: 1.18;
+      }
+
+      .subtitle {
+        max-width: 890px;
+        margin: 0 auto 24px;
+        color: #555c66;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+
+      .authors {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 1.9;
+      }
+
+      .authors a,
+      .authors span {
+        margin: 0 4px;
+        font-weight: 600;
+      }
+
+      .corresponding {
+        color: #c94d2d;
+      }
+
+      .affiliations {
+        max-width: 900px;
+        margin: 8px auto 0;
+        color: #5b626c;
+        font-size: 15px;
+      }
+
+      .affiliations div {
+        margin: 2px 0;
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .project-button {
+        display: inline-flex;
+        min-width: 120px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 999px;
+        color: #ffffff;
+        background: #24292f;
+        font-size: 15px;
+        font-weight: 700;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .project-button.secondary {
+        border: 1px solid #c9d1d9;
+        color: #24292f;
+        background: #ffffff;
+      }
+
+      .project-button:hover {
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+        transform: translateY(-2px);
+      }
+
+      .project-button.secondary:hover {
+        color: #1769aa;
+        background: #f4f8fb;
+      }
+
+      .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 34px;
+        padding: 12px 15px;
+        border-top: 1px solid #e7ebef;
+        border-bottom: 1px solid #e7ebef;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+      }
+
+      .section-nav a {
+        padding: 6px 11px;
+        border-radius: 6px;
+        color: #444b54;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .section-nav a:hover {
+        background: #f2f5f7;
+        text-decoration: none;
+      }
+
+      section {
+        padding: 54px 0 8px;
+        scroll-margin-top: 72px;
+      }
+
+      section h2 {
+        margin: 0 0 22px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 32px;
+        line-height: 1.3;
+      }
+
+      section h3 {
+        max-width: 940px;
+        margin: 38px auto 16px;
+        font-size: 23px;
+      }
+
+      .section-description {
+        max-width: 920px;
+        margin: 0 auto 24px;
+        color: #40464e;
+        text-align: justify;
+        font-size: 17px;
+      }
+
+      .teaser {
+        margin: 34px auto 10px;
+        text-align: center;
+      }
+
+      .teaser img {
+        width: min(100%, 1040px);
+        border-radius: 10px;
+      }
+
+      .caption {
+        max-width: 940px;
+        margin: 12px auto 0;
+        color: #666e78;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .key-points {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto 0;
+      }
+
+      .key-point {
+        padding: 20px;
+        border: 1px solid #dfe5ea;
+        border-radius: 12px;
+        background: #fbfcfd;
+      }
+
+      .key-point strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1769aa;
+        font-size: 16px;
+      }
+
+      .key-point p {
+        margin: 0;
+        color: #59616b;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .figure-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin: 26px auto 0;
+      }
+
+      .figure-card {
+        overflow: hidden;
+        border: 1px solid #e1e5e9;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 4px 16px rgba(31, 43, 55, 0.05);
+      }
+
+      .figure-card.wide {
+        grid-column: 1 / -1;
+      }
+
+      .figure-card img {
+        display: block;
+        width: calc(100% - 28px);
+        max-height: 680px;
+        margin: 14px auto 0;
+        object-fit: contain;
+        background: #ffffff;
+      }
+
+      .figure-card figcaption {
+        padding: 13px 16px 16px;
+        color: #59616b;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin: 28px auto;
+      }
+
+      .metric {
+        padding: 22px 18px;
+        border: 1px solid #dce7ef;
+        border-radius: 12px;
+        background: linear-gradient(145deg, #f8fbfd, #ffffff);
+        text-align: center;
+      }
+
+      .metric .value {
+        display: block;
+        color: #1769aa;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .metric .label {
+        display: block;
+        margin-top: 7px;
+        color: #59616b;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .result-list {
+        max-width: 900px;
+        margin: 22px auto;
+        padding-left: 24px;
+        color: #40464e;
+        font-size: 16px;
+      }
+
+      .result-list li {
+        margin: 9px 0;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 20px;
+        border-radius: 9px;
+        background: #f4f6f8;
+        font-family: Consolas, Monaco, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      footer {
+        margin-top: 62px;
+        padding: 30px 0;
+        border-top: 1px solid #e7ebef;
+        color: #747b84;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 900px) {
+        .key-points,
+        .metric-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media screen and (max-width: 760px) {
+        .container {
+          width: min(100% - 24px, 1120px);
+        }
+
+        .hero {
+          padding-top: 36px;
+        }
+
+        .hero h1 {
+          font-size: 34px;
+        }
+
+        .subtitle,
+        .authors {
+          font-size: 16px;
+        }
+
+        .section-nav {
+          position: static;
+        }
+
+        section {
+          padding-top: 40px;
+        }
+
+        section h2 {
+          font-size: 27px;
+        }
+
+        .figure-grid,
+        .key-points,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .figure-card.wide {
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">Computer Methods in Applied Mechanics and Engineering - 2026</p>
+        <h1>Topology optimization of additively manufactured continuous fiber-reinforced composites using B-spline components</h1>
+        <p class="subtitle">
+          A geometry-driven framework that concurrently optimizes structural topology,
+          continuous fiber paths, path spacing, and fiber usage for additively manufactured composites.
+        </p>
+
+        <div class="authors">
+          <span>Yifan Guo<sup>1</sup></span>,
+          <a href="https://www.mech.sdu.edu.cn/info/1153/129553.htm">Jikai Liu<sup>3</sup></a>,
+          <a class="corresponding" href="https://shuzhi1996.github.io/">Shuzhi Xu<sup>2,*</sup></a>,
+          <span>Kentaro Yaji<sup>2</sup></span>,
+          <span class="corresponding">Takayuki Yamada<sup>1,*</sup></span>
+        </div>
+
+        <div class="affiliations">
+          <div><sup>1</sup> Department of Mechanical Engineering, The University of Tokyo, Japan</div>
+          <div><sup>2</sup> Department of Mechanical Engineering, The University of Osaka, Japan</div>
+          <div><sup>3</sup> School of Mechanical Engineering, Shandong University, China</div>
+          <div class="corresponding"><sup>*</sup> Corresponding authors</div>
+        </div>
+
+        <div class="button-row">
+          <a class="project-button" href="./1-s2.0-S0045782526004974-main.pdf">Paper PDF</a>
+          <a class="project-button secondary" href="https://doi.org/10.1016/j.cma.2026.119224" target="_blank" rel="noopener noreferrer">DOI</a>
+          <a class="project-button secondary" href="../../portfolio/portfolio-4/">Research Page</a>
+          <a class="project-button secondary" href="#citation">Citation</a>
+        </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#verification">Verification</a>
+        <a href="#citation">Citation</a>
+      </nav>
+
+      <div class="teaser">
+        <img src="./images/bspline-component-and-path-field.png" alt="Variable-width B-spline components and their continuous fiber-path fields"/>
+        <p class="caption">
+          Variable-width B-spline components simultaneously describe the structural geometry,
+          continuous fiber-path field, and spatially varying reinforcement allocation.
+        </p>
+      </div>
+
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p class="section-description">
+          This work proposes a B-spline-driven topology and fiber-path optimization framework
+          for continuous fiber-reinforced composites. Multiple variable-width B-spline components
+          represent the structural layout, while continuous fiber paths are generated as iso-contours
+          of the component-induced scalar field. A separate spacing-control field enables local
+          adjustment of fiber density and global control of fiber usage. Non-self-crossing,
+          attachment, and fiber-content constraints improve path continuity and manufacturability.
+          The optimized direction and fiber-density indicators are mapped to homogenized orthotropic
+          material properties, and adjoint sensitivities are derived for all parametric variables.
+        </p>
+
+        <div class="key-points">
+          <article class="key-point">
+            <strong>Explicit B-spline geometry</strong>
+            <p>Variable-width components provide compact topology control and direct CAD compatibility.</p>
+          </article>
+          <article class="key-point">
+            <strong>Continuous fiber paths</strong>
+            <p>Printable trajectories are extracted directly from iso-contours of the optimized scalar field.</p>
+          </article>
+          <article class="key-point">
+            <strong>Fiber-content control</strong>
+            <p>Local spacing and global fiber usage are adjusted within the same optimization framework.</p>
+          </article>
+          <article class="key-point">
+            <strong>Manufacturability aware</strong>
+            <p>Geometric constraints prevent self-crossing and promote coherent component attachment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method">
+        <h2>Method</h2>
+        <p class="section-description">
+          Each component contains a B-spline centerline, a variable radius field, and a spacing-control
+          field. Their assembled scalar field defines the structural boundary and the continuous fiber
+          trajectories. The local tangent direction and an analytically evaluated fiber-density indicator
+          are then coupled with a homogenization-based constitutive model. The complete formulation
+          optimizes geometry, reinforcement paths, and material allocation using a shared set of design variables.
+        </p>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide panorama">
+            <img src="./images/fiber-path-homogenization.png" alt="Continuous fiber-path generation and homogenized material construction"/>
+            <figcaption>
+              Iso-contours generate continuous paths; their tangents and local density indicators define
+              the orthotropic homogenized material response.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card wide">
+            <img src="./images/manufacturability-constraints.png" alt="Non-self-crossing and attachment constraints for B-spline components"/>
+            <figcaption>
+              The non-self-crossing constraint removes degenerate centerlines, while the attachment
+              constraint promotes smooth and coherent coupling between neighboring components.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card wide panorama">
+            <img src="./images/optimization-workflow.png" alt="Optimization workflow of the proposed method"/>
+            <figcaption>
+              The workflow integrates initialization, geometry and field construction, homogenized
+              analysis, constraint evaluation, sensitivity analysis, and design-variable updates.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="results">
+        <h2>Numerical Results</h2>
+        <p class="section-description">
+          MBB-beam, L-bracket, and compliant-mechanism benchmarks evaluate initialization,
+          minimum feature size, component manufacturability, local fiber density, and global
+          fiber usage. The examples show that the framework produces smooth structural skeletons
+          together with continuous reinforcement paths and controllable spacing.
+        </p>
+
+        <div class="metric-grid">
+          <article class="metric">
+            <span class="value">32.41%</span>
+            <span class="label">Maximum-displacement reduction in the stiffness-oriented verification cases</span>
+          </article>
+          <article class="metric">
+            <span class="value">31.00%</span>
+            <span class="label">Average-displacement reduction compared with reference fiber layouts</span>
+          </article>
+          <article class="metric">
+            <span class="value">2.46%</span>
+            <span class="label">Output-displacement gain from moderate reinforcement in the compliant mechanism</span>
+          </article>
+          <article class="metric">
+            <span class="value">1.10%</span>
+            <span class="label">Gain of moderate reinforcement over the over-reinforced mechanism design</span>
+          </article>
+        </div>
+
+        <div class="figure-grid">
+          <figure class="figure-card">
+            <img src="./images/mbb-initialization-results.png" alt="MBB beam initialization and optimization results"/>
+            <figcaption>
+              MBB-beam studies compare principal-stress-based initialization, component counts,
+              optimized layouts, fiber paths, and convergence behavior.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <img src="./images/l-bracket-fiber-content.png" alt="L-bracket results under fiber-content constraints"/>
+            <figcaption>
+              L-bracket results demonstrate local fiber-density control, global fiber-budget control,
+              and their influence on topology and reinforcement allocation.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card wide panorama">
+            <img src="./images/manufacturability-effects.png" alt="Effects of B-spline manufacturability constraints"/>
+            <figcaption>
+              Minimum radius, non-self-crossing, and attachment constraints control feature size,
+              eliminate invalid path interactions, and improve geometric coherence.
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card medium">
+            <img src="./images/compliant-mechanism-results.png" alt="Compliant mechanism optimization results"/>
+            <figcaption>
+              Compliant-mechanism examples reveal the balance between fiber reinforcement and the
+              flexibility needed to transmit the prescribed output motion.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="verification">
+        <h2>Full-Scale Reconstruction and Verification</h2>
+        <p class="section-description">
+          The explicit B-spline representation allows optimized boundaries to be reconstructed as
+          CAD geometry without complex topology-repair procedures. Full-scale finite-element models
+          retain the resolved matrix and fiber paths to assess the mechanical effectiveness of the
+          optimized reinforcement. Stiffness-oriented cases substantially reduce both maximum and
+          average displacement, while the compliant-mechanism study confirms that excessive fiber
+          coverage can over-stiffen the structure.
+        </p>
+
+        <ul class="result-list">
+          <li>Redundant internal curves are removed before the optimized boundary is reconstructed.</li>
+          <li>The explicit geometry is mirrored and converted into a complete CAD model.</li>
+          <li>Resolved fiber trajectories are transferred to the full-scale finite-element verification model.</li>
+          <li>Fiber allocation can be tailored to either stiffness or compliant-motion requirements.</li>
+        </ul>
+
+        <div class="figure-grid">
+          <figure class="figure-card wide panorama">
+            <img src="./images/full-scale-reconstruction.png" alt="Full-scale reconstruction of the optimized MBB beam"/>
+            <figcaption>
+              From B-spline boundary curves to the reconstructed CAD geometry and full-scale
+              matrix-fiber finite-element model.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="citation">
+        <h2>Citation</h2>
+        <pre>@article{guo2026bsplinefiber,
+  title   = {Topology optimization of additively manufactured continuous
+             fiber-reinforced composites using B-spline components},
+  author  = {Guo, Yifan and Liu, Jikai and Xu, Shuzhi and Yaji, Kentaro
+             and Yamada, Takayuki},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  volume  = {461},
+  pages   = {119224},
+  year    = {2026},
+  doi     = {10.1016/j.cma.2026.119224}
+}</pre>
+      </section>
+
+      <section id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p class="section-description">
+          This work was supported in part by JSPS KAKENHI Grant Numbers JP23H03800,
+          JP25H01108, and 25KF0244.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      B-Spline Topology Optimization for Continuous Fiber Composites - CMAME 461 (2026) 119224
+    </footer>
+  </body>
+</html>

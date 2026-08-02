@@ -1,6 +1,6 @@
 ---
-title: "方向三：Geometry Driven Topology Optimization"
-excerpt: "We develop methods that bridge topology optimization and CAD modeling, enabling the direct generation of editable, history-based geometric features. With Autodesk Inventor, optimized designs are reconstructed as fully parametric models, allowing seamless design refinement and rapid downstream modifications.<br/><br/><img src='/images/封面.png'>"
+title: "方向三：Geometry-Driven Topology Optimization"
+excerpt: "Geometry-driven topology optimization represents designs with editable B-spline centerlines and sectional profiles, enabling direct CAD reconstruction for thermal-fluid systems.<br/><br/><img src='/images/CAD/图片9.svg'>"
 collection: portfolio
 ---
 
@@ -390,133 +390,85 @@ collection: portfolio
 
 <div class="research-page">
 
-
-  <!-- =====================================================
-       第一部分：混合制造
-       该 section 有两个卡片，因此使用两列布局
-       ===================================================== -->
-
+  <!-- Geometry-driven topology optimization -->
   <section class="research-section">
-
-    <h2 class="section-title">
-      1. Geometry-Driven Topology Optimization Using B-Spline Geometric Primitives
-    </h2>
-
+    <h2 class="section-title">1. Geometry-Driven Topology Optimization Using B-Spline Geometric Primitives</h2>
 
     <div class="research-text">
-
       <p>
-        We develop geometry-driven topology optimization methods based on
-      B-spline geometric primitives. The optimized structures are represented
-      using editable centerlines and sectional profiles, enabling direct
-      reconstruction as parameterized and manufacturing-compatible CAD models.
+        We develop geometry-driven topology optimization methods based on B-spline
+        geometric primitives. Optimized structures are represented by editable
+        centerlines and sectional profiles, enabling direct reconstruction as
+        parameterized, manufacturing-compatible CAD models.
       </p>
-
     </div>
-
-
-    <!-- 两个卡片：使用默认两列布局 -->
 
     <div class="card-grid">
-
-
-      <!-- ===================================================
-           Card 1.1
-           =================================================== -->
-
+      <!-- Card 1.1 -->
       <article class="card">
-
         <div class="card-image">
-
           <img
             src="{{ '/images/CAD/图片9.svg' | relative_url }}"
-            alt="Topology optimization for hybrid additive-subtractive manufacturing">
-
+            alt="Geometry-driven thermal-fluid topology optimization with B-spline primitives">
         </div>
-
-
         <div class="card-content">
-
           <h3 class="card-title">
-
-            1.1. Geometry driven thermal fulid topology optimization using B-spline geometric primitives
-
-            <span class="card-tag">
-              专攻方向
-            </span>
-
+            1.1. Geometry-Driven Thermal-Fluid Topology Optimization Using B-Spline Geometric Primitives
+            <span class="card-tag">专攻方向</span>
           </h3>
-
-
           <p class="card-description">
-            Geometry-driven topology optimization for thermal-fluid problems
-          based on editable, parameterized, and manufacturing-compatible
-          B-spline loft features.
+            A differentiable thermal-fluid optimization framework based on editable,
+            parameterized, and manufacturing-compatible B-spline loft features.
           </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
-
+          <a class="card-button" href="{{ '/project/BsplineTO/bspline1.html' | relative_url }}">
             Project Page&nbsp;→
-
           </a>
-
         </div>
-
       </article>
 
-
-      <!-- ===================================================
-           Card 1.1
-           =================================================== -->
-
+      <!-- Card 1.2 -->
       <article class="card">
-
         <div class="card-image">
-
           <img
-            src="{{ '/images/CAD/图片9.svg' | relative_url }}"
-            alt="Topology optimization for hybrid additive-subtractive manufacturing">
-
+            src="{{ '/images/cooling2.png' | relative_url }}"
+            alt="Geometry-driven topology optimization of a dual-flow heat exchanger">
         </div>
-
-
         <div class="card-content">
-
           <h3 class="card-title">
-
-            1.2. Explicit Geometry Driven Topology Optimization for Dual Fluid Heat Exchanger
-
-            <span class="card-tag">
-              专攻方向
-            </span>
-
+            1.2. Explicit Geometry-Driven Topology Optimization for Dual-Flow Heat Exchangers
+            <span class="card-tag">专攻方向</span>
           </h3>
-
-
           <p class="card-description">
-            Geometry-driven topology optimization for dual fluid heat exchanger
-          based on editable, parameterized, and manufacturing-compatible
-          B-spline loft features.
+            Geometry-driven thermal-fluid optimization of compact dual-flow heat exchangers, balancing heat-transfer performance and flow resistance.
           </p>
-
-
-          <a
-            class="card-button"
-            href="{{ '/project/BsplineTO/' | relative_url }}">
-
-            Coming soon&nbsp;→
-
+          <a class="card-button" href="{{ '/publications/' | relative_url }}">
+            Related Publications&nbsp;→
           </a>
-
         </div>
-
       </article>
 
+      <!-- Card 1.3 -->
+      <article class="card">
+        <div class="card-image">
+          <img
+            src="{{ '/project/BsplineFiber/images/bspline-component-and-path-field.png' | relative_url }}"
+            alt="B-spline topology optimization for continuous fiber-reinforced composites">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">
+            1.3. Topology Optimization of Additively Manufactured Continuous Fiber-Reinforced Composites Using B-Spline Components
+            <span class="card-tag">专攻方向</span>
+          </h3>
+          <p class="card-description">
+            A geometry-driven framework for concurrent structural topology,
+            continuous fiber-path, spacing, and fiber-content optimization.
+          </p>
+          <a class="card-button" href="{{ '/project/BsplineFiber/bspline-fiber.html' | relative_url }}">
+            Project Page&nbsp;→
+          </a>
+        </div>
+      </article>
     </div>
-
   </section>
 
 </div>
